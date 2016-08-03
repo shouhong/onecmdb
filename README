@@ -66,7 +66,8 @@ considirations, see respectivly directory:
 HOW TO BUILD
 ------------------------
 1. Copy maven repository to user home: cp ./.m2 /root/
-2. Extract "./3rdpary/apache-maven-3.1.1-bin.tar.gz" and add "apache-maven-3.1.1/bin/mvn" to $PATH
+2. Extract "./3rdpary/jdk-1_5_0_22-linux-amd64.bin" and set the full path of "jdk1.5.0_22" as $JAVA_HOME
+3. Extract "./3rdpary/apache-maven-3.1.1-bin.tar.gz" and add "apache-maven-3.1.1/bin/mvn" to $PATH
 3. Go to "src" and execute "mvn clean install"
 
 
