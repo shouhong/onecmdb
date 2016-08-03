@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphQuery>
+	<ItemOffspringSelector id="system" template="System"
+		primary="true">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	<ItemOffspringSelector id="os" template="OS">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	<ItemOffspringSelector id="appl" template="ServerApplication">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	
+	<ItemRelationSelector id="os2system" template="InstalledOn">
+		<target>system</target>
+		<source>os</source>
+	</ItemRelationSelector>
+	
+	<ItemRelationSelector id="appl2os" template="InstalledOn">
+		<target>os</target>
+		<source>appl</source>
+		<mandatory>false</mandatory>
+	</ItemRelationSelector>
+	
+	
+</GraphQuery>

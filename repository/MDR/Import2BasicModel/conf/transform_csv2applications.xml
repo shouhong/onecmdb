@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb-transform name="csv2applications">
+<!--  
+1Application.Type
+2Application.Name
+3Application.Version
+4Application.Port
+5Application.Protocol
+6OS.Type
+7OS.Version
+8System.Type
+9System.IPAddress
+10System.Hostname
+11Network.Name
+-->
+
+	
+	<DataSet name="application" >
+		<InstanceSelector template="Application" templateSelector="1" />
+		<AttributeSelector name="Name" naturalKey="true" selector="2" />		
+		<AttributeSelector name="Version" naturalKey="false" selector="3" />
+		<ComplexAttributeSelector name="InstalledOn" naturalKey="true" dataSet="os" />
+	</DataSet>
+
+	
+	<DataSet name="os">
+		<InstanceSelector template="OS"  />
+		<AttributeSelector name="Version" naturalKey="false" selector="7" />
+		<ComplexAttributeSelector name="InstalledOn" naturalKey="true" dataSet="system" />
+	</DataSet>
+	
+	<DataSet name="system">
+		<InstanceSelector template="System" />
+		<AttributeSelector name="IPAddress" naturalKey="true" selector="9" />
+		<AttributeSelector name="Hostname" naturalKey="false" selector="10" />
+		<ComplexAttributeSelector name="Network" naturalKey="true" dataSet="network" /> 
+	</DataSet>
+	
+	<DataSet name="network">
+		<InstanceSelector template="Network"/>
+		<AttributeSelector name="Name" naturalKey="true" selector="11" />
+	</DataSet>
+	
+</onecmdb-transform>

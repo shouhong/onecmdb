@@ -1,0 +1,13 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ehcache</groupId>
+  <artifactId>ehcache</artifactId>
+  <version>1.2</version>
+
+  <distributionManagement>
+    <relocation>
+      <groupId>net.sf.ehcache</groupId>
+    </relocation>
+  </distributionManagement>
+
+</project>

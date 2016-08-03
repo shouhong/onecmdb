@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Configuration for OneCMDB</comment>
+<entry key="oneCMDBwsdl">http://localhost:8080/webservice/onecmdb</entry>
+
+</properties>

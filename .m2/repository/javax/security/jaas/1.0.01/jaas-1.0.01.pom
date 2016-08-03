@@ -1,0 +1,14 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javax.security</groupId>
+  <artifactId>jaas</artifactId>
+  <version>1.0.01</version>
+  <name>Java Authentication and Authorization Service</name>
+  <description>
+    The Java Authentication and Authorization Service (JAAS) is a set of APIs that enable services to authenticate and enforce access controls upon users. 
+  </description>
+  <url>http://java.sun.com/products/jaas</url>
+  <distributionManagement>
+    <downloadUrl>http://java.sun.com/products/jaas/index-10.html</downloadUrl>
+  </distributionManagement>
+</project>

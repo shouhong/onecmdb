@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb>
+	<templates>
+		<!-- References -->
+		<template alias="CIReference" displayName="CIReference">
+			<derivedFrom>
+				<ref alias="Reference"/>
+			</derivedFrom>
+			<description>Master template for ci references.</description>
+		</template>
+		
+		<template alias="BelongsTo" id="6732577159285719988" displayName="${source} belongs to ${target}">
+			<derivedFrom>
+				<ref alias="CIReference"/>
+			</derivedFrom>
+			<description>Reference describes that the source belongs to the target.</description>
+			<setSimpleValue attAlias="icon" >reference</setSimpleValue>
+		</template>
+	
+		<!-- NMAP Templates -->
+		<template alias="Discovery">
+			<description>Defines root of all discoverd CI's</description>
+			<derivedFrom>
+				<ref alias="Ci"/>
+			</derivedFrom>
+		</template>
+		
+		<template alias="NMAP">
+			<description>Defines root of all NMAP CI's</description>
+			<derivedFrom>
+				<ref alias="Discovery"/>
+			</derivedFrom>
+		</template>
+		
+		<template alias="NMAP_Network" displayName="${name}">
+			<description>Defines a discovered network discoverd by NMAP</description>
+			<derivedFrom>
+				<ref alias="NMAP"/>
+			</derivedFrom>
+			<attribute attAlias="name" displayName="Name">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="networkAddress" displayName="Network IP Address">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="networkMask" displayName="Network Mask">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<setSimpleValue attAlias="icon" id="-1587083510407015269">network</setSimpleValue>
+			<setSimpleValue attAlias="name" id="-1587083510407015269">Network Name</setSimpleValue>
+		</template>
+		<template alias="NMAP_Port" displayName="${protocol} ${port}">
+			<description>Defines a discovered network discoverd by NMAP</description>
+			<derivedFrom>
+				<ref alias="NMAP"/>
+			</derivedFrom>
+			<attribute attAlias="host" displayName="Host">
+				<complexType>
+					<ref alias="NMAP_Host"/>
+					<refType><ref alias="BelongsTo"/></refType>
+				</complexType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="port" displayName="Port">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="protocol" displayName="Protocol">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="serviceName" displayName="Service Name">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<setSimpleValue attAlias="protocol" id="-1587083510407015269">Port</setSimpleValue>
+		</template>
+
+		<template alias="NMAP_TCP_Port">
+			<description>Defines a NMAP discovered open TCP server port</description>
+			<derivedFrom>
+				<ref alias="NMAP_Port"/>
+			</derivedFrom>
+			<setSimpleValue attAlias="protocol" id="-1587083510407015269">tcp</setSimpleValue>
+		</template>
+		
+		<template alias="NMAP_UDP_Port">
+			<description>Defines a NMAP discovered open UDP server port</description>
+			<derivedFrom>
+				<ref alias="NMAP_Port"/>
+			</derivedFrom>
+			<setSimpleValue attAlias="protocol" id="-1587083510407015269">udp</setSimpleValue>
+		</template>
+		
+		
+		<template alias="NMAP_Host" displayName="${hostname} ${ipv4Address}">
+			<description>Defines a discovered host NMAP CI</description>
+			<derivedFrom>
+				<ref alias="NMAP"/>
+			</derivedFrom>
+			<attribute attAlias="network" displayName="Network">
+				<complexType>
+					<ref alias="NMAP_Network"/>
+					<refType><ref alias="BelongsTo"/></refType>
+				</complexType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="ipv4Address" displayName="IPV4 Address">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="ipv6Address" displayName="IPV6 Address">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			
+			<attribute attAlias="macAddress" displayName="MAC Address">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			
+			
+			<attribute attAlias="hostname" displayName="Hostname">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			
+			<attribute attAlias="macVendor" displayName="Interface Vendor">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<setSimpleValue attAlias="hostname" id="-1587083510407015269">Hostname</setSimpleValue>
+		</template>
+	<template alias="MDR_NMAP_Config" id="-94353215047185362" displayName="${name}" created="2008-10-11T16:35:49.580" lastModified="2008-10-14T11:51:36.680">
+		<derivedFrom>
+			<ref alias="MDR_ConfigEntry"/>
+		</derivedFrom>
+		<description>The master template for all CI (Configuration Items).</description>
+		<attribute attAlias="icon" displayName="Icon" derived="true" id="365207592694139536">
+			<description>Filename (no file extension) of icon image.</description>
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="status" displayName="Status" derived="true" id="-1393642157046851743">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="program" displayName="Program" derived="true" id="5669849318227807573">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="network" displayName="Network" derived="false" id="-8975165249318840306">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="name" displayName="Name" derived="true" id="-1777165297676006990">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="autoCommit" displayName="Auto Commit" derived="true" id="-7235779889238309616">
+			<simpleType>xs:boolean</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		
+		<setSimpleValue attAlias="name" id="-7597647194876205642">NMAP Config</setSimpleValue>
+		<setSimpleValue attAlias="program" id="-5407539815009754709">bin/nmap-discovery</setSimpleValue>
+	</template>
+</templates>
+<instances>
+	<MDR_Repository alias="MDR_NMAP-1">
+		<name>NMAP_Discovery</name>
+		<configAlias>MDR_NMAP_Config</configAlias>
+	</MDR_Repository>
+	
+	<MDR_NMAP_Config alias="MDR_NMAP_Config-1">
+		<mdrRepository><ref alias="MDR_NMAP-1"/></mdrRepository>
+		<name>network-1</name>
+		<network>192.168.1.0/24</network>
+	</MDR_NMAP_Config>
+</instances>
+</onecmdb>

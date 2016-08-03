@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb>
+<templates>
+	
+	
+	<template alias="Nagios_MDR_Config" displayName="${name}">
+		<derivedFrom>
+			<ref alias="MDR_ConfigEntry"/>
+		</derivedFrom>
+		<description>Handle Nagios data to/from CMDB</description>
+		<attribute attAlias="importDir" displayName="Import Directory">
+			<description>If this entry should be an instances and a template.</description>
+			<simpleType>xs:string</simpleType>
+		</attribute>
+		<attribute attAlias="exportDir" displayName="Export Directory">
+			<description>If this entry should be an instances and a template.</description>
+			<simpleType>xs:string</simpleType>
+		</attribute>
+				
+		<setSimpleValue attAlias="name" >Nagios2CMDB Config</setSimpleValue>
+	</template>
+	
+</templates>
+<instances>
+	<MDR_Repository alias="MDR_Nagios2Basic-1">
+		<name>Nagios2BasicModel</name>
+		<configAlias>Nagios_MDR_Config</configAlias>
+	</MDR_Repository>
+	
+	<!--  
+	<Nagios_MDR_Config alias="Nagios2Basic_mdr-1">
+		<mdrRepository><ref alias="MDR_Nagios2Basic-1"/></mdrRepository>
+		<name>Nagios Model to Basic Model</name>
+		<program>bin/nagios2cmdb</program>
+	</Nagios_MDR_Config>
+	-->
+	
+	<Nagios_MDR_Config alias="Basic2Nagios_mdr-1">
+		<mdrRepository><ref alias="MDR_Nagios2Basic-1"/></mdrRepository>
+		<name>Basic Model to Nagios Model</name>
+		<program>bin/cmdb2nagios</program>
+	</Nagios_MDR_Config>
+	
+</instances>
+</onecmdb>

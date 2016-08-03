@@ -1,0 +1,195 @@
+Changes
+=======
+Version 2.1.0 (Dec 2009)
+========================================
+* GUI
+** Support for Google Chrome browser.
+
+* MDR
+** GUI Transform configurator added.
+** Native excel files now supported.
+
+* HTTP API 
+** Support lastModified and create date for CI's.
+** Support to list all instances, including instances from sub-templates, 
+   derived from a template.
+   
+
+* All bugs marked as closed on SourceForge tracker is fixed.
+
+Version 2.0.1 (Sep 2009)
+========================================
+* All bugs marked as closed on SourceForge tracker is fixed.
+** Delete attribute is now fixed.
+** Editing grid is not messing up horisonal scrolling.
+** More checks in core when modifying attributes.
+
+* MDR performance.
+** Check for an exsiting CI is now only perfomed once. 
+
+* New CI selector widgets introduced.
+** Template, Refeference types can be selected from a tree.
+** Instances can be selected from a grid, where also adding 
+   new instances are supported.  
+
+* Desktop lock timeout introduced. 
+** A time in min can be specified to lock the desktop when inactive.
+** Added a lock item in start menu.
+
+* Changing parameters in the repository/Configuration/content.cfg 
+  don't need restart to be applied.
+
+* Added alias column (hidden) in property grid.
+
+* Readonly grid now have configurable mouse-clicks(single/double) for displaying tool-tip. 
+
+* Small registration form introduced, showed first time a user login.
+
+Version 2.0.0 (May 2009)
+========================================
+* All bugs marked as closed on SourceForge tracker is fixed.
+* Improved URL and multi value handling.
+* Improved secutry handling in the widgets.
+* Automatic update detection service addad.
+* Enhanced the tree view.
+
+
+Version 2.0.0 Beta (Jan 2009)
+========================================
+
+New Desktop Application
+* Completely new GUI look using Ext/GWT. 
+* New powerfull visualization (graphs) of the CMDB (applet).
+* New import/reconciliation feature where data can be pre-viewed before comitting.
+** Can be used to detected changes in discovery etc.
+* New Managed Data Repository (MDR) framework. Enables pluginable interface to extrnal systems.
+** Support NMAP discovery import.
+** Support NMAP transform to CMDB model.
+** Support NAGIOS import/export to/from nagios cfg files.
+* New Export/Report function. Built-in support for XSLT transforms.
+* Configurable views from xml files. Supports views for different Roles/Users.
+   
+CORE 2.0.0Beta
+* New powerfull relation query method in Web Service.
+* New CI cache enables faster performance.
+* Move CI is now allowed between any templates.
+* Bug Fix: Simple Type date is now converting date correct.
+
+
+Version 1.4.0 Beta (Oct 26 2007)
+========================================
+
+New Web Applications
+* ITIL Application.
+* Model Designer.
+
+New OneCMDB GWT Toolkit.
+* Both of the new Web Applications uses this new OneCMDB GWT toolkit.
+
+CORE 1.4.0 Beta (NOTE: Not binary compatable with previous release)
+* New: Core now support to move a CI from one template to another.
+* Imporved: Import function, now compare using ID's can be used to be more precise.
+* Imporved: New features in the WSDL interface, including better search capabilities. 
+* Improved: Evaluation of relations is improved.
+* Bug Fix: Problem creating templates from admin gui now resolved.
+
+
+Version 1.3.1 (Aug 22 2007)
+========================================
+
+CORE 1.1.1 
+-----------
+* Bug Fix: Problem with creating templatesfrom the Web GUI have been fixed.
+* Bug Fix: Discover the network with the Advandced model will now only import 
+           hosts that are up.
+ 
+
+Version 1.3.0 (May 30 2007)
+========================================
+
+CORE 1.1.0 (NOTE: Not binary compatable with previous release)
+--------------------------------------------------------------
+* New: Basic support for acegi security system.
+* New: Web Service support.
+* New: HTTP remote service support.
+* NEW: Basic transform/import/reconciliation of external data.
+* NEW: Better compare function to import external CI.
+* Changed db schema to use string type instead of text type.
+* Clean up method names, blueprint is replaced by template. 
+
+GUI 1.2.2
+---------
+* NEW: Added basic support for acegi security system. 
+* NEW: Added WebService servlet.
+* NEW: Added HTTP Service servlet.
+* Added graph for template.
+* Modified description section to also show derived from in designer mode.
+* Added WSDL link in footer.
+
+Version 1.2.1
+=============
+CORE 1.0.3
+----------
+
+* Added predicate features to the IPath interface, for example `isSibling'
+* Using UTF-8 when exporting/importing models
+* Minor cleanups.
+
+GUI 1.2.1
+---------
+
+* NEW: Memory metaphor used to remember an object to be used in
+  forms at a later step.
+* Collapsable sections in sidebar
+* FIXED: Simpler global data in JSP
+* Refactorizations
+
+Version 1.2.0 (never released)
+==============================
+
+GUI
+---
+
+* NEW: Graph can now be used for navigation
+* FIXED: Forms forgetting values when "Create New" is used.
+* FIXED: Internationalization issues. Now using UTF-8 for encoding.
+
+
+Version 1.1.0
+=============
+
+Overall
+-------
+	* Two different data models are available
+	* A utility that changes (replaces) data model is added
+	* Support for Linux
+	* More comments added in the source code
+	* Overall source code cleanup
+	* Various spelling errors corrected
+
+GUI
+---
+	* A basic graph function is implemented
+	* Expand and collapse of sections are now possible
+	* The Display Name of an attribute is primarily used 
+	  when displaying an attribute (rather than the
+	  Alias Name)
+	* The Display Name of a CI is augmented with its Alias name in Designer mode. 
+	* Field sensitive help is available. A pop-up window
+	  appears when hovering over an attribute's name.
+	  The text in the window is taken from the attributes
+	  Description. The attribute's Alias Name is also displayed.
+
+
+Core
+----
+	* The cmdb model file that previously was named DefaultModel.xml
+	  is now named Model.xml.
+	* The cmdb model file was previously read each time OneCMDB
+	  was started. Now the file is read only once. A CI named
+	  OneCMDB Configuration is introduced that holds information
+	  about whether a model file is read or not.
+	* Method getDisplayName() now always returns the evaluated
+	  Display Name expression.
+
+

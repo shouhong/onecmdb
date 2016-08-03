@@ -1,0 +1,484 @@
+<HTML>
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=windows-1257">
+<TITLE>Nmap network security scanner man page (Lithuanian translation)</TITLE>
+</HEAD>
+<BODY>
+<H1>Nmap network security scanner man page (Lithuanian translation)</H1>
+<HR>
+<PRE>
+<!-- Manpage converted by man2html 3.0.1 -->
+<B>NMAP(1)</B>                                                   <B>NMAP(1)</B>
+
+
+
+
+</PRE>
+<H2>PAVADINIMAS</H2><PRE>
+       nmap - tinklo tyrinėjimo įrankis bei saugumo skeneris
+
+
+</PRE>
+<H2>SINTAKSĖ</H2><PRE>
+       <B>nmap</B>  [skanavimo  tipas(ai)]  [opcijos] &lt;hostas/tinklas #1
+       ... #n&gt;
+
+
+</PRE>
+<H2>APIBŪDINIMAS</H2><PRE>
+       <I>nmap'as</I> yra sukurtas tam, kad leistų sistemų administrato­
+       riams  bei smalsiems individams skanuoti didelius tinklus,
+       siekiant nustatyti kokie hostai yra veikiantys  ir  kokias
+       paslaugas  jie siūlo.  <I>nmap'as</I> turi be galo daug skanavimo
+       technologijų, tai: UDP, TCP  connect(),  TCP  SYN  (pusiau
+       atviras),   ftp   proxy   (bounce  ataka),  Reverse-ident,
+       ICMP(ping sweep), FIN, ACK sweep, Xmas  Tree,  SYN  sweep,
+       bei  Null  skan'as.  <I>Skanavimo</I> <I>Tipai</I> sekcijoje rasite apie
+       tai  smulkesnės  informacijos.   nmap'as  taip  pat   turi
+       nemažai pažangių savybių, tokių kaip nutolusio kompiuterio
+       (toliau vadinamo 'remote')  (O)peracinės  (S)istemos  nus­
+       tatymas  per  TCP/IP  fingerprintinima, stealth (vogtinis)
+       skanavimas, dinaminės pauzės ir retransimisijos skaičiavi­
+       mai,  lygiagretusis  skanavimas , nepasiekiamų host'ų nus­
+       tatymas skanuojant  lygiagrečiu  skanavimo  metodu,  decoy
+       skanavimas,  filtruojamų portų nustatymas, tiesioginis RPC
+       skanavimas, fragmentinis skanavimas,  bei  labai  lankstus
+       taikinio ir portų nurodymas.
+
+       nmap'o  autorius  stengiasi  kaip  galima  daugiau įvairių
+       nmap'o galimybių suteikti ne tik root vartotojui,  bet  ir
+       paprastam sistemos vartotojui, deja daugėlis kritinių sis­
+       temos branduolio  (kernel)  interfeisų  (tokių  kaip  "raw
+       socket'ai")  reikalauja  root'o privilegijų, todėl nmap'as
+       turėtų būti naudojamas root'u kai tik įmanoma.
+
+       nmap'o naudojimo rezultatas dažniausiai  būna  paprasčiau­
+       sias    sąrašas    įdomių    portų,   rastų   skanuojamoje
+       mašinoje(se). Nmap'as visada parodo kokią  paslaugą  (ser­
+       vice)  teikia  portas,  jo  numerį,  būseną bei protokolą.
+       Būsaną nusako vienas iš trijų žodžių: "open",  "filtered",
+       "unfiltered".  "open" (atviras) reiškia, kad taikinys leis
+       prisijungti prie  šito  porto.  "filtered"  (filtruojamas)
+       reiškia,  kad  firewall'as  (ugnies siena), filtras ar dar
+       kažkoks įdomus įrankis dengia portą, dėl to nmap'as  tikl­
+       siai  negali  nustatyti  ar  portas  atviras. "unfiltered"
+       (nefiltruojamas) parodo, kad portas  yra  tikrai  "closed"
+       (uždarytas)  ir  nera  dengiamas  jokio firewall'o/filtro.
+       Nefiltruojamas portas yra  gan  įprastas  atvėjis  ir  yra
+       rodomas  tik tuo atveju, kai dauguma iš skanuotų portų yra
+       filtruojami.
+
+       Priklausomai nuo to, kokios  opcijos  naudojamos,  nmap'as
+       taip   pat   gali   parodyti   ir  nutolusio  kompiuterio:
+       (O)peracinę (S)istemą, TCP susekamumą,  vartotoju  vardus,
+       kuriems  priklauso  tam  tikri procesai, DNS vardus ir dar
+       vieną kitą.
+
+
+</PRE>
+<H2>OPCIJOS</H2><PRE>
+       Prasmingos opcijos visos gali  būti  rašomos  kartu  (t.y.
+       vienoje  eilutėje).   <I>nmap'as</I>  stengsis  pasakyti,  kokias
+       klaidas esate padarę (aišku jei esate :).
+
+       Jei esate nekantrus, galite  iškarto  šoktelti  į  sekciją
+       <I>pavyzdžiai</I>  gale  dokumento, kur gan aiškiai parodo naudo­
+       jimą. Taip pat  galite  paleisti  <B>nmap</B>  <B>-h</B>  ir  pamatysite
+       pagrindines opcijas, su trumpais aprašymais.
+
+       <B>SKANAVIMŲ</B> <B>TIPAI</B>
+
+       <B>-sT</B>    paprasčiausias  TCP  connect() skanavimas. Jūs ban­
+              dote prisijungti prie kiekvieno porto iš eilės. Jei
+              portas klausosi, nmap'as prisijungia prie jo, taigi
+              jei host'as logina, jis matys, kad bandote jungtis.
+              Šis metodas yra tiksliausias, bet rekomenduočiau jį
+              naudoti tik tuo  atveju,  jei  skanuojate  savo  ar
+              draugo  kompiuterį,  t.y.  tokį,  dėl  kurio vėliau
+              tikrai nesusilauksite nemalonumų.
+
+       <B>-sS</B>    TCP SYN skanavimas,  kitaip  dar  dažnai  vadinamas
+              kaip  "pusiau-atviras" skanavimas, nes nėra padaro­
+              mas   TCP   prisijungimas.    Jūs    paprasčiausiai
+              nusiunčiate  TCP  SYN  paketuką  kaip kad norėdamas
+              prisijungti ir laukiate atsakymo. Pakankamai neblo­
+              gas  metodas,  bet  jei yra filtruojamų portų (pvz.
+              pastatytas firewall'as) ir  host  kompiuteris  juos
+              logina, - būsite pastebėtas.
+
+       <B>-sF</B> <B>-sX</B> <B>-sN</B>
+              Stealth  FIN, Xmas Tree bei Null skanavimo režimai.
+              Tai yra šiek tiek saugesni skanavimo būdai nei  TCP
+              SYN (pastebimumo atžvilgiu), bet deja nei vienas iš
+              jų neveikia M$  sistemoms.   Iš  kitos  pusės,  tai
+              nebloga  priemonė,  kurios pagalba galima nustatyti
+              ar tai M$ sistema ar ne, t.y. jei -sF -sX arba  -sN
+              parodo,  kad visi portai uždaryti, o -sS rodo kelis
+              atvirus  portus,  taikinys   greičiausiai   windows
+              dėžutė.
+
+       <B>-sP</B>    Tai  paprasčiausias  ping'as,  kuris  parodo  kurie
+              hostai tinkle yra  gyvi.  Atliekama  paprasčiausiai
+              siunčiant  ICMP  echo  prašymą  (request). Deja kai
+              kurie   saitai   (kaip   mail.takas.lt)    blokuoja
+              prašymus.  Kad iš tikro įsitikinti, ar hostas negy­
+              vas, nmap'as nusiunčia ir TCP  ack  paketuką  į  80
+              (standartiškai)   portą.  Jei  gauname  atgal  RST,
+              reiškia hostas  gyvas.  Pagal  standartą  (r00t'ui)
+              nmap'as  naudoja abu ICMP bei ACK metodus. Pakanka­
+              mai efektyvu, nes vienu metu galite  patikrinti  #n
+              hostų.
+
+       <B>-sU</B>    UDP skanavimas. Naudojamas tam, kad nustatyti kokie
+              UDP (User Datagram Protocol,  RFC 768)  portai  yra
+              atviri.
+
+              Kai    kurie   mano,   kad   UDP   skanavimas   yra
+              beprasmiškas, bet  jį  prisiminti  verta  vien  dėl
+              vienos  Solaris  rcpbind  skylės.  Taip pat yra cDc
+              Back Orifice trojanas, kuris atsidaro UDP portą ant
+              window'sų.  Gaila  tik,  kad UDP skanavimas kartais
+              gali trukti labai ilgai.
+
+       <B>-SO</B>    IP protokolo skanavimas. Šis metodas yra naudojamas
+              tam,  kad  nustatyti kokius protokolus naudoja jūsų
+              taikinys. Technika  labai  paprasta:  siunčiami  IP
+              paketai   be  jokio  protokolo  header'io  į  visus
+              nurodytus protokolus. Jeigu pvz gauname "ICMP  pro­
+              tocol unreachible" (ICMP protoklolas nepasiekiamas)
+              atsakymą,   vadinasi    protokolas    nenaudojamas,
+              priešingu atveju skaitoma, kad jis atviras.
+
+       <B>-sA</B>    ACK  skanavimas: šitas metodas paprastai yra naudo­
+              jamas  tam,  kad  išsiaiškinti  firewall'ų  (ugnies
+              sinų) taisykles. Jis gali padėti nustatyti ar fire­
+              wall'as tikras, ar paprasčiausias  paketų  filtras,
+              blokuojantis įplaukiančius SYN paketukus.
+
+       <B>-sW</B>    Window   skanavimas.   Šis  skanavimo  būdas  labai
+              panašus į ACK skaną, skirtumas  tik  tas,  kad  šis
+              skanavimo  metodas kartais parodo ir atvirus portus
+              (ACK jų nerodo).
+
+       <B>-sR</B>    RPC skanavimas. Praskanavus parodoma kokia programa
+              ir jos versija laiko RPC portus atvirus.
+
+       <B>-b</B> <B>&lt;ftp</B> <B>relay</B> <B>hostas&gt;</B>
+              Dar  vienas  pakankamai originalus skanavimo būdas,
+              t.y.  pasinaudojant ftp proxy serveriu. &lt;ftp  relay
+              host'o&gt;    formatas   gali   būti   useris:passwor­
+              das@serveris:portas . Viskas išskyrus  serverį  yra
+              nebūtina.
+
+       <B>BENDROSIOS</B> <B>OPCIJOS</B>
+              Nei  viena  iš šių nėra būtina, bet kai kurios gali
+              būti pakankamai naudingos
+
+       <B>-P0</B>    Skanuoti iš kart, nepabandžius iš pradžių  ping'int
+              serverio.   Tai  naudinga  skanuojant  tokius  kaip
+              mail.takas.lt,  kurie  neatsakinėja  į  ICMP   echo
+              request'us.  Tokiu  atveju reikėtų naudoti <B>-P0</B> arba
+              <B>-PT80.</B>
+
+       <B>-PT</B>    Naudoti  TCP  "ping'ą"  vietoje  standartinio  ICMP
+              ping'o.  Naudinga  tokiais  atvejais,  kai serveris
+              neatsakinėja i ICMO echo request'us. Taip pat  gal­
+              ima naudoti kartu su postu (-PT&lt;portas&gt;).
+
+       <B>-PS</B>    Naudoja SYN (prisijungimo prašymą) vietoje ACP
+
+       <B>-PI</B>    Paprastas  ping'as  +  suranda subnet'o broadcast'u
+              adresus tinkle.
+
+       <B>-PB</B>    Standartinis ping'inimo metodas:  naudoja  ACP  bei
+              ICMP  ping'us  kartu.  Geriausia  būdas  patikrinti
+              firewall'us, kurie blokuoja vieną iš jų.
+
+       <B>-O</B>     Viena geriausių nmap'o  ypatybių  -  serverio  OS'o
+              atpažinimas  pagal  jo fingerprint'us (jei atvirai,
+              pats nelabai  žinau  kas  per  biesas  tie  finger­
+              printai).
+
+       <B>-I</B>     Įjungiamas  TCP reverse ident skanavimas. Kaip 1996
+              Dave'as Goldsmith'as  pastebėjo,  ident  protokolas
+              (rfc  1413)  leidžia pamatyti, kokiam useriui prik­
+              lauso  procesas,  kuris  naudoja  TCP  susijungima.
+              Taigi,  tu  gali  pvz  prisijungti prie 80 porto ir
+              tada pasinaudojes inentd'u, gali pamatyti  ar  http
+              serveris   yra   paleistas  root'u  ar  kokiu  kitu
+              userium.
+
+       <B>-f</B>     Skanuojant SYN (-sS) , FIN (-sF), XMAS  (-sX)  arba
+              NULL (-sN) metodu, naudojami labai mažyčiai sufrag­
+              mentuoti IP paketai.
+
+       <B>-v</B>     Verbose mode. Labai rekomenduojama opcija, ypač jei
+              norit  geriau  suprasti  kas čia dedasi. naudodamas
+              šią opciją du kartus,  efektas  bus  dar  geresnis.
+              Gali  naudoti  ir  dvigubą  -d, efektas - nerealus.
+              Nepabandęs, nesuprasi.
+
+       <B>-h</B>     Jei norite  kad  nedidelis  langelis  jums  trumpai
+              primintu  kelias  pagrindines komandas, ši opcija -
+              jums.
+
+       <B>-oN</B> <B>&lt;logas&gt;</B>
+              Viskas, kas vyksta ekrane bus  loginama  į  "logas"
+              failą.
+
+       <B>-oX</B> <B>&lt;logas&gt;</B>
+              Skanavimo rezultatai išsaugomi XML formatu į failą,
+              kurį nurodote kaip argumentą šiai opcijai.
+
+       <B>-oG</B> <B>&lt;logas&gt;</B>
+              Ši opcija išsaugo skanavimo  rezultatus  taip,  kad
+              jūs juos galetumėte lengvai grepinti. Šis gan prim­
+              ityvus formatas išsaugo viską vienoje eilutėje.
+
+       <B>-oS</B> <B>&lt;logas&gt;</B>
+              Loginama į failą "logas" "skipt kiddie" formatu.
+
+       <B>--resume</B> <B>&lt;logas&gt;</B>
+              Skanavimas, kuris buvo nutrauktas su ^C, gali  būti
+              pratęstas,  su  sąlyga, kad viskas buvo loginama su
+              -oN opcija.  Daugiau jokie parametrai  negali  būti
+              pateikti (jie bus tokie, kokie buvo naudojami logi­
+              nant).  nmap'as  pradės  skanuoti   nuo   sekančios
+              mašinos,  po  tos,  kuri  paskutinė  buvo sėkmingai
+              nuskanuota..
+
+       <B>-iL</B> <B>&lt;failas&gt;</B>
+              Nuskaito hostus (IP  adresus)  iš  failo  "failas".
+              Hostai  faile  turi  būti atskirti tarpais, TAB'ais
+              arba atskirose linijose. deja opcijų nurodyti jokių
+              negalite   tame   faile,  užtat  yra  galimybė  jas
+              nurodyti komandinėje eilutėje.
+
+       <B>-iR</B>    Šita opcija  priverčia  nmap'ą  generuoti  atsitik­
+              tinius  hostus.  Jei  kada  neturėsite  ką  veikti,
+              pabandykite `nmap -sS -iR -p 80',  kad  surastumėte
+              keletą www serverių.
+
+       <B>-p</B> <B>&lt;portai&gt;</B>
+              Galite  nurodyti kurį/kuriuos portus tikrinti. pvz.
+              -p 110 patikrins ar hostas turi pop3 serverį,  taip
+              pat galite mišriai nurodinėti portus:
+
+                  -p 21,60-90,1243     --  21, visi nuo 60 iki 90
+              bei 1243 portas
+                  -p 1-                --  visi portai nuo 1  iki
+              65535.
+
+       <B>-F</B>     Greitasis  metodas. Skanuoja tik tuos portus, kurie
+              nurodyti nmap'o services faile (pagal  default'ą  -
+              /usr/local/lib/nmap/nmap-services)
+
+       <B>-D</B> <B>&lt;decoy1</B> <B>[,decoy2][,decoyN][,ME]&gt;</B>
+              Decoy   skanavimas   priverčia   skanuojamą  host'ą
+              manyti, kad jį vienu metu  skanuoja  visi  nurodyti
+              decoy'iai. Hostų logai gali parodyti 5-10 skanavimų
+              iš unikalių IP adresų, bet kuris iš jų skanuoja  iš
+              tikro jie pasakyti negalės.
+
+              Atskirk  kiekvieną decoy'į kableliais (be tarpo) ir
+              gali tarp jų įterpti 'ME' kaip vieną  iš  decoy'ių.
+              nmap'as   ten   įterps   tavo   adresą.   Jei  šito
+              nenurodysi, nmap'as atsitiktinai išrinks tau vietą.
+              Tiesa,  jei  'ME'  įrašysi  6-oje  ar dar vėlesnėje
+              vietoje, kai  kurie  skanavimų  detektoriai  (tokie
+              kaip  Solar Designer'io nepakartojamas scanlog dae­
+              mon'as) gali tavo IP išviso neparodyti.
+
+              Nepamiršk,  kad   hostai,   kuruos   naudosi   kaip
+              decoy'ius,  turi  būti  gyvi,  kitaip  gali už-SYN-
+              flood'inti taikinį,  o  be  to  labai  nesunku  bus
+              surasti  skanuotoją,  jei jis bus vienintelis gyvas
+              visame tinkle.
+
+              Atkreipk dėmesį ir į tai, kad kai kurie  (durnesni)
+              portų  skanavimų  detektoriai  gali aplamai skanuo­
+              jantiems host'ams uždrausti priėjimą.  Įsivaizduok,
+              kas  gali  nutikti, jei vieną iš decoy'ių nurodytum
+              "localhost'ą" :)
+
+              Decoy skanavimas gali būti naudojamas kartu su ping
+              (naudojant  ICMP,  SYN,  ACK,  ar dar ką nors) arba
+              tikru portų skanavimu bei  bandant  surasti  remote
+              OS'ą ( -O ).
+
+       <B>-S</B> <B>&lt;IP_adresas&gt;</B>
+              Kartais  nmap'as  gali  nerasti  jūsų adreso. Tokiu
+              atveju galite naudoti -S opciją su jūsų  IP  adresu
+              bei interfeisu, kuriuo siūsite paketus.
+
+       <B>-e</B> <B>&lt;interfeisas&gt;</B>
+              Nurodo  nmap'ui  kokiu  interfeisu  siųsti paketus.
+              (lo, ppp0, eth0 ir etc.)
+
+       <B>-g</B> <B>&lt;portas&gt;</B>
+              Nurodo iš kokio porto skanuoti. Daugelis firewall'ų
+              bei  filtrų  padaro  išimtis  DNS (53) bei FTP-DATA
+              (20) paketams.
+
+       <B>-n</B>     Liepia nmap'ui net nemėginti rezolvinti ip adresų i
+              jų vardus, nes dažnai tai būna labai lėtas procesas
+              ir stabdo nmap'o darbą.
+
+       <B>-R</B>     Priešingai nei -n opcija, -R liepia nmap'ui  visada
+              pamėginti išrezolvinti ip adresą.
+
+       <B>-r</B>     Nurodo   nmap'ui  portus  skanuoti  <B>NE</B>  atsitiktine
+              tvarka.
+
+       <B>--randomize_hosts</B>
+              Nmap'as atsitiktine tvarka išmaišo kiekvieną  grupę
+              iš  daugiau  nei  2048  hostų  prieš pradedant juos
+              skanuoti. Tai šiek tiek suklaidina įvairius  tinklo
+              stebejimo įrankius.
+
+       <B>-M</B> <B>&lt;maximalus</B> <B>susijungimu</B> <B>skaicius&gt;</B>
+              Nustato  naksimalų  susijungimu  skaičių, kuris bus
+              naudojamas paralelėje su TCP(standartiškai) skanav­
+              imu.
+
+       <B>LAIKO</B> <B>APRIBOJIMAI</B>
+
+       <B>-T</B> <B>&lt;Paranoid|Sneaky|Polite|Normal|Aggressive|Insane&gt;</B>
+              Paranoid  - pats lėčiausias skanavimo būdas, Insane
+              - pats greičiausias, deja ne toks tikslus, ypač jei
+              tinklas  lėtas.  Vietoj žodžių galite naudoti ir -T
+              (0-5), kur 0 == Paranoid, 1 == Sneaky ir t.t.
+
+       <B>--host_timeout</B> <B>&lt;milisekundės&gt;</B>
+              Nurodo kiek laiko nmap'as gali skanuoti duotąjį IP.
+              Laikas turi būti nemažiau nei 200 milisekundžių.
+
+       <B>--max_rtt_timeout</B> <B>&lt;milisekundės&gt;</B>
+              Kiek  daugiausia laiko nmap'as gali laukti atsakymo
+              iš skanuojamo IP.
+
+       <B>--scan_delay</B> <B>&lt;milisekundės&gt;</B>
+              Nustato minimalų laiko  tarpą,  kuri  nmap'as  turi
+              laukti  tarp  bandymų.  Tai  naudingiausia siekiant
+              sumažinti tinklo apkrovimą.
+
+
+
+</PRE>
+<H2>TAIKINIO NURODYMO BŪDAI</H2><PRE>
+       Viskas, kas nėra opcijos, nmap'e suprantama kaip taikinys.
+       Paprasčiausias  būdas yra nurodyti konkrečius IP arba hos­
+       tus.  Jeigu norite nuskanuoti IP adresų  subnet'ą,  galite
+       pridėti <B>/maskę</B> hostname'ui ar IP adresui.  <B>Maskė</B> turi būti
+       tarp 0 (norint nuskanuoti visą internetą)  ir  32  (norint
+       nuskanuoti  konkretų  host'ą/IP.  Naudok  /24  'C'  klasės
+       adresų skanavimui bei /16 'B' klasės adresų skanavimui.
+
+       nmap'as taip pat turi gan patogią galimybę nustatinėti  IP
+       adresus sąrašais/atstumais. pvz. gali nuskanuoti 'B' klasę
+       užrašydamas 128.210.*.* arba 128.210.0-255.0-255 arba  dar
+       128.210.0-50,51-255.1,2,3,4,5-255 . Manau kad tai pakanka­
+       mai patogu ir nesudėtinga.
+
+
+</PRE>
+<H2>KELETAS PAVYZDŽIŲ</H2><PRE>
+       <B>nmap</B> <B>-sX</B> <B>-e</B> <B>lo</B> <B>-P0</B> <B>-S</B> <B>127.0.0.3</B> <B>localhost</B>
+
+       Pasinaudodamas     Xmas     Tree     skanavimo     metodu,
+       apsimetinėdamas,  kad  esu  127.0.0.3  Loopback  protokolu
+       skanuoju savo  localhost'ą  Štai  kaip  atrodo  ipchains'ų
+       log'as:
+
+       Packet   log:   input   DENY  lo  PROTO=6  127.0.0.3:37009
+       127.0.0.1:139 L=40 S=0x00 I=53682 F=0x0000 T=41 (#1)
+
+       kaip matote, kernelis yra įsitikinęs, kad jį  skanuoja  iš
+       127.0.0.3  o  tai  ir  yra  vienas svarbiausių uždavinių -
+       likti nematomiems :)
+
+       <B>nmap</B> <B>-sS</B> <B>-O</B> <B>target.example.com/24</B>
+
+       stealth SYN metodu nuskanuoja visas 255 mašinas,  esančias
+       target.example.com  'C'  klasėje. Taip pat bando nustatyti
+       kiekvieno iš jų operacinę sistemą.
+
+       <B>host</B> <B>-l</B> <B>company.com</B> <B>|</B> <B>cut</B> <B>'-d</B> <B>'</B> <B>-f</B> <B>4</B> <B>|</B> <B>./nmap</B> <B>-v</B> <B>-iL</B> <B>-</B>
+
+       suranda  visus  *.company.com  hostus  ir  atiduoda   juos
+       nmap'ui,  kuris  savo  ruožtu įsijungęs verbose mode visus
+       juos nuskanuoja.
+
+       <B>nmap</B> <B>-sN</B> <B>-D</B> <B>microsoft.com,mail.takas.lt,ME</B> <B>-oN</B>  <B>/tmp/crazy</B>
+       <B>-p</B> <B>1-1024</B> <B>-O</B> <B>crazy.com</B>
+
+       skanauoja   Null  skanavimo  režimu,  panaudoja  du  decoy
+       adresus, viską logina į /tmp/crazy failą, skanuoja  nuo  1
+       iki  1024 crazy.com portus bei stengiasi atspėti crazy.com
+       serverio operacinę sistemą
+
+
+</PRE>
+<H2>BUGAI</H2><PRE>
+       Vabalėliai? Kokie dar vabalėliai? Na..  jei  rasit  kokių,
+       būtinai  siūskit  autoriui: &lt;fyodor@insecure.org&gt; . Pachai
+       taip pat labai laukiami. Taip pat nepamirškite siūsti OS'ų
+       fingerprintus,  kad  nmap'o  autoriai  galėtų plėsti duom.
+       bazę. Apie tai  smulkiau  galite  rasti  docs/nmap-finger­
+       printing-article.txt   dokumente  arba  nmap'o  puslapyje:
+       http://www.insecure.org/nmap
+
+
+</PRE>
+<H2>AUTORIUS</H2><PRE>
+       Fyodor <I>&lt;fyodor@insecure.org&gt;</I>
+
+
+</PRE>
+<H2>IŠVERTĖ</H2><PRE>
+       Aurimas Mikalauskas <I>&lt;inner@crazy.lt&gt;</I>
+
+
+
+</PRE>
+<H2>PLATINIMAS</H2><PRE>
+       Naujausią <I>nmap'o</I> versiją visada galite rasti čia:
+
+       <I>http://www.insecure.org/nmap/</I>
+
+       <I>nmap</I> is (C) 1997,1998,1999,2000  by  Fyodor  (fyodor@inse­
+       cure.org)
+
+       <I>libpcap'as</I>  yra  taip  pat  platinamas  kartu  su  nmap'u.
+       Autorines teises į jį turi Van Jacobson,  Craig  Leres  ir
+       Steven  McCanne,  visi  iš  Lawrence Berkeley nacionalinės
+       Laboratorijos Kalifornijos Universiteto,   Berkeley,   CA.
+       Versija platinama su nmap'u gali būti perrašinėjama. Sour­
+       cus  galit   parsisiūsti   iš   <I>ftp://ftp.ee.lbl.gov/libp­</I>
+       <I>cap.tar.Z</I>
+
+
+
+</PRE>
+<H2>PABAIGAI</H2><PRE>
+       Džiaugiuosi, kad pagaliau pasiekėte galą. Dabar jau galite
+       skaityti save kvalifikuotu nmap'o guru.
+
+       beje, jei norite ką nors pridėti ar pakeisti  šiame  doku­
+       mente,  arba (neduok Dieve) radot kokių tai bug'u, rašykit
+       man adresu, pateiktu sekcijoje <B>išvertė.</B>  Šiaip šitas manu­
+       alas  abejoju  ar  bus  atnaujinamas,  bet pačią naujausią
+       nmap-lt-HOWTO visada galite rasti mano puslapyje:
+
+       <I>http://crazy.lt/~inner</I>
+
+
+
+                                                          <B>NMAP(1)</B>
+</PRE>
+<HR>
+<ADDRESS>
+Man(1) output converted with
+<a href="http://www.oac.uci.edu/indiv/ehood/man2html.html">man2html</a>
+</ADDRESS>
+</BODY>
+</HTML>

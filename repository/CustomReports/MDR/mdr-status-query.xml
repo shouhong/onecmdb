@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphQuery>
+
+	<!--
+		Templates
+		===========
+		MDR_Repository
+		MDR_ConfigEntry
+		MDR_HistoryEntry
+	-->
+	
+	<ItemOffspringSelector id="config" template="MDR_ConfigEntry"
+		primary="true">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	<ItemOffspringSelector id="mdr" template="MDR_Repository">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	
+	<ItemOffspringSelector id="history" template="MDR_HistoryEntry">
+		<matchTemplate>false</matchTemplate>
+		<PageInfo>
+			<maxResult>1</maxResult>
+			<firstResult>0</firstResult>
+		</PageInfo>
+	</ItemOffspringSelector>
+	
+	<!--	
+		Relations
+		=========
+		config2mdr
+		history2config
+	-->
+	
+	<ItemRelationSelector id="config2mdr" template="Reference">
+		<target>mdr</target>
+		<source>config</source>
+	</ItemRelationSelector>
+	
+	<ItemRelationSelector id="history2config" template="Reference">
+		<target>config</target>
+		<source>history</source>
+		<mandatory>false</mandatory>
+	</ItemRelationSelector>
+</GraphQuery>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<CustomViews>
+	<CustomView>
+		<name>Nagios View</name>
+		<description>Specilized view for nagios.</description>
+		<group>Nagios</group>
+		<definition>CustomViews/Nagios/NagiosView.xml</definition>
+	</CustomView>
+	<CustomView>
+		<name>Systems</name>
+		<description>Specilized view for system/network/OS CI:s.</description>
+		<group>CMDB</group>
+		<definition>CustomViews/CMDB/CMDB_Systems_View.xml</definition>
+	</CustomView>
+	<CustomView>
+		<name>Applications</name>
+		<description>Specilized view for application CI's.</description>
+		<group>CMDB</group>
+		<definition>CustomViews/CMDB/CMDB_Applications_View.xml</definition>
+	</CustomView>
+	<CustomView>
+		<name>NMAP</name>
+		<description>Specilized view for namp CI's (readonly).</description>
+		<group>NMAP</group>
+		<definition>CustomViews/NMAP/NMAP_View.xml</definition>
+	</CustomView>
+</CustomViews>

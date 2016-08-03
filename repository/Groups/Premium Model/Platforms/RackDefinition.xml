@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GroupDescription name="Racks" icon="onecmdb/content/Content/Images/Icons/rack16.gif">
+	
+	<GraphQuery>
+		<ItemOffspringSelector id="address" template="StreetAddress">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="room" template="Room">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+	
+		<ItemOffspringSelector id="rack" template="Rack" primary="true">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="rackSlot" template="RackSlot">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="platform" template="Platform">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="interface" template="NetworkInterface">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="segment" template="PhysicalSegment">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		
+		
+		<ItemRelationSelector id="interface2platform" template="BelongsTo">
+			<target>platform</target>
+			<source>interface</source>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="interface2segment" template="MemberOf">
+			<target>segment</target>
+			<source>interface</source>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="room2address" template="BelongsTo">
+			<target>address</target>
+			<source>room</source>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="rack2room" template="BelongsTo">
+			<target>room</target>
+			<source>rack</source>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="slot2rack" template="BelongsTo">
+			<target>rack</target>
+			<source>rackSlot</source>
+		</ItemRelationSelector>
+		<ItemRelationSelector id="platform2slot" template="BelongsTo">
+			<target>rackSlot</target>
+			<source>platform</source>
+		</ItemRelationSelector>
+	</GraphQuery>
+
+	<Presentation>
+		<Table name="Racks">
+			<visible>true</visible>
+			<primary>rack</primary>
+			<TableView asList="true" id="rack">
+				<Column object="rack" render="internal_displayname" asList="true">
+					<label>Rack</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				<Column object="rack2room.0.room" render="internal_displayname" asList="true">
+					<label>Room</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				
+				<Column object="rack2room.0.room2address.0.address" render="internal_displayname" asList="true">
+					<label>Address</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				<Column object="slot2rack" render="size" asList="true">
+					<label>Slots</label>
+					<reference>true</reference>
+					<type>RackSlot</type>
+				</Column>
+				
+				
+			</TableView>
+			<TableView asList="true" id="slot2rack">
+				<Column object="rackSlot" render="value_slot.value" asList="true">
+					<label>Slot</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				<Column object="platform2slot.0.platform" render="internal_displayname" asList="true">
+					<label>Platform</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+			</TableView>	
+			
+			
+		</Table>
+		<Graph id="graph-1" name="DataCenter Map">
+			<expression asSimpleList="true">address/room/rack/rackSlot/platform</expression>
+			<dependency>platform/interface/segment/interface/platform</dependency>
+			<applet>
+				<code>
+					org.onecmdb.graphml.viewer.applet.TreeMLViewApplet.class
+				</code>
+				<archive>
+					onecmdb/content/Content/applet/graphml/onecmdb-applet.jar,
+					onecmdb/content/Content/applet/graphml/onecmdb-applet-dependencies.jar
+				</archive>
+				<param>
+					<url><![CDATA[
+						${baseURL}/onecmdb/export/output.graphml?name=GraphML/export.cfg&type=treeml&group=${group}&graphid=${graphid}
+					]]></url>
+					<nodeLabel>name</nodeLabel>
+					<nodeImageLabel>nodeImage</nodeImageLabel>
+				</param>
+			</applet>
+		</Graph>
+	</Presentation>
+
+	<LifeCycle>
+		<Create>
+			<instances>
+			</instances>
+			
+			<parameters>
+				<Input id="a" name="Platform"/>
+				<Input id="b" name="Install Dir"/>
+			</parameters>
+		</Create>
+		<Delete/>
+		<Import/>
+	</LifeCycle>
+	
+	
+</GroupDescription>
+
+
+
+
+

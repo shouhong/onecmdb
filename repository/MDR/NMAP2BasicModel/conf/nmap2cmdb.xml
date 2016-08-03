@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb-transform name="nmap2cmdb">
+	
+	<DataSet name="network">
+		<InstanceSelector match="//network" template="Network"/>
+		<AttributeSelector name="Name" naturalKey="true" selector="name" />
+	</DataSet>
+	
+	<DataSet name="system">
+		<InstanceSelector match="//host" template="System"/>
+		<AttributeSelector name="MAC_Address" naturalKey="true" selector="macAddress" />
+		<AttributeSelector name="IPAddress" naturalKey="true" selector="ipv4Address" />
+		<AttributeSelector name="IPv6Address" naturalKey="false" selector="ipv6Address" />
+		<AttributeSelector name="Hostname" naturalKey="true" selector="hostname" />
+		<ComplexAttributeSelector name="Network" naturalKey="true" selector="../.." dataSet="network" />
+	</DataSet>
+	
+	<DataSet name="os">
+		<InstanceSelector match="//host" template="OS"/>
+		<ComplexAttributeSelector name="InstalledOn" naturalKey="true" selector="." dataSet="system" />
+	</DataSet>
+	
+	<DataSet name="sAppl">
+		<InstanceSelector match="//port2host/port" template="ServerApplication" />
+		<ComplexAttributeSelector name="InstalledOn" naturalKey="true" selector="../.." dataSet="os" />
+		<AttributeSelector name="Port" naturalKey="true" selector="port" />
+		<AttributeSelector name="Protocol" naturalKey="true" selector="protocol" />
+		<AttributeSelector name="Name" natrualKey="false" selector="serviceName" />
+	</DataSet>
+	
+	
+</onecmdb-transform>

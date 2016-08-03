@@ -1,0 +1,108 @@
+<html>
+
+<head>
+<title>OneCMDB Documentation</title>
+<link rel="stylesheet" type="text/css" href="../doc.css" />
+</head>
+
+<body>
+	<h1>OneCMDB Models</h1>
+	
+	<h2>Core</h2>
+	
+	<h3><img src="../../Images/icons/file_obj.gif"/>Transform_Model.xml</h3>
+	<p>
+	Includes object definitions for all transformations.<br/>
+	If any transformations, used in MDRs, should be performed<br/>
+	this model needs to be imported.	
+	</p>
+	
+	
+	
+	<h2>NMAP</h2>
+	<h3><img src="../../Images/icons/file_obj.gif"/>NMAP_Model.xml</h3>
+	<p>Includes definitions for NMAP model.</p>
+	
+	<h3><img src="../../Images/icons/file_obj.gif"/>NMAP2BasicModel_MDR_Model.xml</h3>
+	<p>
+	Defines the MDR to transform NMAP model data into Basic Data model.<br>
+	It will transform:<br>
+	&nbsp;NMAP_Host to Server CI.</br>
+	&nbsp;NMAP_Network to Network CI</br>
+	&nbsp;NMAP_[TCP/UDP]_Port to ServerApplication CI.</br>
+	</p>
+	
+	<h3><img src="../../Images/icons/file_obj.gif"/>NMAP_MDR_Model.xml</h3>
+	<p>Defines the MDR to execute NMAP and transform the result into the NMAP model.</p>
+	
+	<h2>Nagios</h2>
+	
+	<h3><img src="../../Images/icons/file_obj.gif"/>Nagios_MDR_Model.xml</h3>
+	<p>
+	Defines the MDR to import/export nagios config files.<br>
+	Also defines the MDR to transform data between nagios and basic model.<br>
+	<h3><img src="../../Images/icons/file_obj.gif"/>Nagios_Model.xml</h3>
+	<p>
+	Defines the Nagios CI model. It's uses Version 3.x of nagios object definitions.
+	<p>
+	<h3><img src="../../Images/icons/file_obj.gif"/>Nagios2BasicModel_MDR_Model.xml</h3>
+	<p>
+	Defines the MDR to transform Basic Model data to Nagios data and vice versa.
+	<p>
+
+	<h2>Basic</h2>
+	<h3><img src="../../Images/icons/file_obj.gif"/>Basic_Model.xml</h3>
+	<p>
+	The Basic CMDB CI Model. It defines the core CI's like:<br>
+	<code>
+		Application</br>
+		OS</br>
+		System</br>
+		Component (hardware)</br>
+		Company</br>
+		Location</br>
+		Maintenance</br>
+		Service</br>
+		etc.
+	</code>
+	<h3><img src="../../Images/icons/file_obj.gif"/>Basic_Model_References.xml</h3>
+	<p>
+	The Basic CMDB Reference Model. It defines the refernce types between CI's like:<br>
+	<code>
+		InstalledOn</br>
+		DependensOn</br>
+		PointsTo</br>
+		BelongsTo</br>
+		etc.
+	</code>
+	</p>
+	
+	<h2>Demo</h2>
+	<h3><img src="../../Images/icons/file_obj.gif"/>Import2BasicModel_MDR_Model.xml</h3>
+	<p>
+	Includes mdr definitions for import and transformation of external data.</br>
+	Support for xml/csv and JDBC(SQL) data sources are available.
+	</p>
+	<h3><img src="../../Images/icons/file_obj.gif"/>Demo_Basic_Model_Instances.xml</h3>
+	<p>
+	Demo data that populates the Basic Model with demo instances. <br>
+	A good way to understand the basic model.
+	</p>
+	<h3><img src="../../Images/icons/file_obj.gif"/>Demo_User_Role_Instances.xml</h3>
+	<p>
+	Defines three roles:</br>
+	<code>
+	Admin</br> 
+	User</br>
+	Guest</br>
+	</code>
+	And three users belonging to each role.</br>
+	<code>
+	cmdb-admin (pasword=1qaz)</br>
+	cmdb-user (pasword=1qaz)</br>
+	cmdb-guest (pasword=1qaz)</br>
+	</code>
+	</p>
+</body>
+
+</html>

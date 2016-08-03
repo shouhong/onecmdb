@@ -1,0 +1,14 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javax.jdo</groupId>
+  <artifactId>jdo</artifactId>
+  <version>2.0-20050809.1515</version>
+  <url>http://java.sun.com/products/jdo/</url>
+  
+  <distributionManagement>
+    <downloadUrl>http://prdownloads.sourceforge.net/jpox/jdo-2.0-snapshot4.jar?download</downloadUrl>
+  </distributionManagement>
+
+  <dependencies>
+  </dependencies>
+</project>

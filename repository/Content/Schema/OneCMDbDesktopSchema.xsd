@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Root Element -->
+  <xs:element name="OneCMDBDesktopConfig" type="OneCMDBDesktopConfigType"/>
+  
+  <!-- OneCMDBDesktopConfig -->
+  <xs:complexType name="OneCMDBDesktopConfigType">
+  	<xs:sequence>
+  		<xs:element type="permissionsType" name="permissions" maxOccurs="1" minOccurs="0" />
+  		<xs:element type="menuitemType" name="menuitem" maxOccurs="unbounded" minOccurs="0" />
+  	</xs:sequence>
+  	<xs:attribute type="xs:string" name="defaultWidth"></xs:attribute>
+  	<xs:attribute type="xs:string" name="defaultHeight">
+  	</xs:attribute>
+  </xs:complexType>
+ 
+  <xs:complexType name="permissionsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="readonly"/>
+      <xs:element type="xs:string" name="editable"/>
+      <xs:element type="xs:string" name="deletable"/>
+      <xs:element type="xs:string" name="classify"/>
+      <xs:element type="xs:string" name="default"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  	<!-- Defines a menuitem --> 
+  	<xs:complexType name="menuitemType">
+  	 	<xs:sequence>
+      		<xs:element type="widgetType" name="widget" minOccurs="0"/>
+      		<xs:element type="menuitemType" name="menuitem" maxOccurs="unbounded" minOccurs="0"/>
+    	</xs:sequence>
+    	<xs:attribute type="xs:string" name="text" use="optional"/>
+    	<xs:attribute type="xs:string" name="iconStyle" use="optional"/>
+    	<xs:attribute type="xs:boolean" name="asList" use="required"/>
+    	<xs:attribute type="xs:boolean" name="separator" use="optional"/>
+   </xs:complexType>
+
+  	<xs:complexType name="widgetType">
+  		<xs:sequence>
+  			<xs:element type="permissionsType" name="permissions" minOccurs="0" />
+  			<xs:element type="shortcutType" name="shortcut" minOccurs="0" />
+  			
+  			<xs:element type="xs:string" name="id" minOccurs="1" maxOccurs="1" />
+  			<xs:element type="xs:string" name="heading" minOccurs="0" />
+  			<xs:element type="xs:anyType" name="params" minOccurs="0" />
+  			<xs:element type="xs:anyURI" name="help" minOccurs="0" />
+  			<xs:element type="xs:string" name="minimizable" minOccurs="0" />
+  			<xs:element type="xs:string" name="width" minOccurs="0" />
+  			<xs:element type="xs:string" name="height" minOccurs="0" />
+  			<xs:element type="xs:int" name="x" minOccurs="0" />
+  			<xs:element type="xs:int" name="y" minOccurs="0" />
+  		</xs:sequence>
+  	</xs:complexType>
+
+  <xs:complexType name="shortcutType">
+   	<xs:sequence>
+      <xs:element name="text" />
+      <xs:element name="style" />
+      <xs:element name="tooltip" />
+  </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<AutoLogins>
+	<!--  
+		The AutoLogin id can be specified on the desktop url
+		Example:
+		http://localhost:8080/onecmdb-desktop?alid=nagios
+		
+		Then the desktop will auto login as nagios with passsword nagios.
+	 	Note: This user can belong to a Role that has unique desktop configs.
+	 -->
+	<AutoLogin id="nagios" asList="true">
+		<username>nagios</username>
+		<password>nagios</password>
+	</AutoLogin>
+</AutoLogins>

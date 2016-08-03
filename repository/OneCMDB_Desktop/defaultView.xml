@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+
+<OneCMDBDesktopConfig defaultWidth="1000px" defaultHeight="650px">
+	
+	<permissions>
+		<readonly>true</readonly>
+		<editable>true</editable>
+		<deletable>true</deletable>
+		<classify>true</classify>
+
+		<default>readonly</default>
+	</permissions>
+
+
+	<menuitem text="Model" iconStyle="menuitem-icon-folder"
+		asList="true">
+		<menuitem text="Import" iconStyle="menuitem-icon-import" asList="true">
+			<widget>
+				<id>cmdb-model-import</id>
+				<heading>Import OneCMDB Model</heading>
+				
+				<params>
+					<mdrName>Models</mdrName>
+					<mdrConfigName>defaultModels</mdrConfigName>
+					<modelRoot>MDR/Models/models</modelRoot>
+				</params>
+				
+				<shortcut>
+					<text>Import Model</text>
+					<style>shortcut-import-model</style>
+					<tooltip>
+						Import Models stored on server into OneCMDB
+					</tooltip>
+				</shortcut>
+				<help>
+					http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#Import
+				</help>
+			</widget>
+		</menuitem>
+
+		<menuitem text="Export" iconStyle="menuitem-icon-export" asList="true">
+			<widget id="cmdb-model-save">
+				<heading>Export Model</heading>
+				<params>
+					<modelRoot>MDR/Models/models</modelRoot>
+				</params>
+				<help>
+					http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#Export
+				</help>
+			</widget>
+		</menuitem>
+
+	</menuitem>
+
+	<menuitem text="Model Overview"
+		iconStyle="menuitem-icon-modeloverview" asList="true">
+
+		<widget id="cmdb-applet-widget">
+			<heading>Model Overview</heading>
+			<minimizable>false</minimizable>
+			<params>
+				<code>
+					org.onecmdb.rest.graph.utils.applet.AppletLaunch.class
+				</code>
+				<archive>
+					onecmdb/content/Content/applet/onecmdb-applet.jar,
+					onecmdb/content/Content/applet/onecmdb-applet-dependencies.jar
+				</archive>
+				<param>
+					<url>${baseURL}/onecmdb/query</url>
+					<rootCI>Ci</rootCI>
+					<appletlaunch.callcode>
+						org.onecmdb.rest.graph.applet.TemplateViewApplet
+					</appletlaunch.callcode>
+					<appletlaunch.color.background>
+						FFFFFF
+					</appletlaunch.color.background>
+					<appletlaunch.splash>
+						onecmdb/content/Content/applet/applet-loading.gif
+					</appletlaunch.splash>
+					<appletlaunch.splasherror>
+						onecmdb/content/Content/applet/applet-error.gif
+					</appletlaunch.splasherror>
+					<appletlaunch.version>1.5.0</appletlaunch.version>
+					<iconURL>${baseURL}/onecmdb/icon</iconURL>
+					<graphBackgroundColor>
+						0x454545
+					</graphBackgroundColor>
+				</param>
+			</params>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#Model_Overview</help>
+			<shortcut>
+				<style>shortcut-model-overview</style>
+				<text>Model Overview</text>
+				<tooltip>
+					<![CDATA[
+						Visualization of the CMDB.
+						]]>
+				</tooltip>
+			</shortcut>
+		</widget>
+	</menuitem>
+
+	<menuitem text="MDR" iconStyle="menuitem-icon-mdr" asList="true">
+			<widget id="cmdb-mdr-view">
+				<heading>
+					OneCMDB - Management Data Repository (MDR)
+				</heading>
+				<params>
+					<excludeMDR asSimpleList="true">Models</excludeMDR>
+					<mdrConfigTable>
+						<columnFilter>
+							<Column asList="true" attAlias="_icon">
+								<exclude>true</exclude>
+							</Column>
+							<Column asList="true" attAlias="_mdrRepository">
+								<exclude>true</exclude>
+							</Column>
+							<Column asList="true" attAlias="internal_alias">
+								<exclude>true</exclude>
+							</Column>
+							<Column asList="true" attAlias="internal_id">
+								<exclude>true</exclude>
+							</Column>
+							<Column asList="true" attAlias="internal_derivedFrom">
+								<exclude>true</exclude>
+							</Column>
+							<Column asList="true" attAlias="internal_created">
+								<exclude>true</exclude>
+							</Column>
+							
+							
+							<Column asList="true" attAlias="internal_description">
+								<exclude>true</exclude>
+							</Column>
+							
+							<Column asList="true" attAlias="_status">
+								<exclude>true</exclude>
+							</Column>
+						
+							<order asSimpleList="true">_displayname</order>
+							<order asSimpleList="true">program</order>
+							<order asSimpleList="true">autoCommit</order>
+							<order asSimpleList="true">_name</order>
+						
+						</columnFilter>
+					</mdrConfigTable>
+					<mdrHistoryTable>
+						<columnFilter>
+							<Column asList="true" attAlias="status">
+								<include>true</include>
+							</Column>
+							<Column asList="true" attAlias="lastModified">
+								<include>true</include>
+							</Column>
+							<Column asList="true" attAlias="added">
+								<include>true</include>
+								<width>50</width>
+							</Column>
+							<Column asList="true" attAlias="deleted">
+								<include>true</include>
+								<width>50</width>
+							</Column>
+							<Column asList="true" attAlias="modified">
+								<include>true</include>
+								<width>50</width>
+							</Column>
+							<Column asList="true" attAlias="rejected">
+								<include>true</include>
+								<width>50</width>
+							</Column>
+							<Column asList="true" attAlias="rejectCause">
+								<include>true</include>
+							</Column>
+						</columnFilter>
+					</mdrHistoryTable>
+				</params>
+				<shortcut>
+					<style>shortcut-mdr</style>
+					<text>MDR</text>
+				</shortcut>
+				<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#MDR</help>
+			</widget>
+	</menuitem>
+
+	<menuitem separator="true" asList="true" />
+
+	<menuitem text="CMDB View"
+		iconStyle="menuitem-icon-instanceoverview" asList="true">
+		<widget id="cmdb-model-instance-overview">
+			<heading>CMDB View</heading>
+			<width>800px</width>
+			<height>600px</height>
+			
+			
+			<params>
+				<rootCI asSimpleList="true">Ci</rootCI>
+				<tree>
+					<visible>true</visible>
+				</tree>
+				<table>
+					<visible>true</visible>
+				</table>
+				<graph>
+					<visible>true</visible>
+					<code>
+						org.onecmdb.rest.graph.utils.applet.AppletLaunch.class
+					</code>
+					<archive>
+						onecmdb/content/Content/applet/onecmdb-applet.jar,
+						onecmdb/content/Content/applet/onecmdb-applet-dependencies.jar
+					</archive>
+					<param>
+						<url>${baseURL}/onecmdb/query</url>
+						<rootCI>Ci</rootCI>
+						<appletlaunch.callcode>
+							org.onecmdb.rest.graph.applet.InstanceViewApplet
+						</appletlaunch.callcode>
+						<appletlaunch.color.background>
+							FFFFFF
+						</appletlaunch.color.background>
+						<appletlaunch.splash>
+							onecmdb/content/Content/applet/applet-loading.gif
+						</appletlaunch.splash>
+						<appletlaunch.splasherror>
+							onecmdb/content/Content/applet/applet-error.gif
+						</appletlaunch.splasherror>
+						<appletlaunch.version>
+							1.5.0
+						</appletlaunch.version>
+						<iconURL>${baseURL}/onecmdb/icon</iconURL>
+						<graphBackgroundColor>
+							0x454545
+						</graphBackgroundColor>
+					</param>
+				</graph>
+			</params>
+			<shortcut>
+				<style>shortcut-cmdb-view</style>
+				<text>CMDB View</text>
+			</shortcut>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#CMDB_View</help>
+		</widget>
+	</menuitem>
+	<!-- 
+	<menuitem text="CMDB Composite View"
+		iconStyle="menuitem-icon-instanceoverview" asList="true">
+		<widget id="cmdb-group-widget">
+			<heading>CMDB Composite View</heading>
+			<width>800px</width>
+			<height>600px</height>
+			
+			<params>
+			</params>
+			<shortcut>
+				<style>shortcut-cmdb-view</style>
+				<text>CMDB Composite View</text>
+			</shortcut>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#CMDB_Grouping</help>
+		</widget>
+	</menuitem>
+ 	-->
+ 	
+	<menuitem text="Custom Views" iconStyle="menuitem-icon-customview"
+		asList="true">
+		<widget id="cmdb-custom-view">
+			<heading>OneCMDB - Custom Views</heading>
+			<width>300px</width>
+			<height>400px</height>
+			<x>10</x>
+			<y>10</y>
+			<params>
+				<customDefinition>
+					CustomViews/defaultCustomViews.xml
+				</customDefinition>
+				<rootElement>CustomViews</rootElement>
+				<recordElement>CustomView</recordElement>
+
+			</params>
+			<shortcut>
+				<style>shortcut-customview</style>
+				<text>Custom Views</text>
+			</shortcut>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#Custom_Views</help>
+		</widget>
+
+	</menuitem>
+	<menuitem text="Custom Reports" iconStyle="menuitem-icon-report"
+		asList="true">
+		<widget id="cmdb-custom-view">
+			<heading>OneCMDB - Custom Reports</heading>
+			<width>300px</width>
+			<height>400px</height>
+			<x>10</x>
+			<y>10</y>
+			<params>
+				<customDefinition>
+					CustomReports/defaultCustomReports.xml
+				</customDefinition>
+				<rootElement>CustomReports</rootElement>
+				<recordElement>CustomReport</recordElement>
+			</params>
+			<shortcut>
+				<style>shortcut-custom-reports</style>
+				<text>Custom Reports</text>
+			</shortcut>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#Custom_Reports</help>
+		</widget>
+	</menuitem>
+	
+	<menuitem separator="true" asList="true" />
+	
+	<menuitem text="Design" iconStyle="menuitem-icon-design"
+		asList="true">
+		<menuitem text="Model Editor"
+			iconStyle="menuitem-icon-modeldesign" asList="true">
+			<widget id="cmdb-model-designer">
+				<heading>Model Editor</heading>
+				<params>
+					<rootCI asSimpleList="true">Ci</rootCI>
+					<rootCI asSimpleList="true">CIReference</rootCI>
+				</params>
+			</widget>
+		</menuitem>
+		<menuitem text="MDR Setup"
+			iconStyle="menuitem-icon-mdr" asList="true">			
+			<widget id="cmdb-mdr-setup">
+				<heading>OneCMDB - MDR Setup</heading>
+			</widget>
+		</menuitem>
+
+		<menuitem text="Custom View Design" iconStyle="menuitem-icon-customview" asList="true">
+			<widget id="cmdb-url-frame-widget">
+				<heading>OneCMDB - Custom View Designer</heading>
+				<params>
+					<newWindow>true</newWindow>
+					<url>
+						http://onecmdb.org/wiki/index.php/Custom_View_Design
+					</url>
+				</params>
+			</widget>
+			<!--
+			<widget id="cmdb-view-designer">
+				<heading>OneCMDB - Custom View Designer</heading>
+			</widget>
+			-->
+		</menuitem>
+
+		<menuitem text="Custom Report Design"
+			iconStyle="menuitem-icon-report" asList="true">
+			<widget id="cmdb-url-frame-widget">
+				<heading>OneCMDB - Custom View Designer</heading>
+				<params>
+					<newWindow>true</newWindow>
+					<url>
+						http://onecmdb.org/wiki/index.php/Custom_Report_Design
+					</url>
+				</params>
+			</widget>
+			<!-- 	
+			<widget id="cmdb-report-designer">
+				<heading>OneCMDB - Custom Report Designer</heading>
+			</widget>
+			 -->
+		</menuitem>
+	</menuitem>
+
+
+	<menuitem text="System" iconStyle="menuitem-icon-system"
+		asList="true">
+		
+		<menuitem text="System Overview"
+			iconStyle="menuitem-icon-modeloverview" asList="true">
+			<widget id="cmdb-applet-widget">
+				<heading>System Overview</heading>
+				<width>800px</width>
+				<height>600px</height>
+				<params>
+					<code>
+						org.onecmdb.rest.graph.utils.applet.AppletLaunch.class
+					</code>
+					<archive>
+						onecmdb/content/Content/applet/onecmdb-applet.jar,
+						onecmdb/content/Content/applet/onecmdb-applet-dependencies.jar
+					</archive>
+					<param>
+						<url>${baseURL}/onecmdb/query</url>
+						<rootCI>Root</rootCI>
+						<rootReference>Reference</rootReference>
+						<appletlaunch.callcode>
+							org.onecmdb.rest.graph.applet.TemplateViewApplet
+						</appletlaunch.callcode>
+						<appletlaunch.color.background>
+							FFFFFF
+						</appletlaunch.color.background>
+						<appletlaunch.splash>
+							onecmdb/content/Content/applet/applet-loading.gif
+						</appletlaunch.splash>
+						<appletlaunch.splasherror>
+							onecmdb/content/Content/applet/applet-error.gif
+						</appletlaunch.splasherror>
+						<appletlaunch.version>
+							1.5.0
+						</appletlaunch.version>
+						<iconURL>${baseURL}/onecmdb/icon</iconURL>
+						<graphBackgroundColor>
+							0x454545
+						</graphBackgroundColor>
+					</param>
+				</params>
+			</widget>
+		</menuitem>
+		<menuitem text="System Editor" iconStyle="menuitem-icon-modeldesign" asList="true">
+			<widget id="cmdb-model-designer">
+				<heading>System Editor</heading>
+				<params>
+					<rootCI asSimpleList="true">Root</rootCI>
+					
+				</params>
+			</widget>
+		</menuitem>
+
+		<menuitem text="System View" iconStyle="menuitem-icon-instanceoverview" asList="true">
+			<widget id="cmdb-model-instance-overview">
+				<heading>System Editor</heading>
+				<params>
+					<rootCI asSimpleList="true">Root</rootCI>
+					<searchRefRootCi>Root</searchRefRootCi>
+				<tree>
+					<visible>true</visible>
+				</tree>
+				<table>
+					<visible>true</visible>
+				</table>
+				<graph>
+					<visible>true</visible>
+					<code>
+						org.onecmdb.rest.graph.utils.applet.AppletLaunch.class
+					</code>
+					<archive>
+						onecmdb/content/Content/applet/onecmdb-applet.jar,
+						onecmdb/content/Content/applet/onecmdb-applet-dependencies.jar
+					</archive>
+					<param>
+						<url>${baseURL}/onecmdb/query</url>
+						<rootCI>Ci</rootCI>
+						<appletlaunch.callcode>
+							org.onecmdb.rest.graph.applet.InstanceViewApplet
+						</appletlaunch.callcode>
+						<appletlaunch.color.background>
+							FFFFFF
+						</appletlaunch.color.background>
+						<appletlaunch.splash>
+							onecmdb/content/Content/applet/applet-loading.gif
+						</appletlaunch.splash>
+						<appletlaunch.splasherror>
+							onecmdb/content/Content/applet/applet-error.gif
+						</appletlaunch.splasherror>
+						<appletlaunch.version>
+							1.5.0
+						</appletlaunch.version>
+						<iconURL>${baseURL}/onecmdb/icon</iconURL>
+						<graphBackgroundColor>
+							0x454545
+						</graphBackgroundColor>
+					</param>
+				</graph>
+					
+				</params>
+			</widget>
+		</menuitem>
+		
+		<menuitem text="System Export" iconStyle="menuitem-icon-export" asList="true">
+			<widget id="cmdb-model-save">
+				<heading>Export Model</heading>
+				<params>
+					<modelRoot>MDR/Models/models</modelRoot>
+					<rootCI asSimpleList="true">Root</rootCI>
+				</params>
+			</widget>
+		</menuitem>
+		
+		
+	
+	</menuitem>
+	
+	<menuitem text="Admin" iconStyle="menuitem-icon-admin"
+		asList="true">
+		<menuitem text="User Accounts"
+			iconStyle="menuitem-icon-accounts" asList="true">
+			<widget>
+				<id>cmdb-model-instance-overview</id>
+				<heading>User Accounts</heading>
+				<params>
+					<rootCI asSimpleList="true">CMDBAccount</rootCI>
+					<rootCI asSimpleList="true">CMDBRole</rootCI>
+					<table>
+						<visible>true</visible>
+					</table>
+					<tree>
+						<visible>false</visible>
+					</tree>
+					<graph>
+						<visible>false</visible>
+					</graph>
+				</params>
+				
+			</widget>
+		</menuitem>
+		
+		<menuitem text="Desktop File Editor" iconStyle="menuitem-icon-file-editor" asList="true">
+			<widget>
+				<id>cmdb-content-browser</id>
+				<heading>Desktop File Editor</heading>
+			</widget>
+		</menuitem>
+		
+		<menuitem text="Delete CMDB Objects" iconStyle="delete-icon" asList="true">
+			<widget id="cmdb-model-delete">
+				<heading>Delete CMDB Objects</heading>
+				<params>
+					<rootCI asSimpleList="true">Root</rootCI>
+				</params>
+			</widget>
+		</menuitem>
+		
+		<menuitem text="Desktop Widget List" iconStyle="menuitem-icon-widget-list" asList="true">
+			<widget id="desktop-widget-list">
+				<heading>Desktop Widget List</heading>
+			</widget>
+		</menuitem>
+	</menuitem>
+
+	<menuitem separator="true" asList="true" />
+
+	<menuitem text="Help" iconStyle="menuitem-icon-help"
+		asList="true">
+		<widget id="cmdb-url-frame-widget">
+			<heading>OneCMDB Help</heading>
+			<params>
+				<newWindow>true</newWindow>
+				<url>http://www.onecmdb.org/wiki/index.php/Documentation</url>
+			</params>
+			<shortcut>
+				<style>shortcut-cmdb-help</style>
+				<text>OneCMDB Doc.</text>
+			</shortcut>
+		</widget>
+	</menuitem>
+	<menuitem text="OneCMDB.org" iconStyle="menuitem-icon-onecmdb"
+		asList="true">
+		<widget id="cmdb-url-frame-widget">
+			<heading>OneCMDB.org</heading>
+			<params>
+				<newWindow>true</newWindow>
+				<url>http://www.onecmdb.org</url>
+			</params>
+		</widget>
+	</menuitem>
+	
+</OneCMDBDesktopConfig>

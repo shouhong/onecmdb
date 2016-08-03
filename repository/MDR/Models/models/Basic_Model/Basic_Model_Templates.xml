@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb>
+<templates>
+	<!--
+		================================================================
+		Resource Definitions
+		================================================================ 
+	 -->
+	<template alias="Resource" displayName="${Name}">
+		<derivedFrom>
+			<ref alias="Ci"/>
+		</derivedFrom>
+		<description>This CI defines a Resource. A resource is something that must be knowned in the datacenter, like a Company, Location and People etc.</description>
+		<attribute attAlias="Name" displayName="Name">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Resource</setSimpleValue>
+		<setSimpleValue attAlias="icon">resource</setSimpleValue>
+	</template>
+
+	<!--
+		================================================================
+		Network Definitions
+		================================================================ 
+	 -->
+	<template alias="Network" displayName="${Name}">
+		<derivedFrom>
+			<ref alias="Resource"/>
+		</derivedFrom>
+		<description>A network.</description>
+		<setSimpleValue attAlias="Name">Network</setSimpleValue>
+		<setSimpleValue attAlias="icon">network</setSimpleValue>
+	</template>
+	
+	<!--
+		================================================================
+		Software Definitions
+		================================================================ 
+	 -->
+	<template alias="Software" displayName="${Name} ${Version}">
+		<derivedFrom>
+			<ref alias="Resource"/>
+		</derivedFrom>
+		<description>This CI specifies an installable software.</description>
+		<attribute attAlias="LicenseKey" displayName="License Key">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Service" displayName="Service">
+			<complexType>
+				<ref alias="Service"/>
+				<refType><ref alias="BelongsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		
+		<attribute attAlias="DSLEntry" displayName="DSL Entry">
+			<simpleType>xs:anyURI</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		
+		<attribute attAlias="Financial" displayName="Financial Info">
+			<complexType>
+				<ref alias="Financial"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Maintenance" displayName="Maintenance Info">
+			<complexType>
+				<ref alias="Maintenance"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Version" displayName="Version">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		
+		
+		<setSimpleValue attAlias="Name">Software</setSimpleValue>
+		<setSimpleValue attAlias="icon">software</setSimpleValue>
+	</template>
+
+	<!--
+		==================================================================
+		OS Definitions
+		================================================================== 
+	 -->
+	<template alias="OS" displayName="${Name} ${Version} (on ${InstalledOn})">
+		<derivedFrom>
+			<ref alias="Software"/>
+		</derivedFrom>
+	
+		<description>This CI defines an Operating System. The OS is installed on a System.</description>
+		<attribute attAlias="InstalledOn" displayName="Installed On" >
+			<complexType>
+				<ref alias="System"/>
+				<refType><ref alias="InstalledOn"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Family" displayName="OS Family">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">OS</setSimpleValue>
+		<setSimpleValue attAlias="icon">os</setSimpleValue>
+	</template>
+	
+	<template alias="Windows">
+		<derivedFrom>
+			<ref alias="OS"/>
+		</derivedFrom>
+		<description>This CI defines a Windows Operating System. The OS is installed on a System.</description>
+		<setSimpleValue attAlias="Family">Windows</setSimpleValue>
+		<setSimpleValue attAlias="DSLEntry">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</setSimpleValue>
+		<setSimpleValue attAlias="icon">mswindows</setSimpleValue>
+	</template>
+
+	<template alias="WinXP">
+		<derivedFrom>
+			<ref alias="Windows"/>
+		</derivedFrom>
+		
+		<description>This CI defines a Windows XP Operating System. The OS is installed on a System.</description>
+
+		<setSimpleValue attAlias="Name">Windows XP</setSimpleValue>
+		<setSimpleValue attAlias="Version">XP</setSimpleValue>
+		<setSimpleValue attAlias="icon">mswindows</setSimpleValue>
+	</template>
+	
+	<template alias="Vista">
+		<derivedFrom>
+			<ref alias="Windows"/>
+		</derivedFrom>
+		
+		<description>This CI defines a Windows Vista Operating System. The OS is installed on a System.</description>
+
+		<setSimpleValue attAlias="Name">Windows Vista</setSimpleValue>
+		<setSimpleValue attAlias="Version">Vista</setSimpleValue>
+		<setSimpleValue attAlias="icon">windows_vista</setSimpleValue>
+	</template>
+
+	
+	<template alias="WinXP_SP2">
+		<derivedFrom>
+			<ref alias="WinXP"/>
+		</derivedFrom>
+		<description>This CI defines a Windows XP Operating System. The OS is installed on a System.</description>
+		<setSimpleValue attAlias="Version">SP2</setSimpleValue>
+		<setSimpleValue attAlias="LicenseKey">MSWR-1234-8765</setSimpleValue>
+		<setSimpleValue attAlias="icon">mswindows</setSimpleValue>
+	</template>
+
+	<template alias="WinXP_SP1">
+		<derivedFrom>
+			<ref alias="WinXP"/>
+		</derivedFrom>
+		<description>This CI defines a Windows XP Operating System. The OS is installed on a System.</description>
+		<setSimpleValue attAlias="Version" >SP1</setSimpleValue>
+		<setSimpleValue attAlias="LicenseKey">MSHJ-6543-6789</setSimpleValue>
+		<setSimpleValue attAlias="icon">mswindows</setSimpleValue>
+	</template>
+	
+	<template alias="UNIX">
+		<derivedFrom>
+			<ref alias="OS"/>
+		</derivedFrom>
+		<description>This CI defines a UNIX Operating System. The OS is installed on a System.</description>
+		<setSimpleValue attAlias="Family">UNIX</setSimpleValue>
+		<setSimpleValue attAlias="icon">os</setSimpleValue>
+	</template>	
+	
+	<template alias="Linux">
+		<derivedFrom>
+			<ref alias="UNIX"/>
+		</derivedFrom>
+		<description>This CI defines an Linux Operating System. The OS is installed on a System.</description>
+		<setSimpleValue attAlias="Name">Red Hat Linux</setSimpleValue>
+		<setSimpleValue attAlias="Family">Linux</setSimpleValue>
+		<setSimpleValue attAlias="icon">linux</setSimpleValue>
+	</template>
+	
+	<template alias="RedHatLinuxV4">
+		<derivedFrom>
+			<ref alias="Linux"/>
+		</derivedFrom>
+		<description>This CI defines a Red Hat Linux Operating System. It is installed on a System.</description>
+		<setSimpleValue attAlias="Name">Red Hat Linux</setSimpleValue>
+		<setSimpleValue attAlias="Family">Linux</setSimpleValue>
+		<setSimpleValue attAlias="Version">4</setSimpleValue>
+		<setSimpleValue attAlias="LicenseKey">GHJU-7688-MOVF</setSimpleValue>
+		<setSimpleValue attAlias="icon">linux</setSimpleValue>
+	</template>
+
+	<template alias="RedHatLinuxV5">
+		<derivedFrom>
+			<ref alias="Linux"/>
+		</derivedFrom>
+		<description>This CI defines a Red Hat Linux Operating System. It is installed on a System.</description>
+		<setSimpleValue attAlias="Name">Red Hat Linux</setSimpleValue>
+		<setSimpleValue attAlias="Family">Linux</setSimpleValue>
+		<setSimpleValue attAlias="Version">5</setSimpleValue>
+		<setSimpleValue attAlias="DSLEntry">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</setSimpleValue>
+		<setSimpleValue attAlias="LicenseKey">FGHJ-3456-YUJK</setSimpleValue>
+		<setSimpleValue attAlias="icon">linux</setSimpleValue>
+	</template>
+	
+	<!--
+		==================================================================
+		Application Definitions
+		================================================================== 
+	 -->
+	<template alias="Application" displayName="${Name} (on ${InstalledOn})">
+		<derivedFrom>
+			<ref alias="Software"/>
+		</derivedFrom>		
+		<description>This CI defines an Application. An application is installed on a OS.</description>
+		<attribute attAlias="InstalledOn" displayName="Installed On" >
+			<complexType>
+				<ref alias="OS"/>
+				<refType><ref alias="InstalledOn"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Uses" displayName="Uses">
+			<complexType>
+				<ref alias="Application"/>
+				<refType><ref alias="DependsOn"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>unbound</maxOccurs>
+				<minOccurs>0</minOccurs>
+			</policy>
+		</attribute>
+		
+		<setSimpleValue attAlias="Name">Application</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	<template alias="ClientApplication">
+		<derivedFrom>
+			<ref alias="Application"/>
+		</derivedFrom>
+		<description>This CI defines a Client Application. A Client Application is not receiving network events, but may communicate with application servers.</description>
+		<setSimpleValue attAlias="Name">Client Appl.</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	<template alias="MSOffice">
+		<derivedFrom>
+			<ref alias="ClientApplication"/>
+		</derivedFrom>
+		<description>This CI defines MS Office</description>
+		<setSimpleValue attAlias="Name">MS Office</setSimpleValue>
+		<setSimpleValue attAlias="Version">2003</setSimpleValue>
+		<setSimpleValue attAlias="DSLEntry">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</setSimpleValue>
+		<setSimpleValue attAlias="LicenseKey">MSOF-6767-7788-WERT</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+
+	<template alias="VMWarePlayer">
+		<derivedFrom>
+			<ref alias="ClientApplication"/>
+		</derivedFrom>
+		<description>This CI defines a VMWare Player application</description>
+		<setSimpleValue attAlias="Name">VMWare Player</setSimpleValue>
+		<setSimpleValue attAlias="Version">2.0</setSimpleValue>
+		<setSimpleValue attAlias="DSLEntry">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</setSimpleValue>
+		<setSimpleValue attAlias="LicenseKey"></setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	<template alias="MSOutlook">
+		<derivedFrom>
+			<ref alias="ClientApplication"/>
+		</derivedFrom>
+		<description>This CI defines MS Outlook</description>
+		<setSimpleValue attAlias="Name">MS Outlook</setSimpleValue>
+		<setSimpleValue attAlias="Version">2003</setSimpleValue>
+		<setSimpleValue attAlias="DSLEntry">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</setSimpleValue>
+		<setSimpleValue attAlias="LicenseKey">MSOL-4566-7768-6786</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	<template alias="MS_Exchange">
+		<derivedFrom>
+			<ref alias="ServerApplication"/>
+		</derivedFrom>
+		<description>This CI defines MS Exchange.</description>
+		<setSimpleValue attAlias="Name">MS Exchange</setSimpleValue>
+		<setSimpleValue attAlias="Version">2003</setSimpleValue>
+		<setSimpleValue attAlias="DSLEntry">http://onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</setSimpleValue>
+		<setSimpleValue attAlias="LicenseKey" ></setSimpleValue>
+		<setSimpleValue attAlias="Protocol"></setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	<template alias="DHCP">
+		<derivedFrom>
+			<ref alias="NetworkApplication"/>
+		</derivedFrom>
+		<description>This CI describes a DHCP (Dynamic Host Configuration Protocol) Server.</description>
+		<setSimpleValue attAlias="Name">DHCP</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	<template alias="DNS">
+		<derivedFrom>
+			<ref alias="NetworkApplication"/>
+		</derivedFrom>
+		<description>This CI one DNS (Domain Name System) Server Application.</description>
+		<setSimpleValue attAlias="Name">DNS</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	<template alias="Database">
+		<derivedFrom>
+			<ref alias="ServerApplication"/>
+		</derivedFrom>
+		<description>This CI describes a database software.</description>
+		<setSimpleValue attAlias="Name">DB</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	<template alias="J2EEServer">
+		<derivedFrom>
+			<ref alias="ServerApplication"/>
+		</derivedFrom>
+		<description>This CI describes a Java EE server.</description>
+		<setSimpleValue attAlias="Name">J2EE Server</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	<template alias="NetworkApplication">
+		<derivedFrom>
+			<ref alias="ServerApplication"/>
+		</derivedFrom>
+		<description>This CI describes a network application.</description>
+		<setSimpleValue attAlias="Name">Network Application</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+
+	<template alias="ServerApplication">
+		<derivedFrom>
+			<ref alias="Application"/>
+		</derivedFrom>
+		<description>This CI defines a Server Application. A Server Application defines a listener port.</description>
+		<attribute attAlias="Port" displayName="Port">
+			<simpleType>xs:integer</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Protocol" displayName="Protocol">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Server Application</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+		<template alias="ServletContainer">
+		<derivedFrom>
+			<ref alias="ServerApplication"/>
+		</derivedFrom>
+		<description>This CI describes a container for servlets.</description>
+		<setSimpleValue attAlias="Port">8080</setSimpleValue>
+		<setSimpleValue attAlias="Protocol">TCP</setSimpleValue>
+		<setSimpleValue attAlias="Name">Servlet Container</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	
+	<template alias="WebApplication">
+		<derivedFrom>
+			<ref alias="Application"/>
+		</derivedFrom>
+		<description>This CI describes one web application, that is accessed through a web browser.</description>
+		<setSimpleValue attAlias="Name">Web Application</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	<template alias="WebService">
+		<derivedFrom>
+			<ref alias="WebApplication"/>
+		</derivedFrom>
+		<description>This CI describes one web service.</description>
+		<attribute attAlias="WSDL_URL" displayName="WSDL URL">
+			<simpleType>xs:anyURI</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Web Service</setSimpleValue>
+		<setSimpleValue attAlias="icon">application</setSimpleValue>
+	</template>
+	
+	<!--
+		=====================================================================
+		Hardware Definitions
+		===================================================================== 
+	 -->
+		<template alias="Switch">
+		<derivedFrom>
+			<ref alias="System"/>
+		</derivedFrom>
+		<description>This CI specifies one switch network device.</description>
+		
+		<setSimpleValue attAlias="Name">Switch</setSimpleValue>
+		<setSimpleValue attAlias="icon">netcomp</setSimpleValue>
+	</template>
+	
+	<template alias="System" displayName="${Name} ${IPAddress}">
+		<derivedFrom>
+			<ref alias="Hardware"/>
+		</derivedFrom>
+		<description>This CI specifies one system. A System is connected to a network.</description>
+		
+		<attribute attAlias="ConnectedTo" displayName="Connected To">
+			<complexType>
+				<ref alias="System"/>
+				<refType><ref alias="ConnectedTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>unbound</maxOccurs>
+				<minOccurs>0</minOccurs>
+			</policy>
+		</attribute>
+		
+		<attribute attAlias="MAC_Address" displayName="MAC Address">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Hostname">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Network" displayName="Network">
+			<complexType>
+				<ref alias="Network"/>
+				<refType><ref alias="BelongsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		
+		<attribute attAlias="IPAddress" displayName="IPv4 Address">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="IPv6Address" displayName="IPv6 Address">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		
+		<setSimpleValue attAlias="Name">System</setSimpleValue>
+		<setSimpleValue attAlias="icon">system</setSimpleValue>
+	</template>
+	
+	<template alias="Hardware" displayName="${Name}">
+		<derivedFrom>
+			<ref alias="Resource"/>
+		</derivedFrom>
+		<description>This CI specifies one hardware. All hardware belongs to a service.</description>
+		<attribute attAlias="Status" displayName="Status">
+			<complexType>
+				<ref alias="OperationalStatus"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Maintenance" displayName="Maintenance Info">
+			<complexType>
+				<ref alias="Maintenance"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Service" displayName="Service">
+			<complexType>
+				<ref alias="Service"/>
+				<refType><ref alias="BelongsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Location" displayName="Location">
+			<complexType>
+				<ref alias="Location"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Financials" displayName="Financial Info">
+			<complexType>
+				<ref alias="Financial"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="SerialNumber" displayName="Serial Number">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Manufacturer" displayName="Manufacturer">
+			<complexType>
+				<ref alias="Company"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Hardware</setSimpleValue>
+		<setSimpleValue attAlias="icon">hardware</setSimpleValue>
+	</template>
+	
+	<template alias="HardDiskDrive">
+		<derivedFrom>
+			<ref alias="Component"/>
+		</derivedFrom>
+		<description>a hard disk drive is a non-volatile storage device which stores digitally encoded data.</description>
+		<setSimpleValue attAlias="Name">HDD</setSimpleValue>
+		<setSimpleValue attAlias="icon">hdd</setSimpleValue>
+	</template>
+	
+	<template alias="Printer">
+		<derivedFrom>
+			<ref alias="Component"/>
+		</derivedFrom>
+		<description>A system connected printer.</description>
+		<setSimpleValue attAlias="Name">Printer</setSimpleValue>
+		<setSimpleValue attAlias="icon">printer</setSimpleValue>
+	</template>
+	<template alias="Component">
+		<derivedFrom>
+			<ref alias="Hardware"/>
+		</derivedFrom>
+		<description>This CI specifies one hardware component. A component is part of a System.</description>
+		<setSimpleValue attAlias="Name">Component</setSimpleValue>
+		<setSimpleValue attAlias="icon">rackunit</setSimpleValue>
+	</template>
+	
+	<template alias="Computer">
+		<derivedFrom>
+			<ref alias="System"/>
+		</derivedFrom>
+		<description>This CI specifies one computer system. A Computer System has different components installed on it, like harddrive, memory, network card etc.</description>
+		<setSimpleValue attAlias="Name">Computer</setSimpleValue>
+		<setSimpleValue attAlias="icon">computer</setSimpleValue>
+	</template>
+	<template alias="Desktop">
+		<derivedFrom>
+			<ref alias="Computer"/>
+		</derivedFrom>
+		<description>This CI specifies one desktop computer system. A desktop computer System is located in one place and used by one person at a time.</description>
+		<setSimpleValue attAlias="Name">Desktop</setSimpleValue>
+		<setSimpleValue attAlias="icon">desktop</setSimpleValue>
+	</template>
+	<template alias="Laptop">
+		<derivedFrom>
+			<ref alias="Computer"/>
+		</derivedFrom>
+		<description>This CI specifies one laptop computer system. A laptop computer system can may not be  located in one place.Is owned by one person at a time.</description>
+		<setSimpleValue attAlias="Name">Laptop</setSimpleValue>
+		<setSimpleValue attAlias="icon">portable</setSimpleValue>
+	</template>
+	<template alias="NetworkDevice">
+		<derivedFrom>
+			<ref alias="System"/>
+		</derivedFrom>
+		<description>This CI specifies a network device.</description>
+		<setSimpleValue attAlias="Name">Network Device</setSimpleValue>
+		<setSimpleValue attAlias="icon">netcomp</setSimpleValue>
+	</template>
+	
+	<template alias="Router">
+		<derivedFrom>
+			<ref alias="System"/>
+		</derivedFrom>
+		<description>This CI specifies a network device router.</description>
+		<attribute attAlias="WAN_IPAddress" displayName="WAN IP Address">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="WAN_Hostname" displayName="WAN Hostname">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Router</setSimpleValue>
+		<setSimpleValue attAlias="icon">netcomp</setSimpleValue>
+	</template>
+	
+	<template alias="WiFiRouter">
+		<derivedFrom>
+			<ref alias="Router"/>
+		</derivedFrom>
+		<description>This CI specifies a network device router.</description>
+		<attribute attAlias="SSID" displayName="SSID">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">WiFi Router</setSimpleValue>
+		<setSimpleValue attAlias="icon">wifirouter</setSimpleValue>
+	</template>
+
+	<template alias="NetworkPrinter">
+		<derivedFrom>
+			<ref alias="System"/>
+		</derivedFrom>
+		<description>This CI specifies a network connected printer.</description>
+		<setSimpleValue attAlias="Name">Net Printer</setSimpleValue>
+		<setSimpleValue attAlias="icon">netprinter</setSimpleValue>
+	</template>
+
+	<template alias="Firewall">
+		<derivedFrom>
+			<ref alias="System"/>
+		</derivedFrom>
+		<description>This CI specifies a firewall system.</description>
+		<setSimpleValue attAlias="Name">Firewall</setSimpleValue>
+		<setSimpleValue attAlias="icon">firewall</setSimpleValue>
+	</template>
+
+	<template alias="Server">
+
+		<derivedFrom>
+			<ref alias="Computer"/>
+		</derivedFrom>
+		<description>This CI specifies one server computer system. A Server Computer System is used to host server applications.</description>
+		<setSimpleValue attAlias="Name">Server</setSimpleValue>
+		<setSimpleValue attAlias="icon">computer</setSimpleValue>
+	</template>
+	
+	<!--
+		=====================================================================
+		Management Definitions
+		===================================================================== 
+	 -->
+	  <template alias="Management" displayName="${Name}">
+		<derivedFrom>
+			<ref alias="Ci"/>
+		</derivedFrom>
+		<description>This CI defines Management CI's.</description>
+		<attribute attAlias="Name" displayName="Name">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Management</setSimpleValue>
+		<setSimpleValue attAlias="icon">management</setSimpleValue>
+	</template>
+	
+	 <template alias="OperationalStatus">
+		<derivedFrom>
+			<ref alias="Management"/>
+		</derivedFrom>
+		<description>The operational status for a CI. Typically this would be In Production, In Testing, Under installation etc.</description>
+		<setSimpleValue attAlias="Name">Operational Status</setSimpleValue>
+		<setSimpleValue attAlias="icon">status</setSimpleValue>
+	</template>
+	 <template alias="Maintenance">
+		<derivedFrom>
+			<ref alias="Management"/>
+		</derivedFrom>
+		<description>This CI describes the maintenance aggrement. The maintenance are typically associated with a Service, Software and Hardware.</description>
+		<attribute attAlias="Maintenance_Org" displayName="Maintenance Org.">
+			<complexType>
+				<ref alias="Company"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Maintenance_Agreement" displayName="Maintenance Agreement">
+			<simpleType>xs:anyURI</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Maintenance_Level" displayName="Maintenance Level">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Specialist" displayName="Specialist (internal)">
+			<complexType>
+				<ref alias="Person"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Maintenance</setSimpleValue>
+		<setSimpleValue attAlias="icon">maintenance</setSimpleValue>
+	</template>
+	 
+	<template alias="Financial">
+		<derivedFrom>
+			<ref alias="Management"/>
+		</derivedFrom>
+		<description>This CI describes the financial aspect of a CI.</description>
+		<attribute attAlias="Purchase_Date" displayName="Purchase Date">
+			<simpleType>xs:date</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Depreciation" displayName="Depreciation (years)">
+			<simpleType>xs:integer</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Maintenance_Fee" displayName="Maintenance Fee (USD/Year)">
+			<simpleType>xs:integer</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Purchase_Prise" displayName="Purchase Prise (USD)">
+			<simpleType>xs:integer</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Purchase_Contract" displayName="Purchase Contract">
+			<simpleType>xs:anyURI</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Financials</setSimpleValue>
+		<setSimpleValue attAlias="icon">asset</setSimpleValue>
+	</template>
+	
+	<!--
+		=====================================================================
+		Organisation Definitions
+		===================================================================== 
+	 -->
+	 <template alias="Organisation" displayName="${Name}">
+		<derivedFrom>
+			<ref alias="Ci"/>
+		</derivedFrom>
+		<description>This CI defines an Organisation. A organisation is something that must be knowned in the datacenter, like a Company, Location and People etc.</description>
+		<attribute attAlias="Name" displayName="Name">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Organisation</setSimpleValue>
+		<setSimpleValue attAlias="icon">organisation</setSimpleValue>
+	</template>
+	<template alias="Person">
+		<derivedFrom>
+			<ref alias="Organisation"/>
+		</derivedFrom>
+		<description>This CI describes one Person.</description>
+		<attribute attAlias="Email" displayName="E-Mail">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>unbound</maxOccurs>
+				<minOccurs>0</minOccurs>
+			</policy>
+		</attribute>		
+		<attribute attAlias="Telephone" displayName="Telephone">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>unbound</maxOccurs>
+				<minOccurs>0</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Organisation" displayName="Organization">
+			<complexType>
+				<ref alias="Company"/>
+				<refType><ref alias="BelongsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Person</setSimpleValue>
+		<setSimpleValue attAlias="icon">people</setSimpleValue>
+	</template>
+
+	 <template alias="Location">
+		<derivedFrom>
+			<ref alias="Organisation"/>
+		</derivedFrom>
+		<description>This CI defines a Location. A location is defined by a symbolic name.</description>
+		
+		<attribute attAlias="Street_Address" displayName="Street Address">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>		
+		
+		<attribute attAlias="Postal_Code" displayName="Postal Code">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>		
+		
+		<attribute attAlias="City" displayName="City">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>			
+		</attribute>		
+		
+		<attribute attAlias="Country" displayName="Contry">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>			
+		</attribute>		
+		
+		
+		<setSimpleValue attAlias="Name" id="7971385341813654577">Location</setSimpleValue>
+		<setSimpleValue attAlias="icon" id="-2043132284837370430">location</setSimpleValue>
+	</template>
+	
+	<template alias="Company">
+		<derivedFrom>
+			<ref alias="Organisation"/>
+		</derivedFrom>
+		<description>This CI describes one company.</description>
+		<attribute attAlias="Web_Address" displayName="Web Address">
+			<simpleType>xs:anyURI</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Telephone" displayName="Telephone">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>unbound</maxOccurs>
+				<minOccurs>0</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Company</setSimpleValue>
+		<setSimpleValue attAlias="icon">company</setSimpleValue>
+	</template>
+	
+	<!--
+		=====================================================================
+		Service Definitions
+		===================================================================== 
+	 -->
+	<template alias="Service" displayName="${Name}">
+		<derivedFrom>
+			<ref alias="Ci"/>
+		</derivedFrom>
+		<description>This CI defines a Service. All hardware and software belongs to a service. A service defines a number of SLA&apos;s and has many company that uses it.</description>
+		<attribute attAlias="UsedBy" displayName="Used By">
+			<complexType>
+				<ref alias="Company"/>
+				<refType><ref alias="PointsTo"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>unbound</maxOccurs>
+				<minOccurs>0</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Uses" displayName="Uses">
+			<complexType>
+				<ref alias="Service"/>
+				<refType><ref alias="DependsOn"/></refType>
+			</complexType>
+			<policy>
+				<maxOccurs>unbound</maxOccurs>
+				<minOccurs>0</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="SLA" displayName="SLA">
+			<simpleType>xs:anyURI</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<attribute attAlias="Name" displayName="Name">
+			<simpleType>xs:string</simpleType>
+			<policy>
+				<maxOccurs>1</maxOccurs>
+				<minOccurs>1</minOccurs>
+			</policy>
+		</attribute>
+		<setSimpleValue attAlias="Name">Service</setSimpleValue>
+		<setSimpleValue attAlias="icon">service</setSimpleValue>
+	</template>
+	
+	<template alias="NetworkService">
+		<derivedFrom>
+			<ref alias="Service"/>
+		</derivedFrom>
+		<description>This CI defines a Network Service. Any resource can belong to a service. A service defines a number of SLA&apos;s and has many company that uses it.</description>
+		<setSimpleValue attAlias="icon">network_service</setSimpleValue>
+	</template>
+	
+	<template alias="PlatformService">
+		<derivedFrom>
+			<ref alias="Service"/>
+		</derivedFrom>
+		<description>This CI defines a Platform Service. Any resource can belong to a service. A service defines a number of SLA&apos;s and has many company that uses it.</description>
+		<setSimpleValue attAlias="icon">platform_service</setSimpleValue>
+	</template>
+	
+	<template alias="ApplicationService">
+		<derivedFrom>
+			<ref alias="Service"/>
+		</derivedFrom>
+		<description>This CI defines an Application Service. Any resource can belong to a service. A service defines a number of SLA&apos;s and has many company that uses it.</description>
+		<setSimpleValue attAlias="icon">application_service</setSimpleValue>
+	</template>
+	
+</templates>
+
+<instances>
+
+</instances>
+</onecmdb>

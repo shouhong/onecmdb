@@ -1,0 +1,34 @@
+Aug 3, 2016 2:09:00 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 3, 2016 2:09:00 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 3, 2016 2:09:00 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1573 ms
+Aug 3, 2016 2:09:00 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 3, 2016 2:09:00 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 3, 2016 2:09:00 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 3, 2016 2:09:02 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 3, 2016 2:09:02 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 3, 2016 2:09:03 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive ROOT.war
+Aug 3, 2016 2:09:12 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 3, 2016 2:09:13 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 3, 2016 2:09:13 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 3, 2016 2:09:13 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 3, 2016 2:09:13 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 3, 2016 2:09:13 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/42  config=null
+Aug 3, 2016 2:09:14 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 3, 2016 2:09:14 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 13807 ms

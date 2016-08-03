@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Aug 02 09:20:53 UTC 2016
+onecmdb-nagios-utils-1.0.jar>=
+onecmdb-nagios-utils-1.0.pom>=
+onecmdb-nagios-utils-1.0-sources.jar>=

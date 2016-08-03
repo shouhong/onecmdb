@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GroupDescription name="Hosts" icon="onecmdb/content/Content/Images/Icons/computer16.gif">
+	
+	<GraphQuery>
+		<ItemOffspringSelector id="hostgroup" template="NAGIOS_Hostgroup">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="host" template="NAGIOS_Host" primary="true">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+	
+		<ItemOffspringSelector id="service" template="NAGIOS_Service">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+
+		<ItemRelationSelector id="host2group" template="Reference">
+			<target>host</target>
+			<source>hostgroup</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="service2host" template="Reference">
+			<target>host</target>
+			<source>service</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+	
+		
+	
+	
+	</GraphQuery>
+
+	<Presentation>
+		<Table id="table-1" name="Groups">
+			<visible>true</visible>
+			<primary>host</primary>
+			<TableView asList="true" id="host">
+				<Column object="host" render="internal_displayname" asList="true">
+					<label>Name</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				
+				<Column object="host2group" render="size" asList="true">
+					<label>Hosts</label>
+					<reference>true</reference>
+					<type>Host</type>
+				</Column>
+				
+				<Column object="service2host" render="size" asList="true">
+					<label>Services</label>
+					<reference>true</reference>
+					<type>Service</type>
+				</Column>
+				
+			</TableView>
+		</Table>
+		
+	</Presentation>
+
+	<LifeCycle>
+		<Create>
+			<instances>
+			</instances>
+			
+			<parameters>
+				<Input id="a" name="Platform"/>
+				<Input id="b" name="Install Dir"/>
+			</parameters>
+		</Create>
+		<Delete/>
+		<Import/>
+	</LifeCycle>
+	
+	
+</GroupDescription>
+
+
+
+
+

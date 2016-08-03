@@ -1,0 +1,17 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javax.management</groupId>
+  <artifactId>jmxremote_optional</artifactId>
+  <version>1.0.1_04</version>
+  <name>JMX(TM) Remote API RI, Optional Packages</name>
+  <description>
+    Java Management Extensions (JMX) technology provides the tools for building distributed, 
+    Web-based, modular and dynamic solutions for managing and monitoring devices, applications, 
+    and service-driven networks. By design, this standard is suitable for adapting legacy systems, 
+    implementing new management and monitoring solutions, and plugging into those of the future.
+  </description>
+  <url>http://java.sun.com/products/JavaManagement</url>
+  <distributionManagement>
+    <downloadUrl>http://java.sun.com/products/JavaManagement/download.html</downloadUrl>
+  </distributionManagement>
+</project>

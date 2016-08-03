@@ -1,0 +1,14 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>javax.security</groupId>
+  <artifactId>jacc</artifactId>
+  <version>1.0</version>
+  <name>Java Authorization Contract for Containers</name>
+  <description>
+    The javax.security package. It is appropriate for inclusion in a classpath, and may be added to a Java 2 installation.
+  </description>
+  <url>http://java.sun.com/j2ee/javaacc/</url>
+  <distributionManagement>
+    <downloadUrl>http://java.sun.com/j2ee/javaacc/</downloadUrl>
+  </distributionManagement>
+</project>

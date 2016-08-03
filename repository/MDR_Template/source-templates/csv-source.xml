@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Application Data Source description, CSV</comment>
+<entry key="type">csv</entry>
+<entry key="csv.url">file:import/cmdb_application.csv</entry>
+<entry key="csv.headerLines">2</entry>
+<entry key="csv.delimiter">,</entry>
+<entry key="csv.colTextDel">"</entry>
+</properties>

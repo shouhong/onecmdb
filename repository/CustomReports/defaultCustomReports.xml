@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<CustomReports>
+	
+	<CustomReport>
+		<name>Export System/OS/Network to CSV</name>
+		<description>Export all system/os/network CIs formatted as csv.</description>
+		<group>Basic Model</group>
+		<definition>CustomReports/CMDB/system/CMDBSystemReportView.xml</definition>
+	</CustomReport>
+	<CustomReport>
+		<name>Export Application to CSV</name>
+		<description>Export all application CIs formatted as csv.</description>
+		<group>Basic Model</group>
+		<definition>CustomReports/CMDB/system/CMDBApplicationReportView.xml</definition>
+	</CustomReport>
+	
+	<CustomReport>
+		<name>CMDB Template</name>
+		<description>Export all templates as html.</description>
+		<group>CMDB</group>
+		<definition>CustomReports/CMDB/templates/CMDBTemplateReportView.xml</definition>
+	</CustomReport>
+	
+	<CustomReport>
+		<name>Export Nagios model to Nagios native format</name>
+		<description>Export nagios model data to Nagios native format.</description>
+		<group>Nagios</group>
+		<definition>CustomReports/nagios/OneCMDB2NagiosNative.xml</definition>
+	</CustomReport>
+	
+	
+</CustomReports>

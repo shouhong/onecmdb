@@ -1,0 +1,26 @@
+h1 {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	font-family: Arial;
+	margin-bottom: 5px;
+	padding-bottom: 1px;
+}
+
+h2 {
+	font-family: Arial;
+	margin-bottom: 1px;
+	padding-bottom: 0px;
+}
+
+h3 {
+	font-family: Arial;
+	margin-bottom: 1px;
+	padding-bottom: 0px;
+	
+}
+
+p {
+	margin-top: 1px;
+	margin-left: 16px;
+}
+

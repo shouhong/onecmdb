@@ -1,0 +1,868 @@
+Aug 2, 2016 9:41:35 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 9:41:36 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:41:36 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 732 ms
+Aug 2, 2016 9:41:36 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 9:41:36 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 9:41:36 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 9:41:36 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 9:41:36 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 9:41:37 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 9:41:38 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 9:41:38 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 9:41:39 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:41:39 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 9:41:39 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/43  config=null
+Aug 2, 2016 9:41:39 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 9:41:39 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3563 ms
+Aug 2, 2016 9:45:42 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:45:43 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 9:45:43 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:45:43 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 9:47:38 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 9:47:38 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:47:38 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 764 ms
+Aug 2, 2016 9:47:38 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 9:47:38 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 9:47:38 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 9:47:38 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 9:47:39 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 9:47:39 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 9:47:39 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 9:47:39 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 9:47:40 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:47:40 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 9:47:40 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/59  config=null
+Aug 2, 2016 9:47:40 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 9:47:40 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2568 ms
+Aug 2, 2016 9:58:20 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/onecmdb-modeller]
+Aug 2, 2016 9:58:20 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/onecmdb-desktop]
+Aug 2, 2016 9:58:20 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context []
+Aug 2, 2016 9:58:20 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/itil]
+Aug 2, 2016 9:58:30 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 9:58:30 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 9:58:31 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:58:31 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 9:58:31 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 9:58:31 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 9:58:32 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 9:58:32 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:58:32 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 9:59:05 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 9:59:05 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:59:05 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 755 ms
+Aug 2, 2016 9:59:05 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 9:59:05 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 9:59:05 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 9:59:06 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 9:59:06 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 9:59:06 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 9:59:21 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 9:59:21 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 9:59:21 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/58  config=null
+Aug 2, 2016 9:59:21 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 9:59:21 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 16476 ms
+Aug 2, 2016 9:59:21 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Use class resource repository config
+Aug 2, 2016 9:59:21 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Repository Root is set to '/root/java/test/onecmdb/repository'
+Aug 2, 2016 9:59:21 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl <init>
+INFO: Starting ModelServiceImpl....
+Aug 2, 2016 9:59:22 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=5f79e11d)
+Aug 2, 2016 9:59:22 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'Configuration/content.cfg' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 9:59:22 AM org.onecmdb.ui.gwt.desktop.server.service.model.ConfigurationFactory loadConfigFile
+INFO: OK - Configuration loaded...
+Aug 2, 2016 9:59:22 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Core/Configuration/onecmdb.xml' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 9:59:22 AM org.onecmdb.ui.gwt.desktop.server.service.model.CMDBWebServiceFactory getOneCMDBWebService
+INFO: OneCMDB WSDL URL 'http://localhost:8080/webservice/onecmdb'
+Aug 2, 2016 9:59:28 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******)
+Aug 2, 2016 9:59:28 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******) --> token=47d77d9e
+Aug 2, 2016 9:59:29 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl getDesktopConfig
+INFO: getDesktopConfig(username=admin, token=47d77d9e, role=null)
+Aug 2, 2016 9:59:29 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl getDesktopConfig
+INFO: getDesktopConfig(username=admin, token=47d77d9e, role=null) load default OneCMDB_Desktop/defaultView.xml
+Aug 2, 2016 9:59:29 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Desktop/defaultView.xml' to 'org.onecmdb.ui.gwt.desktop.client.service.model.CMDBDesktopConfig' with 'org.onecmdb.ui.gwt.desktop.server.service.content.adapter.GXTModelContentAdapter'
+Aug 2, 2016 10:00:52 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:00:53 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 10:00:54 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:00:54 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 10:02:29 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 10:02:30 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:02:30 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1204 ms
+Aug 2, 2016 10:02:30 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 10:02:30 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 10:02:30 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 10:02:30 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 10:02:31 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 10:02:31 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 10:02:31 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:02:31 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 10:02:31 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/65  config=null
+Aug 2, 2016 10:02:31 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 10:02:32 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2080 ms
+Aug 2, 2016 10:02:32 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Use class resource repository config
+Aug 2, 2016 10:02:32 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Repository Root is set to '/root/java/test/onecmdb/repository'
+Aug 2, 2016 10:02:33 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl <init>
+INFO: Starting ModelServiceImpl....
+Aug 2, 2016 10:02:33 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=47d77d9e)
+Aug 2, 2016 10:02:33 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'Configuration/content.cfg' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:02:33 AM org.onecmdb.ui.gwt.desktop.server.service.model.ConfigurationFactory loadConfigFile
+INFO: OK - Configuration loaded...
+Aug 2, 2016 10:02:33 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Core/Configuration/onecmdb.xml' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:02:33 AM org.onecmdb.ui.gwt.desktop.server.service.model.CMDBWebServiceFactory getOneCMDBWebService
+INFO: OneCMDB WSDL URL 'http://localhost:8080/webservice/onecmdb'
+Aug 2, 2016 10:02:34 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 404 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:02:38 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******)
+Aug 2, 2016 10:02:38 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 404 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:03:01 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context []
+Aug 2, 2016 10:03:06 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=47d77d9e)
+Aug 2, 2016 10:03:06 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:03:10 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=47d77d9e)
+Aug 2, 2016 10:03:10 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:03:12 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******)
+Aug 2, 2016 10:03:12 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:03:19 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=47d77d9e)
+Aug 2, 2016 10:03:19 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:03:33 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:03:34 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 10:03:34 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:03:34 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 10:03:37 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 10:03:37 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:03:37 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1196 ms
+Aug 2, 2016 10:03:37 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 10:03:37 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 10:03:37 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 10:03:38 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 10:03:38 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 10:03:38 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 10:03:39 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:03:39 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 10:03:39 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/50  config=null
+Aug 2, 2016 10:03:39 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 10:03:39 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Use class resource repository config
+Aug 2, 2016 10:03:39 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Repository Root is set to '/root/java/test/onecmdb/repository'
+Aug 2, 2016 10:03:39 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2175 ms
+Aug 2, 2016 10:03:39 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl <init>
+INFO: Starting ModelServiceImpl....
+Aug 2, 2016 10:03:40 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=47d77d9e)
+Aug 2, 2016 10:03:40 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'Configuration/content.cfg' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:03:40 AM org.onecmdb.ui.gwt.desktop.server.service.model.ConfigurationFactory loadConfigFile
+INFO: OK - Configuration loaded...
+Aug 2, 2016 10:03:40 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Core/Configuration/onecmdb.xml' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:03:40 AM org.onecmdb.ui.gwt.desktop.server.service.model.CMDBWebServiceFactory getOneCMDBWebService
+INFO: OneCMDB WSDL URL 'http://localhost:8080/webservice/onecmdb'
+Aug 2, 2016 10:03:41 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:03:44 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******)
+Aug 2, 2016 10:03:44 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:04:18 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=47d77d9e)
+Aug 2, 2016 10:04:18 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:04:21 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******)
+Aug 2, 2016 10:04:21 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:04:30 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:04:31 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 10:04:31 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:04:31 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 10:04:36 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 10:04:36 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:04:36 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1104 ms
+Aug 2, 2016 10:04:36 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 10:04:36 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 10:04:36 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 10:04:37 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 10:04:37 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 10:04:38 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 10:04:46 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:04:46 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 10:04:46 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/67  config=null
+Aug 2, 2016 10:04:46 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 10:04:46 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Use class resource repository config
+Aug 2, 2016 10:04:46 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Repository Root is set to '/root/java/test/onecmdb/repository'
+Aug 2, 2016 10:04:46 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 10333 ms
+Aug 2, 2016 10:04:46 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl <init>
+INFO: Starting ModelServiceImpl....
+Aug 2, 2016 10:04:47 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=47d77d9e)
+Aug 2, 2016 10:04:47 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'Configuration/content.cfg' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:04:47 AM org.onecmdb.ui.gwt.desktop.server.service.model.ConfigurationFactory loadConfigFile
+INFO: OK - Configuration loaded...
+Aug 2, 2016 10:04:47 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Core/Configuration/onecmdb.xml' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:04:47 AM org.onecmdb.ui.gwt.desktop.server.service.model.CMDBWebServiceFactory getOneCMDBWebService
+INFO: OneCMDB WSDL URL 'http://localhost:8080/webservice/onecmdb'
+Aug 2, 2016 10:04:53 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******)
+Aug 2, 2016 10:04:53 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******) --> token=3020463e
+Aug 2, 2016 10:04:53 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl getDesktopConfig
+INFO: getDesktopConfig(username=admin, token=3020463e, role=null)
+Aug 2, 2016 10:04:53 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl getDesktopConfig
+INFO: getDesktopConfig(username=admin, token=3020463e, role=null) load default OneCMDB_Desktop/defaultView.xml
+Aug 2, 2016 10:04:53 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Desktop/defaultView.xml' to 'org.onecmdb.ui.gwt.desktop.client.service.model.CMDBDesktopConfig' with 'org.onecmdb.ui.gwt.desktop.server.service.content.adapter.GXTModelContentAdapter'
+Aug 2, 2016 10:05:26 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:05:27 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 10:05:27 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:05:27 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 10:06:45 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 10:06:45 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:06:45 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1075 ms
+Aug 2, 2016 10:06:46 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 10:06:46 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 10:06:46 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 10:06:46 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 10:06:47 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 10:06:47 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 10:06:47 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 10:06:55 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:06:55 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 10:06:55 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/63  config=null
+Aug 2, 2016 10:06:55 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 10:06:55 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Use class resource repository config
+Aug 2, 2016 10:06:55 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Repository Root is set to '/root/java/test/onecmdb/repository'
+Aug 2, 2016 10:06:55 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9858 ms
+Aug 2, 2016 10:06:55 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl <init>
+INFO: Starting ModelServiceImpl....
+Aug 2, 2016 10:06:56 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=3020463e)
+Aug 2, 2016 10:06:56 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'Configuration/content.cfg' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:06:56 AM org.onecmdb.ui.gwt.desktop.server.service.model.ConfigurationFactory loadConfigFile
+INFO: OK - Configuration loaded...
+Aug 2, 2016 10:06:56 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Core/Configuration/onecmdb.xml' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:06:56 AM org.onecmdb.ui.gwt.desktop.server.service.model.CMDBWebServiceFactory getOneCMDBWebService
+INFO: OneCMDB WSDL URL 'http://localhost:8080/webservice/onecmdb'
+Aug 2, 2016 10:07:01 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******)
+Aug 2, 2016 10:07:01 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******) --> token=6106dc2d
+Aug 2, 2016 10:07:01 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl getDesktopConfig
+INFO: getDesktopConfig(username=admin, token=6106dc2d, role=null)
+Aug 2, 2016 10:07:01 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl getDesktopConfig
+INFO: getDesktopConfig(username=admin, token=6106dc2d, role=null) load default OneCMDB_Desktop/defaultView.xml
+Aug 2, 2016 10:07:01 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Desktop/defaultView.xml' to 'org.onecmdb.ui.gwt.desktop.client.service.model.CMDBDesktopConfig' with 'org.onecmdb.ui.gwt.desktop.server.service.content.adapter.GXTModelContentAdapter'
+Aug 2, 2016 10:07:18 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:07:19 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 10:07:20 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:07:20 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 10:07:47 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 10:07:47 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:07:47 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1164 ms
+Aug 2, 2016 10:07:47 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 10:07:47 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 10:07:47 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 10:07:48 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 10:07:48 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 10:07:49 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 10:07:50 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 10:08:01 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:08:01 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 10:08:01 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/96  config=null
+Aug 2, 2016 10:08:01 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 10:08:01 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 14182 ms
+Aug 2, 2016 10:12:01 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/onecmdb-modeller]
+Aug 2, 2016 10:12:01 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/onecmdb-desktop]
+Aug 2, 2016 10:12:01 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context []
+Aug 2, 2016 10:12:01 AM org.apache.catalina.startup.HostConfig checkResources
+WARNING: Error while removing context []
+java.lang.NoClassDefFoundError: org/apache/log4j/spi/ThrowableInformation
+	at org.apache.log4j.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at org.apache.log4j.Category.forcedLog(Category.java:379)
+	at org.apache.log4j.Category.log(Category.java:844)
+	at org.apache.commons.logging.impl.Log4JLogger.error(Log4JLogger.java:193)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:3774)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4339)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:892)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1019)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1187)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:292)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1305)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1569)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1578)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1558)
+	at java.lang.Thread.run(Thread.java:595)
+Aug 2, 2016 10:12:01 AM org.apache.catalina.startup.HostConfig checkResources
+WARNING: Error during context [] destroy
+java.lang.NoClassDefFoundError: org/apache/log4j/spi/ThrowableInformation
+	at org.apache.log4j.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at org.apache.log4j.Category.forcedLog(Category.java:379)
+	at org.apache.log4j.Category.log(Category.java:844)
+	at org.apache.commons.logging.impl.Log4JLogger.error(Log4JLogger.java:193)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:3774)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4339)
+	at org.apache.catalina.core.ContainerBase.destroy(ContainerBase.java:1132)
+	at org.apache.catalina.core.StandardContext.destroy(StandardContext.java:4443)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1025)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1187)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:292)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1305)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1569)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1578)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1558)
+	at java.lang.Thread.run(Thread.java:595)
+Aug 2, 2016 10:12:01 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/itil]
+Aug 2, 2016 10:12:51 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 10:12:51 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 10:13:51 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 10:14:12 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 10:14:12 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 10:15:02 AM org.apache.commons.modeler.Registry unregisterComponent
+SEVERE: Error unregistering mbean 
+javax.management.RuntimeErrorException: Error thrown in preDeregister method
+	at com.sun.jmx.mbeanserver.BaseMetaDataImpl.preDeregisterInvoker(BaseMetaDataImpl.java:127)
+	at com.sun.jmx.mbeanserver.MetaDataImpl.preDeregisterInvoker(MetaDataImpl.java:251)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:377)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:527)
+	at org.apache.commons.modeler.Registry.unregisterComponent(Registry.java:643)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:3960)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:759)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:739)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:524)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:904)
+	at org.apache.catalina.startup.HostConfig.deployDirectories(HostConfig.java:867)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:474)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1190)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:292)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1305)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1569)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1578)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1558)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: java.lang.NoClassDefFoundError: org/apache/log4j/spi/ThrowableInformation
+	at org.apache.log4j.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at org.apache.log4j.Category.forcedLog(Category.java:379)
+	at org.apache.log4j.Category.log(Category.java:844)
+	at org.apache.commons.logging.impl.Log4JLogger.error(Log4JLogger.java:193)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:3774)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4339)
+	at org.apache.catalina.core.StandardContext.preDeregister(StandardContext.java:5068)
+	at org.apache.commons.modeler.BaseModelMBean.preDeregister(BaseModelMBean.java:1410)
+	at com.sun.jmx.mbeanserver.BaseMetaDataImpl.preDeregisterInvoker(BaseMetaDataImpl.java:122)
+	... 19 more
+Aug 2, 2016 10:15:02 AM org.apache.catalina.core.NamingContextListener lifecycleEvent
+SEVERE: Creation of the naming context failed: javax.naming.NamingException: Context is read only
+Aug 2, 2016 10:49:43 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context []
+Aug 2, 2016 10:49:43 AM org.apache.commons.modeler.Registry unregisterComponent
+SEVERE: Error unregistering mbean 
+javax.management.RuntimeErrorException: Error thrown in preDeregister method
+	at com.sun.jmx.mbeanserver.BaseMetaDataImpl.preDeregisterInvoker(BaseMetaDataImpl.java:127)
+	at com.sun.jmx.mbeanserver.MetaDataImpl.preDeregisterInvoker(MetaDataImpl.java:251)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.unregisterMBean(DefaultMBeanServerInterceptor.java:377)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.unregisterMBean(JmxMBeanServer.java:527)
+	at org.apache.commons.modeler.Registry.unregisterComponent(Registry.java:643)
+	at org.apache.catalina.core.ContainerBase.destroy(ContainerBase.java:1140)
+	at org.apache.catalina.core.StandardContext.destroy(StandardContext.java:4443)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1025)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1187)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:292)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1305)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1569)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1578)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1558)
+	at java.lang.Thread.run(Thread.java:595)
+Caused by: java.lang.NoClassDefFoundError: org/apache/log4j/spi/ThrowableInformation
+	at org.apache.log4j.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at org.apache.log4j.Category.forcedLog(Category.java:379)
+	at org.apache.log4j.Category.log(Category.java:844)
+	at org.apache.commons.logging.impl.Log4JLogger.error(Log4JLogger.java:193)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:3774)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4339)
+	at org.apache.catalina.core.StandardContext.preDeregister(StandardContext.java:5068)
+	at org.apache.commons.modeler.BaseModelMBean.preDeregister(BaseModelMBean.java:1410)
+	at com.sun.jmx.mbeanserver.BaseMetaDataImpl.preDeregisterInvoker(BaseMetaDataImpl.java:122)
+	... 15 more
+Aug 2, 2016 10:49:55 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:49:56 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 10:49:56 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:49:56 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 10:49:59 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 10:49:59 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:49:59 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1121 ms
+Aug 2, 2016 10:49:59 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 10:49:59 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 10:49:59 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 10:50:00 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 10:50:00 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 10:50:01 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 10:50:01 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 10:50:01 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 10:50:01 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:50:02 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 10:50:02 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/57  config=null
+Aug 2, 2016 10:50:02 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 10:50:02 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2585 ms
+Aug 2, 2016 10:51:26 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:51:27 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 10:51:27 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:51:27 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 10:52:09 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 10:52:09 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:52:09 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1110 ms
+Aug 2, 2016 10:52:09 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 10:52:09 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 10:52:10 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 10:52:10 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 10:52:11 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 10:52:11 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 10:52:11 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:52:11 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 10:52:11 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/48  config=null
+Aug 2, 2016 10:52:11 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 10:52:12 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2234 ms
+Aug 2, 2016 10:52:16 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Use class resource repository config
+Aug 2, 2016 10:52:16 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory get
+INFO: Repository Root is set to '/root/java/test/onecmdb/repository'
+Aug 2, 2016 10:52:16 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl <init>
+INFO: Starting ModelServiceImpl....
+Aug 2, 2016 10:52:16 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl validateToken
+INFO: validateToken(token=6106dc2d)
+Aug 2, 2016 10:52:16 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'Configuration/content.cfg' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:52:16 AM org.onecmdb.ui.gwt.desktop.server.service.model.ConfigurationFactory loadConfigFile
+INFO: OK - Configuration loaded...
+Aug 2, 2016 10:52:16 AM org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory getAdaptor
+INFO: Adapt file 'OneCMDB_Core/Configuration/onecmdb.xml' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+Aug 2, 2016 10:52:16 AM org.onecmdb.ui.gwt.desktop.server.service.model.CMDBWebServiceFactory getOneCMDBWebService
+INFO: OneCMDB WSDL URL 'http://localhost:8080/webservice/onecmdb'
+Aug 2, 2016 10:52:17 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:52:20 AM org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl autenticate
+INFO: autenticate(username=admin, pwd=*******)
+Aug 2, 2016 10:52:20 AM org.codehaus.xfire.transport.http.HttpChannel sendViaClient
+SEVERE: Server returned error code = 400 for URI : http://localhost:8080/webservice/onecmdb. Check server logs for details
+Aug 2, 2016 10:57:50 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:57:51 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 10:57:51 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 10:57:51 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 11:01:56 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 11:01:56 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:01:56 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1106 ms
+Aug 2, 2016 11:01:56 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 11:01:56 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 11:01:56 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 11:01:56 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 11:01:57 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 11:01:57 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive ROOT.war
+Aug 2, 2016 11:02:06 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 11:02:07 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 11:02:07 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 11:02:07 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:02:07 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 11:02:07 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/50  config=null
+Aug 2, 2016 11:02:07 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 11:02:07 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11607 ms
+Aug 2, 2016 11:40:57 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/onecmdb-modeller]
+Aug 2, 2016 11:40:57 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/onecmdb-desktop]
+Aug 2, 2016 11:40:57 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context []
+Aug 2, 2016 11:40:57 AM org.apache.catalina.startup.HostConfig checkResources
+WARNING: Error while removing context []
+java.lang.NoClassDefFoundError: org/apache/log4j/spi/ThrowableInformation
+	at org.apache.log4j.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at org.apache.log4j.Category.forcedLog(Category.java:379)
+	at org.apache.log4j.Category.log(Category.java:844)
+	at org.apache.commons.logging.impl.Log4JLogger.error(Log4JLogger.java:193)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:3774)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4339)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:892)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1019)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1187)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:292)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1305)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1569)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1578)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1558)
+	at java.lang.Thread.run(Thread.java:595)
+Aug 2, 2016 11:40:57 AM org.apache.catalina.startup.HostConfig checkResources
+WARNING: Error during context [] destroy
+java.lang.NoClassDefFoundError: org/apache/log4j/spi/ThrowableInformation
+	at org.apache.log4j.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+	at org.apache.log4j.Category.forcedLog(Category.java:379)
+	at org.apache.log4j.Category.log(Category.java:844)
+	at org.apache.commons.logging.impl.Log4JLogger.error(Log4JLogger.java:193)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:3774)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4339)
+	at org.apache.catalina.core.ContainerBase.destroy(ContainerBase.java:1132)
+	at org.apache.catalina.core.StandardContext.destroy(StandardContext.java:4443)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1025)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1187)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:292)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1305)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1569)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1578)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1558)
+	at java.lang.Thread.run(Thread.java:595)
+Aug 2, 2016 11:40:57 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/itil]
+Aug 2, 2016 11:41:37 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive ROOT.war
+Aug 2, 2016 11:41:55 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 11:41:55 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 11:42:06 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 11:42:26 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 11:42:26 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 11:42:53 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:42:54 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 11:42:55 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:42:55 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 11:43:47 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 11:43:47 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:43:47 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1124 ms
+Aug 2, 2016 11:43:47 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 11:43:47 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 11:43:47 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 11:43:48 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 11:43:48 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 11:43:49 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive ROOT.war
+Aug 2, 2016 11:43:58 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 11:43:59 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 11:43:59 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 11:43:59 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:43:59 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 11:43:59 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/11  config=null
+Aug 2, 2016 11:43:59 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 11:44:00 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12448 ms
+Aug 2, 2016 11:58:11 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:58:12 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Aug 2, 2016 11:58:12 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:58:12 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Aug 2, 2016 11:58:25 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /root/java/test/onecmdb/jre/lib/amd64/server:/root/java/test/onecmdb/jre/lib/amd64:/root/java/test/onecmdb/jre/../lib/amd64
+Aug 2, 2016 11:58:25 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:58:25 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1058 ms
+Aug 2, 2016 11:58:25 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Aug 2, 2016 11:58:25 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.17
+Aug 2, 2016 11:58:25 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Aug 2, 2016 11:58:26 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive itil.war
+Aug 2, 2016 11:58:26 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/itil/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 11:58:26 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive ROOT.war
+Aug 2, 2016 11:58:34 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-desktop.war
+Aug 2, 2016 11:58:34 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive onecmdb-modeller.war
+Aug 2, 2016 11:58:34 AM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/root/java/test/onecmdb/tomcat/webapps/onecmdb-modeller/WEB-INF/lib/servlet-api-2.2.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Aug 2, 2016 11:58:34 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Aug 2, 2016 11:58:34 AM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Aug 2, 2016 11:58:34 AM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/84  config=null
+Aug 2, 2016 11:58:34 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Aug 2, 2016 11:58:34 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9170 ms
+Aug 2, 2016 1:28:57 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GroupDescription name="Subnets" icon="onecmdb/content/Content/Images/Icons/network_16x16.png">
+	
+	<GraphQuery>
+		<ItemOffspringSelector id="subnet" template="SubNet" primary="true">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="ip" template="IPAddress">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+	
+		<ItemOffspringSelector id="platform" template="PlatformSystem">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+	
+		<ItemRelationSelector id="ip2platform" template="BelongsTo">
+			<target>platform</target>
+			<source>ip</source>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="ip2subnet" template="MemberOf">
+			<target>subnet</target>
+			<source>ip</source>
+		</ItemRelationSelector>
+		
+		
+	</GraphQuery>
+
+	<Presentation>
+		<Table id="subnets" name="Subnets">
+			<visible>true</visible>
+			<primary>subnet</primary>
+			<TableView asList="true" id="subnet">
+				<Column object="subnet" render="internal_displayname" asList="true">
+					<label>Subnet</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				<Column object="subnet" render="value_numberOfHosts.value" asList="true">
+					<label>Max IPs</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				<Column object="ip2subnet" render="size" asList="true">
+					<label>IP Addresss</label>
+					<reference>true</reference>
+					<type>Addresses</type>
+					<complexType>false</complexType>
+				</Column>
+				
+			</TableView>
+			
+			<TableView asList="true" id="ip2subnet">
+				<Column object="ip" render="internal_displayname" asList="true">
+					<label>IP Address</label>
+				</Column>
+			</TableView>
+		</Table>
+		<Graph id="graph1" name="Platform - Subnets Graph">
+			<expression asSimpleList="true">subnet/ip/platform</expression>
+			<applet>
+				<code>
+					org.onecmdb.graphml.viewer.applet.GraphMLViewApplet.class
+				</code>
+				<archive>
+					onecmdb/content/Content/applet/graphml/onecmdb-applet.jar,
+					onecmdb/content/Content/applet/graphml/onecmdb-applet-dependencies.jar
+				</archive>
+				<param>
+					<url><![CDATA[
+						${baseURL}/onecmdb/export/output.graphml?name=GraphML/export.cfg&type=graphml&group=${group}&graphid=${graphid}
+					]]></url>
+					<nodeLabel>nodeLabel</nodeLabel>
+					<nodeImageLabel>nodeImage</nodeImageLabel>
+					<layout>force</layout>
+				</param>
+			</applet>
+		</Graph>
+	</Presentation>
+
+	<LifeCycle>
+		<Create>
+			<instances>
+			</instances>
+			
+			<parameters>
+				<Input id="a" name="Platform"/>
+				<Input id="b" name="Install Dir"/>
+			</parameters>
+		</Create>
+		<Delete/>
+		<Import/>
+	</LifeCycle>
+	
+	
+</GroupDescription>
+
+
+
+
+

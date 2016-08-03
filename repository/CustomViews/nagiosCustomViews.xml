@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<CustomViews>
+	<CustomView>
+		<name>Nagios View</name>
+		<description>Specilized view for nagios.</description>
+		<group>Nagios</group>
+		<definition>CustomViews/Nagios/NagiosView.xml</definition>
+	</CustomView>
+</CustomViews>

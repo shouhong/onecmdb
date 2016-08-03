@@ -1,0 +1,82 @@
+Lokomo OneCMDB
+====================================
+(Linux platform)
+
+Version: 2.1.0 (December 14 2009)
+
+OneCMDB is a Configuration Management Database (CMDB) for datacenters. The 
+system keeps track of assets, documents, people, RFCs, etc. and their relations.
+No programming is required to create and manage the CMDB. OneCMDB is ITIL 
+compliant.
+
+INSTALLATION
+------------
+
+This directory contains all files needed to run Lokomo OneCMDB 2.1.0.
+
+
+UNINSTALLATION
+------------
+
+Simply delete all files in this directory.
+
+
+RUNNING
+-------
+
+To start Lokomo OneCMDB 2.1.0, use the command:
+
+	$ bin/onemdb.sh start
+
+It will start the required programs neeeded; HDQLDB for data storage,
+and Apache Tomcat driving the business logic and the GUI.
+
+To open the included web GUI, use a browser and open: 
+
+  http://localhost:8080 
+
+In case you want to use OneCMDB from other computers, open the browser on the
+other computer and replace `localhost' with the name, or IP address, of this 
+computer. Remember to open the firewall (on this computer) to allow TCP requests
+on port 8080.
+
+
+STOPPING
+--------
+
+To stop Lokomo Lokomo OneCMDB 2.1.0, use the command:
+
+	$ bin/onemdb.sh stop
+
+It takes down the database and the Apache Tomcat in a controlled manner.
+
+
+THIRD PARTY APPLICATIONS
+------------------------
+			
+This directory contains third party software. For specific license 
+considirations, see respectivly directory:
+
+./jre: jre1.5.0_08 (updated to jdk-1_5_0_22-linux-amd64)
+./hsqldb: hsqldb_1_8_0_4
+./tomcat: apache-tomcat-5.5.17  (updated by copy ./fix/javax.activation.jar to ./tomcat/common/lib/)
+./nmap: nmap-2.54BETA37-1.i386
+
+		
+HOW TO BUILD
+------------------------
+1. Copy maven repository to user home: cp ./.m2 /root/
+2. Extract "./3rdpary/apache-maven-3.1.1-bin.tar.gz" and add "apache-maven-3.1.1/bin/mvn" to $PATH
+3. Go to "src" and execute "mvn clean install"
+
+
+HOWT TO DEPLOY AND RUN
+------------------------
+1. clean tomcat/webapps
+2. copy below files to tomcat/webapps
+  ./src/ROOT/target/ROOT.war
+  ./src/org.onecmdb.ui.gwt.itil/target/itil.war
+  ./src/org.onecmdb.ui.gwt.desktop/target/onecmdb-desktop.war
+  ./src/org.onecmdb.ui.gwt.modeller/target/onecmdb-modeller.war
+3. exeute "./bin/onecmdb.sh start"
+

@@ -1,0 +1,11 @@
+[Server@15e0be38]: [Thread[main,5,main]]: checkRunning(false) entered
+[Server@15e0be38]: [Thread[main,5,main]]: checkRunning(false) exited
+[Server@15e0be38]: Startup sequence initiated from main() method
+[Server@15e0be38]: Loaded properties from [/root/java/test/onecmdb/hsqldb/data/server.properties]
+[Server@15e0be38]: Initiating startup sequence...
+[Server@15e0be38]: Server socket opened successfully in 17 ms.
+[Server@15e0be38]: Database [index=0, id=0, db=file:test, alias=] opened sucessfully in 3779 ms.
+[Server@15e0be38]: Startup sequence completed in 3804 ms.
+[Server@15e0be38]: 2016-08-03 02:09:02.037 HSQLDB server 1.8.0 is online
+[Server@15e0be38]: To close normally, connect and execute SHUTDOWN SQL
+[Server@15e0be38]: From command line, use [Ctrl]+[C] to abort abruptly

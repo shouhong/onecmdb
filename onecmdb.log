@@ -1,0 +1,682 @@
+2016-08-02 12:02:47,175 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{3}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:47,180 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:47,184 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:47,185 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:47,185 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:47,185 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:47,231 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:02:47,238 INFO - QueryHandler.executeQuery(511) | Selector:NMAP_UDP_Port Found 0items, time:5ms, totalCount=0, time=1ms
+2016-08-02 12:02:47,240 INFO - QueryHandler.getConstraint2(1091) | RelationConstraint RelationSelector[off2ref] SourceRange Empty!
+2016-08-02 12:02:47,242 INFO - QueryHandler.getExpression(978) | RelationSelector[off2ref] SourceRange Empty!
+2016-08-02 12:02:47,243 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+11ms
+2016-08-02 12:02:47,244 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{13}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:48,354 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:48,357 INFO - QueryHandler.executeQuery(511) | Selector:Management Found 3items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:02:48,357 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 3 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:48,358 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=3, rfcs=0, txs=0} totalCount=-1
+4ms
+2016-08-02 12:02:48,358 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=3, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:48,373 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:48,376 INFO - QueryHandler.executeQuery(511) | Selector:OperationalStatus Found 0items, time:2ms, totalCount=0, time=0ms
+2016-08-02 12:02:48,377 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+3ms
+2016-08-02 12:02:48,377 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:48,382 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:48,385 INFO - QueryHandler.executeQuery(511) | Selector:Financial Found 0items, time:2ms, totalCount=0, time=1ms
+2016-08-02 12:02:48,385 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+3ms
+2016-08-02 12:02:48,385 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{3}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:48,390 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:48,393 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:48,394 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:48,394 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:48,394 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:48,399 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:48,402 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:48,403 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:48,403 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:48,403 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:48,407 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:48,410 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:48,410 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:48,410 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+2ms
+2016-08-02 12:02:48,410 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{3}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:48,415 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:48,420 INFO - QueryHandler.executeQuery(511) | Selector:Maintenance Found 0items, time:2ms, totalCount=0, time=0ms
+2016-08-02 12:02:48,422 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+3ms
+2016-08-02 12:02:48,422 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{7}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:49,130 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:49,133 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:49,134 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:49,134 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+4ms
+2016-08-02 12:02:49,135 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:49,189 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:02:49,196 INFO - QueryHandler.executeQuery(511) | Selector:Financial Found 8items, time:4ms, totalCount=8, time=2ms
+2016-08-02 12:02:49,196 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 8 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:49,201 INFO - QueryHandler.executeQuery(511) | Selector:Root Found 0items, time:4ms, totalCount=-1, time=0ms
+2016-08-02 12:02:49,203 INFO - QueryHandler.getExpression(998) | RelationSelector[off2ref] TargetRange Empty!
+2016-08-02 12:02:49,204 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=8, rfcs=0, txs=0} totalCount=8
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+14ms
+2016-08-02 12:02:49,204 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{15}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=8, rfcs=0, txs=0} totalCount=8
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:49,712 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:49,715 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:49,716 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:49,716 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:49,719 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{7}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:49,724 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:49,727 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:49,728 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:49,728 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:49,728 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:49,733 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:49,735 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:49,736 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:49,736 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:49,737 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:49,743 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:49,745 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:1ms, totalCount=-1, time=0ms
+2016-08-02 12:02:49,746 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:49,746 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:49,746 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{3}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:49,790 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:02:49,798 INFO - QueryHandler.executeQuery(511) | Selector:Maintenance Found 5items, time:5ms, totalCount=5, time=2ms
+2016-08-02 12:02:49,798 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 5 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:49,802 INFO - QueryHandler.executeQuery(511) | Selector:Root Found 4items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:02:49,808 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 4 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:49,812 INFO - QueryHandler.executeQuery(511) | Selector:Reference Found 10items, time:4ms, totalCount=-1, time=0ms
+2016-08-02 12:02:49,913 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=5, rfcs=0, txs=0} totalCount=5
+	Node<cache_serach>{offsprings=4, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=10, rfcs=0, txs=0} totalCount=-1
+122ms
+2016-08-02 12:02:49,913 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{123}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=5, rfcs=0, txs=0} totalCount=5
+	Node<cache_serach>{offsprings=4, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=10, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:50,443 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:50,446 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:50,447 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:50,447 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:50,447 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:50,483 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:02:50,490 INFO - QueryHandler.executeQuery(511) | Selector:OperationalStatus Found 3items, time:4ms, totalCount=3, time=2ms
+2016-08-02 12:02:50,490 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 3 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:50,498 INFO - QueryHandler.executeQuery(511) | Selector:Root Found 0items, time:7ms, totalCount=-1, time=0ms
+2016-08-02 12:02:50,504 INFO - QueryHandler.getExpression(998) | RelationSelector[off2ref] TargetRange Empty!
+2016-08-02 12:02:50,505 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=3, rfcs=0, txs=0} totalCount=3
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+21ms
+2016-08-02 12:02:50,505 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{22}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=3, rfcs=0, txs=0} totalCount=3
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:52,706 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:52,708 INFO - QueryHandler.executeQuery(511) | Selector:Monitoring Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:52,708 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:52,708 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+2ms
+2016-08-02 12:02:52,709 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{3}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:52,715 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:52,722 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS Found 0items, time:5ms, totalCount=12, time=1ms
+2016-08-02 12:02:52,723 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=12
+7ms
+2016-08-02 12:02:52,723 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{8}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=12
+
+2016-08-02 12:02:53,528 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:53,531 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:02:53,532 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:53,533 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+5ms
+2016-08-02 12:02:53,533 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:53,577 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:02:53,584 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS Found 0items, time:3ms, totalCount=0, time=3ms
+2016-08-02 12:02:53,586 INFO - QueryHandler.getConstraint2(1091) | RelationConstraint RelationSelector[off2ref] SourceRange Empty!
+2016-08-02 12:02:53,587 INFO - QueryHandler.getExpression(978) | RelationSelector[off2ref] SourceRange Empty!
+2016-08-02 12:02:53,588 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+10ms
+2016-08-02 12:02:53,588 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{11}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,506 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,510 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS Found 12items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:02:54,511 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 12 ci's in 1(1)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:54,511 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=12, rfcs=0, txs=0} totalCount=-1
+4ms
+2016-08-02 12:02:54,512 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{6}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=12, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:54,540 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:54,543 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:54,543 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:54,544 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:54,544 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:54,551 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,555 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Host Found 0items, time:2ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,555 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+3ms
+2016-08-02 12:02:54,555 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,565 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,570 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Servicedependency Found 0items, time:2ms, totalCount=0, time=2ms
+2016-08-02 12:02:54,571 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+5ms
+2016-08-02 12:02:54,571 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{6}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,577 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,581 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Hostgroup Found 0items, time:3ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,581 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+4ms
+2016-08-02 12:02:54,582 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,590 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,593 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Serviceextinfo Found 0items, time:2ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,593 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+3ms
+2016-08-02 12:02:54,599 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{9}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,618 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,622 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Contact Found 0items, time:2ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,622 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+3ms
+2016-08-02 12:02:54,623 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,629 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,633 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Contactgroup Found 0items, time:2ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,633 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+3ms
+2016-08-02 12:02:54,633 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,640 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,644 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Hostdependency Found 0items, time:2ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,645 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+4ms
+2016-08-02 12:02:54,645 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,651 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,655 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Service Found 0items, time:3ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,655 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+4ms
+2016-08-02 12:02:54,656 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,672 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,678 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Servicegroup Found 0items, time:4ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,679 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+6ms
+2016-08-02 12:02:54,679 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{7}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,685 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,689 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Hostextinfo Found 0items, time:2ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,689 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+3ms
+2016-08-02 12:02:54,690 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,698 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,703 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Command Found 0items, time:4ms, totalCount=0, time=0ms
+2016-08-02 12:02:54,703 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+4ms
+2016-08-02 12:02:54,704 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{6}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:54,711 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},})
+2016-08-02 12:02:54,716 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Timeperiod Found 0items, time:4ms, totalCount=0, time=1ms
+2016-08-02 12:02:54,716 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+5ms
+2016-08-02 12:02:54,716 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offsprings},}) : Graph:
+	Node<offsprings>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:55,674 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:55,679 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:4ms, totalCount=-1, time=0ms
+2016-08-02 12:02:55,680 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:55,680 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+5ms
+2016-08-02 12:02:55,680 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{6}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:55,698 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:55,701 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:02:55,701 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:55,702 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+4ms
+2016-08-02 12:02:55,702 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:55,710 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:55,712 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:55,713 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:55,713 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:55,713 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{3}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:55,718 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:55,721 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:02:55,721 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:55,721 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:55,722 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:55,726 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:55,729 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:02:55,729 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:55,730 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:02:55,730 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:55,782 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:02:55,789 INFO - QueryHandler.executeQuery(511) | Selector:NAGIOS_Contact Found 0items, time:4ms, totalCount=0, time=2ms
+2016-08-02 12:02:55,791 INFO - QueryHandler.getConstraint2(1091) | RelationConstraint RelationSelector[off2ref] SourceRange Empty!
+2016-08-02 12:02:55,793 INFO - QueryHandler.getExpression(978) | RelationSelector[off2ref] SourceRange Empty!
+2016-08-02 12:02:55,793 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+11ms
+2016-08-02 12:02:55,796 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{14}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=0
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:02:57,989 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:02:57,992 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:02:57,993 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:57,993 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+4ms
+2016-08-02 12:02:57,994 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{5}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:02:58,031 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:02:58,040 INFO - QueryHandler.executeQuery(511) | Selector:Financial Found 8items, time:7ms, totalCount=8, time=1ms
+2016-08-02 12:02:58,041 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 8 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:02:58,044 INFO - QueryHandler.executeQuery(511) | Selector:Root Found 0items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:02:58,045 INFO - QueryHandler.getExpression(998) | RelationSelector[off2ref] TargetRange Empty!
+2016-08-02 12:02:58,045 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=8, rfcs=0, txs=0} totalCount=8
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+13ms
+2016-08-02 12:02:58,046 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{15}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=8, rfcs=0, txs=0} totalCount=8
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:04:26,629 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:04:26,634 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:4ms, totalCount=-1, time=0ms
+2016-08-02 12:04:26,634 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:04:26,635 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+5ms
+2016-08-02 12:04:26,635 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{6}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:04:26,678 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:04:26,687 INFO - QueryHandler.executeQuery(511) | Selector:OperationalStatus Found 3items, time:5ms, totalCount=3, time=3ms
+2016-08-02 12:04:26,687 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 3 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:04:26,700 INFO - QueryHandler.executeQuery(511) | Selector:Root Found 0items, time:12ms, totalCount=-1, time=0ms
+2016-08-02 12:04:26,709 INFO - QueryHandler.getExpression(998) | RelationSelector[off2ref] TargetRange Empty!
+2016-08-02 12:04:26,710 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=3, rfcs=0, txs=0} totalCount=3
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+32ms
+2016-08-02 12:04:26,710 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{33}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=3, rfcs=0, txs=0} totalCount=3
+	Node<cache_serach>{offsprings=0, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=0, rfcs=0, txs=0} totalCount=0
+
+2016-08-02 12:04:27,410 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:04:27,415 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:4ms, totalCount=-1, time=0ms
+2016-08-02 12:04:27,415 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:04:27,415 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+5ms
+2016-08-02 12:04:27,416 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{6}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:04:27,421 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:04:27,423 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:1ms, totalCount=-1, time=0ms
+2016-08-02 12:04:27,424 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:04:27,424 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:04:27,425 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{4}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:04:27,430 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:04:27,432 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:04:27,433 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:04:27,433 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+3ms
+2016-08-02 12:04:27,433 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{3}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:04:27,443 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},})
+2016-08-02 12:04:27,453 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:9ms, totalCount=-1, time=0ms
+2016-08-02 12:04:27,453 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:04:27,453 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+9ms
+2016-08-02 12:04:27,454 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{11}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=alias},}) : Graph:
+	Node<alias>{offsprings=1, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 12:04:27,492 INFO - OneCMDBWebServiceImpl.queryGraph(538) | WSDL: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},})
+2016-08-02 12:04:27,498 INFO - QueryHandler.executeQuery(511) | Selector:Maintenance Found 5items, time:4ms, totalCount=5, time=1ms
+2016-08-02 12:04:27,498 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 5 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:04:27,501 INFO - QueryHandler.executeQuery(511) | Selector:Root Found 4items, time:3ms, totalCount=-1, time=0ms
+2016-08-02 12:04:27,501 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 4 ci's in 0(0)ms. Attr Ref 0(0) Def 0(0)
+2016-08-02 12:04:27,503 INFO - QueryHandler.executeQuery(511) | Selector:Reference Found 10items, time:2ms, totalCount=-1, time=0ms
+2016-08-02 12:04:27,504 INFO - OneCMDBWebServiceImpl.queryGraph(551) | 	WSDL: GraphQuery: result=Graph:
+	Node<offspring>{offsprings=5, rfcs=0, txs=0} totalCount=5
+	Node<cache_serach>{offsprings=4, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=10, rfcs=0, txs=0} totalCount=-1
+12ms
+2016-08-02 12:04:27,504 INFO - OneCMDBWebServiceImpl.queryGraph(560) | WSDL{13}: QueryGraph(17b60b6, GraphQuery {ItemSelector{id=offspring},ItemSelector{id=cache_serach},ItemSelector{id=off2ref},}) : Graph:
+	Node<offspring>{offsprings=5, rfcs=0, txs=0} totalCount=5
+	Node<cache_serach>{offsprings=4, rfcs=0, txs=0} totalCount=-1
+	Edge<off2ref>{offsprings=10, rfcs=0, txs=0} totalCount=-1
+
+2016-08-02 13:28:58,557 INFO - SpringFactoryBean.close(85) | CLOSE ONECMDB CONTEXT=org.onecmdb.core.internal.OneCmdb@4d7c6bf, handlers=6
+2016-08-02 13:28:58,557 INFO - SpringFactoryBean.close(89) | DESTORY ONECMDB CONTEXT=org.onecmdb.core.internal.OneCmdb@4d7c6bf, handlers=6
+2016-08-02 13:28:58,564 INFO - OneCmdb$SessionCleanerThread.run(273) | Session Cleaner Terminated
+2016-08-02 13:28:58,564 INFO - OneCmdbCcb.close(405) | Closing OneCMDB...
+2016-08-02 13:28:58,564 INFO - OneCmdbCcb.close(411) | OneCMDB has now been closed.
+2016-08-02 13:28:58,565 INFO - JobService.close(203) | JobService Closing
+2016-08-02 13:28:58,565 INFO - JobSchedulare.shutdown(165) | Shutdown Quartz Schedulare
+2016-08-02 13:28:58,566 INFO - JobSchedulare.shutdown(168) | Shutdown Quartz Schedulare Completed
+2016-08-02 13:28:58,566 INFO - JobService.close(207) | JobService Closed
+2016-08-02 13:28:58,566 INFO - UpdateService.close(72) | Update Service Stopped
+2016-08-02 13:28:58,567 INFO - OneCmdb.close(169) | OneCMDB closed.
+2016-08-02 13:28:58,568 INFO - OneCmdbCcb.close(405) | Closing OneCMDB...
+2016-08-02 13:28:58,568 INFO - OneCmdbCcb.close(411) | OneCMDB has now been closed.
+2016-08-02 13:28:58,568 INFO - JobService.close(203) | JobService Closing
+2016-08-02 13:28:58,568 INFO - JobSchedulare.shutdown(165) | Shutdown Quartz Schedulare
+2016-08-02 13:28:58,569 INFO - JobSchedulare.shutdown(168) | Shutdown Quartz Schedulare Completed
+2016-08-02 13:28:58,569 INFO - JobService.close(207) | JobService Closed
+2016-08-02 13:28:58,569 INFO - UpdateService.close(72) | Update Service Stopped
+2016-08-02 13:28:58,569 INFO - OneCmdb.close(169) | OneCMDB closed.
+2016-08-02 13:28:58,570 INFO - HibernateDao.destory(123) | HIBERNATE DAO: Shutdown started
+2016-08-02 13:28:58,570 INFO - HibernateDao.destory(150) | HIBERNATE DAO: Shutdown completed
+2016-08-03 02:09:04,948 INFO [org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/]] - Set web app root system property: 'webapp.root' = [/root/java/test/onecmdb/tomcat/webapps/ROOT/]
+2016-08-03 02:09:04,953 INFO [org.apache.catalina.core.ContainerBase.[Catalina].[localhost].[/]] - Initializing Log4J from [/root/java/test/onecmdb/tomcat/webapps/ROOT/WEB-INF/log4j.xml]
+2016-08-03 02:09:06,024 INFO - SpringFactoryBean.getInstance(64) | LOAD ONECMDB CONTEXT=null, handlers=0
+2016-08-03 02:09:09,353 INFO - OneCmdbCcb.init(120) | OneCMDB CCB startup.
+2016-08-03 02:09:09,408 INFO - OneCmdbCcb.init(139) | Boot up sequence already performed.
+2016-08-03 02:09:09,409 INFO - OneCmdbCcb.init(142) | OneCMDB CCB startup completeted.
+2016-08-03 02:09:09,424 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:09:09,427 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:09:09,435 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:09:09,465 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:09:09,489 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:09:09,490 INFO - Session.login(221) | <admin>
+2016-08-03 02:09:09,492 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:09:09,508 INFO - BeanScope.processBean(246) | Processing  Reference
+2016-08-03 02:09:09,570 INFO - BeanScope.processBean(246) | Processing  CIReference
+2016-08-03 02:09:09,621 INFO - BeanScope.process(170) | External references <validation enabled=false>
+2016-08-03 02:09:09,622 INFO - OneCmdbCcb.processTransaction(209) | PROCESS TX START - <TX status= 1, reject=null, start=Wed Aug 03 02:09:09 UTC 2016, stop=null>
+2016-08-03 02:09:09,628 INFO - OneCmdbCcb.processTransaction(231) | PROCESS RFC DONE - <TX status= 4, reject=null, start=Wed Aug 03 02:09:09 UTC 2016, stop=Wed Aug 03 02:09:09 UTC 2016>
+2016-08-03 02:09:09,701 INFO - OneCmdbCcb.processTransaction(246) | PROCESS TX END - <TX status= 4, reject=null, start=Wed Aug 03 02:09:09 UTC 2016, stop=Wed Aug 03 02:09:09 UTC 2016>
+2016-08-03 02:09:09,704 INFO - Session.logout(237) | Logout user<admin>
+2016-08-03 02:09:09,718 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:09:09,718 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:09:09,718 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:09:09,738 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:09:09,756 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:09:09,756 INFO - Session.login(221) | <admin>
+2016-08-03 02:09:09,757 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:09:09,760 INFO - BeanScope.processBean(246) | Processing  CMDBAccount
+2016-08-03 02:09:09,838 INFO - BeanScope.process(170) | External references <validation enabled=false>
+2016-08-03 02:09:09,838 INFO - ImportBeanProvider.processProvider(122) | No rfcs found...
+2016-08-03 02:09:09,839 INFO - Session.logout(237) | Logout user<admin>
+2016-08-03 02:09:09,839 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:09:09,839 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:09:09,839 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:09:09,853 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:09:09,861 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:09:09,861 INFO - Session.login(221) | <admin>
+2016-08-03 02:09:09,862 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:09:09,868 INFO - BeanScope.processBean(246) | Processing  RBAC
+2016-08-03 02:09:09,894 INFO - BeanScope.processBean(246) | Processing  CMDBRole
+2016-08-03 02:09:09,955 INFO - BeanScope.processBean(246) | Processing  CMDBSecurityGroup
+2016-08-03 02:09:10,009 INFO - BeanScope.processBean(246) | Processing  CMDBSecurityPermission
+2016-08-03 02:09:10,019 INFO - BeanScope.processBean(246) | Processing  CMDBSecurityGroupPermission
+2016-08-03 02:09:10,064 INFO - BeanScope.processBean(246) | Processing  RootGroup
+2016-08-03 02:09:10,084 INFO - BeanScope.process(170) | External references <validation enabled=false>
+2016-08-03 02:09:10,085 INFO - ImportBeanProvider.processProvider(122) | No rfcs found...
+2016-08-03 02:09:10,085 INFO - Session.logout(237) | Logout user<admin>
+2016-08-03 02:09:10,086 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:09:10,086 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:09:10,086 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:09:10,105 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:09:10,109 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:09:10,110 INFO - Session.login(221) | <admin>
+2016-08-03 02:09:10,110 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:09:10,127 INFO - BeanScope.processBean(246) | Processing  PolicyReference
+2016-08-03 02:09:10,154 INFO - BeanScope.processBean(246) | Processing  Policy
+2016-08-03 02:09:10,180 INFO - BeanScope.processBean(246) | Processing  PolicyTrigger
+2016-08-03 02:09:10,252 INFO - BeanScope.processBean(246) | Processing  CiPolicy
+2016-08-03 02:09:10,285 INFO - BeanScope.processBean(246) | Processing  AttributePolicy
+2016-08-03 02:09:10,305 INFO - BeanScope.processBean(246) | Processing  EventPolicy
+2016-08-03 02:09:10,333 INFO - BeanScope.process(170) | External references <validation enabled=false>
+2016-08-03 02:09:10,333 INFO - ImportBeanProvider.processProvider(122) | No rfcs found...
+2016-08-03 02:09:10,333 INFO - Session.logout(237) | Logout user<admin>
+2016-08-03 02:09:10,396 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:09:10,397 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:09:10,397 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:09:10,409 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:09:10,419 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:09:10,419 INFO - Session.login(221) | <admin>
+2016-08-03 02:09:10,420 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:09:10,426 INFO - BeanScope.processBean(246) | Processing  Ci
+2016-08-03 02:09:10,443 INFO - BeanScope.process(170) | External references <validation enabled=false>
+2016-08-03 02:09:10,444 INFO - ImportBeanProvider.processProvider(122) | No rfcs found...
+2016-08-03 02:09:10,444 INFO - Session.logout(237) | Logout user<admin>
+2016-08-03 02:09:10,444 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:09:10,445 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:09:10,445 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:09:10,461 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:09:10,464 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:09:10,465 INFO - Session.login(221) | <admin>
+2016-08-03 02:09:10,465 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:09:10,478 INFO - BeanScope.processBean(246) | Processing  JobReference
+2016-08-03 02:09:10,494 INFO - BeanScope.processBean(246) | Processing  JobTriggerReference
+2016-08-03 02:09:10,511 INFO - BeanScope.processBean(246) | Processing  JobProcessReference
+2016-08-03 02:09:10,551 INFO - BeanScope.processBean(246) | Processing  Job
+2016-08-03 02:09:10,569 INFO - BeanScope.processBean(246) | Processing  JobTrigger
+2016-08-03 02:09:10,615 INFO - BeanScope.processBean(246) | Processing  JobManualTrigger
+2016-08-03 02:09:10,660 INFO - BeanScope.processBean(246) | Processing  JobSchedulareTrigger
+2016-08-03 02:09:10,702 INFO - BeanScope.processBean(246) | Processing  JobCronTrigger
+2016-08-03 02:09:10,739 INFO - BeanScope.processBean(246) | Processing  JobIntervallTrigger
+2016-08-03 02:09:10,786 INFO - BeanScope.processBean(246) | Processing  JobProcess
+2016-08-03 02:09:10,810 INFO - BeanScope.process(170) | External references <validation enabled=false>
+2016-08-03 02:09:10,810 INFO - ImportBeanProvider.processProvider(122) | No rfcs found...
+2016-08-03 02:09:10,811 INFO - Session.logout(237) | Logout user<admin>
+2016-08-03 02:09:10,811 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:09:10,811 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:09:10,811 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:09:10,822 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:09:10,825 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:09:10,825 INFO - Session.login(221) | <admin>
+2016-08-03 02:09:10,825 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:09:10,845 INFO - BeanScope.process(170) | External references <validation enabled=false>
+2016-08-03 02:09:10,845 INFO - JobService.processInitScope(337) | No initial rfcs found...
+2016-08-03 02:09:10,845 INFO - Session.logout(237) | Logout user<admin>
+2016-08-03 02:09:10,997 INFO - JobSchedulare.<init>(65) | Quartz Scheduler Started
+2016-08-03 02:09:11,007 INFO - JobService.reschedualeTriggers(254) | Reschedualer: Cron triggers
+2016-08-03 02:09:11,010 INFO - JobService.reschedualeTriggers(257) | Reschedualer: Intervall triggers
+2016-08-03 02:09:11,029 INFO - UpdateService.init(86) | Update Service Started
+2016-08-03 02:09:11,031 INFO - CheckForUpdate.run(67) | Update Checker Started
+2016-08-03 02:09:11,032 INFO - OneCmdb.init(118) | OneCMDB successfully initialized {
+2016-08-03 02:09:11,032 INFO - OneCmdb.init(119) |  CWD=/root/java/test/onecmdb
+2016-08-03 02:09:11,032 INFO - OneCmdb.init(120) | }
+2016-08-03 02:09:11,033 INFO - OneCmdb$SessionCleanerThread.run(238) | Session Cleaner Start: sessionTimeout=14400000, scanIntervall=600000
+2016-08-03 02:09:11,281 INFO - SpringFactoryBean.getInstance(64) | LOAD ONECMDB CONTEXT=org.onecmdb.core.internal.OneCmdb@6491cf0b, handlers=1
+2016-08-03 02:09:11,407 INFO - ClassPathController.init(63) | INIT: Classpath controller.
+2016-08-03 02:09:11,433 INFO - SpringFactoryBean.getInstance(64) | LOAD ONECMDB CONTEXT=org.onecmdb.core.internal.OneCmdb@6491cf0b, handlers=2
+2016-08-03 02:09:11,435 INFO - RemoteController.init(79) | RemoteController init()
+2016-08-03 02:09:11,670 INFO - SpringFactoryBean.getInstance(64) | LOAD ONECMDB CONTEXT=org.onecmdb.core.internal.OneCmdb@6491cf0b, handlers=3
+2016-08-03 02:09:12,043 INFO - SpringFactoryBean.getInstance(64) | LOAD ONECMDB CONTEXT=org.onecmdb.core.internal.OneCmdb@6491cf0b, handlers=4
+2016-08-03 02:09:12,075 INFO - SpringFactoryBean.getInstance(64) | LOAD ONECMDB CONTEXT=org.onecmdb.core.internal.OneCmdb@6491cf0b, handlers=5
+2016-08-03 02:09:12,076 INFO - RemoteController.init(79) | RemoteController init()
+2016-08-03 02:09:12,076 INFO - ClassPathController.init(63) | INIT: Classpath controller.
+2016-08-03 02:09:12,097 INFO - SpringFactoryBean.getInstance(64) | LOAD ONECMDB CONTEXT=org.onecmdb.core.internal.OneCmdb@6491cf0b, handlers=6
+2016-08-03 02:09:14,331 INFO [org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory] - Use class resource repository config
+2016-08-03 02:09:14,332 INFO [org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory] - Repository Root is set to '/root/java/test/onecmdb/repository'
+2016-08-03 02:09:19,266 INFO [org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl] - Starting ModelServiceImpl....
+2016-08-03 02:09:19,345 INFO [org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl] - autenticate(username=admin, pwd=*******)
+2016-08-03 02:09:19,358 INFO [org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory] - Adapt file 'Configuration/content.cfg' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+2016-08-03 02:09:19,366 INFO [org.onecmdb.ui.gwt.desktop.server.service.model.ConfigurationFactory] - OK - Configuration loaded...
+2016-08-03 02:09:19,366 INFO [org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory] - Adapt file 'OneCMDB_Core/Configuration/onecmdb.xml' to 'java.util.Properties' with 'org.onecmdb.ui.gwt.desktop.server.service.content.PropertyAdaptor'
+2016-08-03 02:09:19,370 INFO [org.onecmdb.ui.gwt.desktop.server.service.model.CMDBWebServiceFactory] - OneCMDB WSDL URL 'http://localhost:8080/webservice/onecmdb'
+2016-08-03 02:09:20,526 INFO - OneCMDBWebServiceImpl.auth(94) | WSDL: auth(admin, ******)
+2016-08-03 02:09:20,533 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:09:20,533 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:09:20,534 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:09:20,537 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:09:20,542 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:09:20,549 INFO - Session.login(221) | <admin>
+2016-08-03 02:09:20,549 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:09:20,551 INFO - OneCMDBWebServiceImpl.auth(102) | WSDL: user admin granted token 1cfd7c
+2016-08-03 02:09:20,612 INFO [org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl] - autenticate(username=admin, pwd=*******) --> token=1cfd7c
+2016-08-03 02:09:20,628 INFO [org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl] - getDesktopConfig(username=admin, token=1cfd7c, role=null)
+2016-08-03 02:09:20,628 INFO [org.onecmdb.ui.gwt.desktop.server.service.model.ModelServiceImpl] - getDesktopConfig(username=admin, token=1cfd7c, role=null) load default OneCMDB_Desktop/defaultView.xml
+2016-08-03 02:09:20,629 INFO [org.onecmdb.ui.gwt.desktop.server.service.content.ContentParserFactory] - Adapt file 'OneCMDB_Desktop/defaultView.xml' to 'org.onecmdb.ui.gwt.desktop.client.service.model.CMDBDesktopConfig' with 'org.onecmdb.ui.gwt.desktop.server.service.content.adapter.GXTModelContentAdapter'
+2016-08-03 02:09:20,762 INFO - OneCMDBWebServiceImpl.isUpdateAvailable(660) | WSDL: isUpdateAvailable(1cfd7c, false)
+2016-08-03 02:09:20,763 INFO - OneCMDBWebServiceImpl.isUpdateAvailable(676) | WSDL: getUpdateInfo(1cfd7c,false)=false
+2016-08-03 02:11:11,043 INFO - Session.login(197) | Login OK for user<admin>
+2016-08-03 02:11:11,043 INFO - Session.login(211) | <admin> granted role ROLE_USER
+2016-08-03 02:11:11,043 INFO - Session.login(211) | <admin> granted role ROLE_ADMIN
+2016-08-03 02:11:11,048 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_USER> is not found!
+2016-08-03 02:11:11,050 INFO - AuthorizationService.setupRBAC(131) | <admin> role name <ROLE_ADMIN> is not found!
+2016-08-03 02:11:11,050 INFO - Session.login(221) | <admin>
+2016-08-03 02:11:11,050 INFO - Session.login(222) | 	Readonly=true
+2016-08-03 02:11:11,102 INFO - QueryHandler.executeQuery(511) | Selector:Root Found 1items, time:16ms, totalCount=408, time=28ms
+2016-08-03 02:11:11,125 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 13(13)ms. Attr Ref 0(2) Def 0(2)
+2016-08-03 02:11:11,155 INFO - QueryHandler.executeQuery(511) | Selector:Ci Found 1items, time:25ms, totalCount=147, time=5ms
+2016-08-03 02:11:11,226 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 71(71)ms. Attr Ref 0(3) Def 0(2)
+2016-08-03 02:11:11,239 INFO - QueryHandler.executeQuery(511) | Selector:Reference Found 1items, time:10ms, totalCount=191, time=3ms
+2016-08-03 02:11:11,239 INFO - OneCmdbBeanProvider.convertCIsToBeans(356) | Convert 1 ci's in 0(0)ms. Attr Ref 0(3) Def 0(2)
+2016-08-03 02:11:11,239 INFO - Session.logout(237) | Logout user<admin>
+2016-08-03 02:11:11,240 INFO - CheckForUpdate.getUpdateInfo(92) | Check for update from http://www.onecmdb.org/update/check.php
+2016-08-03 02:11:12,388 INFO - CheckForUpdate.getUpdateInfo(97) | Response:(2)No

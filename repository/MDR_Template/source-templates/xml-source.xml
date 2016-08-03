@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Application Data Source description, CSV</comment>
+<entry key="type">xml</entry>
+<entry key="xml.url">file:import/file.xml</entry>
+</properties>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphQuery>
+
+	<!--
+		Templates
+		===========
+		System
+		OS
+		Maintenence
+		Network
+		Service
+		Financial
+		Location
+	-->
+	<ItemOffspringSelector id="system" template="System"
+		primary="true">
+		<matchTemplate>false</matchTemplate>
+		<excludeRelation id="system2maintenance"/>
+		<!--
+		<excludeRelation id="system2service"/>
+		<excludeRelation id="system2location"/>
+		<excludeRelation id="system2system"/>
+		-->
+	</ItemOffspringSelector>
+	
+	<ItemOffspringSelector id="os" template="OS">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	
+	<ItemOffspringSelector id="network" template="Network">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	<ItemOffspringSelector id="maintenance" template="Maintenance">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+
+	<!--
+	
+	<ItemOffspringSelector id="service" template="Service">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	<ItemOffspringSelector id="financial" template="Financial">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	<ItemOffspringSelector id="location" template="Location">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	-->
+	
+	<!--	
+		Relations
+		=========
+		os2system
+		system2maintenence
+		system2network
+		system2service
+		system2location
+		system2financial
+		system2system
+	-->
+	
+	<ItemRelationSelector id="os2system" template="InstalledOn">
+		<target>system</target>
+		<source>os</source>
+	</ItemRelationSelector>
+	
+	<ItemRelationSelector id="system2network" template="BelongsTo">
+		<target>network</target>
+		<source>system</source>
+	</ItemRelationSelector>
+	
+	<ItemRelationSelector id="system2maintenance" template="PointsTo">
+		<target>maintenance</target>
+		<source>system</source>
+	</ItemRelationSelector>
+	<!--
+	<ItemRelationSelector id="system2service" template="BelongsTo">
+		<target>service</target>
+		<source>system</source>
+	</ItemRelationSelector>
+	<ItemRelationSelector id="system2location" template="BelongsTo">
+		<target>location</target>
+		<source>system</source>
+	</ItemRelationSelector>
+	<ItemRelationSelector id="system2financial" template="BelongsTo">
+		<target>financial</target>
+		<source>system</source>
+	</ItemRelationSelector>
+	<ItemRelationSelector id="system2system" template="BelongsTo">
+		<target>system</target>
+		<source>system</source>
+	</ItemRelationSelector>
+	-->
+</GraphQuery>

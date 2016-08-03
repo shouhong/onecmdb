@@ -1,0 +1,30 @@
+<?xml version="1.0"?><project>
+  <parent>
+    <artifactId>spring-parent</artifactId>
+    <groupId>org.springframework</groupId>
+    <version>1.2.6</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>spring-dao</artifactId>
+  <name>Spring DAO</name>
+  <version>1.2.6</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>1.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.transaction</groupId>
+      <artifactId>jta</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>jotm</groupId>
+      <artifactId>jotm</artifactId>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <status>deployed</status>
+  </distributionManagement>
+</project>

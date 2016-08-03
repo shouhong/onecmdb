@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<CustomView>
+	<widgets>
+		<widget asList="true" id ="cmdb-url-frame-widget">
+			<heading>CMDB to Native Nagios</heading>
+			<params>
+				<url>onecmdb/export/nagios.cfg?name=nagios/nagios-export.cfg</url>
+			</params>
+		</widget>
+	</widgets>
+</CustomView>

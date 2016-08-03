@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphQuery>
+	<ItemOffspringSelector id="instances" template="{template}"
+		primary="true">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+</GraphQuery>

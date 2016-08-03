@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+<OneCMDBDesktopConfig defaultWidth="1000px" defaultHeight="650px">
+	<permissions>
+		<readonly>true</readonly>
+		<editable>false</editable>
+		<deletable>false</deletable>
+		<classify>false</classify>
+
+		<default>readonly</default>
+	</permissions>
+	
+
+	<menuitem text="Model Overview"
+		iconStyle="menuitem-icon-modeloverview" asList="true">
+
+		<widget id="cmdb-applet-widget">
+			<heading>Model Overview</heading>
+			<minimizable>false</minimizable>
+			<params>
+				<code>
+					org.onecmdb.rest.graph.utils.applet.AppletLaunch.class
+				</code>
+				<archive>
+					onecmdb/content/Content/applet/onecmdb-applet.jar,
+					onecmdb/content/Content/applet/onecmdb-applet-dependencies.jar
+				</archive>
+				<param>
+					<url>${baseURL}/onecmdb/query</url>
+					<rootCI>Ci</rootCI>
+					<appletlaunch.callcode>
+						org.onecmdb.rest.graph.applet.TemplateViewApplet
+					</appletlaunch.callcode>
+					<appletlaunch.color.background>
+						FFFFFF
+					</appletlaunch.color.background>
+					<appletlaunch.splash>
+						onecmdb/content/Content/applet/applet-loading.gif
+					</appletlaunch.splash>
+					<appletlaunch.splasherror>
+						onecmdb/content/Content/applet/applet-error.gif
+					</appletlaunch.splasherror>
+					<appletlaunch.version>1.5.0</appletlaunch.version>
+					<iconURL>${baseURL}/onecmdb/icon</iconURL>
+					<graphBackgroundColor>
+						0x454545
+					</graphBackgroundColor>
+				</param>
+			</params>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#Model_Overview</help>
+			<shortcut>
+				<style>shortcut-model-overview</style>
+				<text>Model Overview</text>
+				<tooltip>
+					<![CDATA[
+						Visualization of the CMDB.
+						]]>
+				</tooltip>
+			</shortcut>
+		</widget>
+	</menuitem>
+
+	<menuitem separator="true" asList="true" />
+
+	<menuitem text="CMDB View"
+		iconStyle="menuitem-icon-instanceoverview" asList="true">
+		<widget id="cmdb-model-instance-overview">
+			<heading>CMDB View</heading>
+			<width>800px</width>
+			<height>600px</height>
+			<params>
+				<rootCI asSimpleList="true">Ci</rootCI>
+				<tree>
+					<visible>true</visible>
+				</tree>
+				<table>
+					<visible>true</visible>
+				</table>
+				<graph>
+					<visible>true</visible>
+					<code>
+						org.onecmdb.rest.graph.utils.applet.AppletLaunch.class
+					</code>
+					<archive>
+						onecmdb/content/Content/applet/onecmdb-applet.jar,
+						onecmdb/content/Content/applet/onecmdb-applet-dependencies.jar
+					</archive>
+					<param>
+						<url>${baseURL}/onecmdb/query</url>
+						<rootCI>Ci</rootCI>
+						<appletlaunch.callcode>
+							org.onecmdb.rest.graph.applet.InstanceViewApplet
+						</appletlaunch.callcode>
+						<appletlaunch.color.background>
+							FFFFFF
+						</appletlaunch.color.background>
+						<appletlaunch.splash>
+							onecmdb/content/Content/applet/applet-loading.gif
+						</appletlaunch.splash>
+						<appletlaunch.splasherror>
+							onecmdb/content/Content/applet/applet-error.gif
+						</appletlaunch.splasherror>
+						<appletlaunch.version>
+							1.5.0
+						</appletlaunch.version>
+						<iconURL>${baseURL}/onecmdb/icon</iconURL>
+						<graphBackgroundColor>
+							0x454545
+						</graphBackgroundColor>
+					</param>
+				</graph>
+			</params>
+			<shortcut>
+				<style>shortcut-cmdb-view</style>
+				<text>CMDB View</text>
+			</shortcut>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#CMDB_View</help>
+		</widget>
+	</menuitem>
+
+
+
+	<menuitem text="Custom Views" iconStyle="menuitem-icon-customview"
+		asList="true">
+		<widget id="cmdb-custom-view">
+			<heading>OneCMDB - Custom Views</heading>
+			<width>300px</width>
+			<height>400px</height>
+			<x>10</x>
+			<y>10</y>
+			<params>
+				<customDefinition>
+					CustomViews/defaultCustomViews.xml
+				</customDefinition>
+				<rootElement>CustomViews</rootElement>
+				<recordElement>CustomView</recordElement>
+
+			</params>
+			<shortcut>
+				<style>shortcut-customview</style>
+				<text>Custom Views</text>
+			</shortcut>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#Custom_Views</help>
+		</widget>
+
+	</menuitem>
+	<menuitem text="Custom Reports" iconStyle="menuitem-icon-report"
+		asList="true">
+		<widget id="cmdb-custom-view">
+			<heading>OneCMDB - Custom Reports</heading>
+			<width>300px</width>
+			<height>400px</height>
+			<x>10</x>
+			<y>10</y>
+			<params>
+				<customDefinition>
+					CustomReports/defaultCustomReports.xml
+				</customDefinition>
+				<rootElement>CustomReports</rootElement>
+				<recordElement>CustomReport</recordElement>
+			</params>
+			<shortcut>
+				<style>shortcut-custom-reports</style>
+				<text>Custom Reports</text>
+			</shortcut>
+			<help>http://www.onecmdb.org/wiki/index.php/User%27s_manual_V2.0#Custom_Reports</help>
+		</widget>
+	</menuitem>
+	<menuitem separator="true" asList="true" />
+
+	<menuitem text="Help" iconStyle="menuitem-icon-help"
+		asList="true">
+		<widget id="cmdb-url-frame-widget">
+			<heading>OneCMDB Help</heading>
+			<params>
+				<newWindow>true</newWindow>
+				<url>http://www.onecmdb.org/wiki/index.php/Documentation</url>
+			</params>
+			<shortcut>
+				<style>shortcut-cmdb-help</style>
+				<text>OneCMDB Doc.</text>
+			</shortcut>
+		</widget>
+	</menuitem>
+	<menuitem text="OneCMDB.org" iconStyle="menuitem-icon-onecmdb"
+		asList="true">
+		<widget id="cmdb-url-frame-widget">
+			<heading>OneCMDB.org</heading>
+			<params>
+				<newWindow>true</newWindow>
+				<url>http://www.onecmdb.org</url>
+			</params>
+		</widget>
+	</menuitem>
+	
+</OneCMDBDesktopConfig>

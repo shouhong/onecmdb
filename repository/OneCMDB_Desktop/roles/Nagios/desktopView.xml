@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<OneCMDBDesktopConfig defaultWidth="800px" defaultHeight="600px">
+	<menuitem text="CI" asList="true">
+		<widget id="cmdb-ci-property">
+			<openAtStartup>true</openAtStartup>
+			<params>
+				<alias>{alias}</alias>
+			</params>
+		</widget>
+	</menuitem>
+	<menuitem text="Custom Views" iconStyle="menuitem-icon-customview"
+		asList="true">
+		<widget id="cmdb-custom-view">
+			<heading>OneCMDB - Custom Views</heading>
+			<width>300px</width>
+			<height>400px</height>
+			<x>10</x>
+			<y>10</y>
+			<params>
+				<customDefinition>
+					CustomViews/nagiosCustomViews.xml
+				</customDefinition>
+				<rootElement>CustomViews</rootElement>
+				<recordElement>CustomView</recordElement>
+
+			</params>
+			<shortcut>
+				<style>shortcut-customview</style>
+				<text>Custom Nagios Views</text>
+			</shortcut>
+		</widget>
+
+	</menuitem>
+</OneCMDBDesktopConfig>

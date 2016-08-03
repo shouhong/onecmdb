@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<CustomView>
+	<widgets>
+		<widget asList="true" id ="cmdb-url-frame-widget">
+			<heading>Basic Model Systems</heading>
+			<params>
+				<url>onecmdb/export/appl.xls?name=CMDB/system/cmdb_application.cfg</url>
+			</params>
+		</widget>
+	</widgets>
+</CustomView>

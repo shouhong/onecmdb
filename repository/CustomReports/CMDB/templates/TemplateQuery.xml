@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphQuery>
+	<ItemOffspringSelector id="CI-TEMPLATES" template="Ci"
+		primary="true">
+		<matchTemplate>true</matchTemplate>
+	</ItemOffspringSelector>
+</GraphQuery>
+

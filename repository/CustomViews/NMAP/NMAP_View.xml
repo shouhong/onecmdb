@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<CustomView>
+	<widgets>
+		<widget asList="true" id="cmdb-model-instance-overview">
+			<heading>NMAP View</heading>
+			<width>800px</width>
+			<height>600px</height>
+			<permissions>
+				<readonly>true</readonly>
+				<editable>false</editable>
+				<deletable>false</deletable>
+				<classify>false</classify>
+			</permissions>
+			<params>
+				<rootCI asSimpleList="true">NMAP_Host</rootCI>
+				<rootCI asSimpleList="true">NMAP_Network</rootCI>
+				<rootCI asSimpleList="true">NMAP_TCP_Port</rootCI>
+				<rootCI asSimpleList="true">NMAP_UDP_Port</rootCI>
+				<table>
+					<visible>true</visible>
+				</table>
+				
+				<tree>
+					<visible>true</visible>
+				</tree>
+		
+				<graph>
+					<visible>true</visible>
+					<code>org.onecmdb.rest.graph.utils.applet.AppletLaunch.class</code>
+					<archive>onecmdb/content/Content/applet/onecmdb-applet.jar, onecmdb/content/Content/applet/onecmdb-applet-dependencies.jar</archive>
+					<param>
+						<url>${baseURL}/onecmdb/query</url>
+						<rootCI>Ci</rootCI>
+						<appletlaunch.callcode>org.onecmdb.rest.graph.applet.InstanceViewApplet</appletlaunch.callcode>
+						<appletlaunch.color.background>FFFFFF</appletlaunch.color.background>
+						<appletlaunch.splash>onecmdb/content/Content/applet/applet-loading.gif</appletlaunch.splash>
+						<appletlaunch.splasherror>onecmdb/content/Content/applet/applet-error.gif</appletlaunch.splasherror>
+						<appletlaunch.version>1.5.0</appletlaunch.version>
+						<iconURL>${baseURL}/onecmdb/icon</iconURL>
+						<graphBackgroundColor>0x454545</graphBackgroundColor>
+					</param>
+				</graph>
+			</params>
+		</widget>
+	</widgets>
+</CustomView>

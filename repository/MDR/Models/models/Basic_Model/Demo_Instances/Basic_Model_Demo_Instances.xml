@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb>
+<templates>
+</templates>
+<instances>
+	<Network alias="Network-4" id="1320455714004857521" displayName="${Name}" created="2009-02-05T18:20:25.215" lastModified="2009-02-05T18:20:25.215" displayValue="Dummy Customer LAN">
+		Dummy Customer LAN
+		<description>A logical network that a system belongs to.</description>
+		<icon id="7946972549059340296">resource</icon>
+		<Name id="-6005593661168532758">Dummy Customer LAN</Name>
+	</Network>
+	<Company alias="Dummycust" id="4414828742862252036" displayName="${Name}" created="2009-02-05T18:20:25.527" lastModified="2009-02-05T18:20:25.527" displayValue="Dummy Customer, Inc.">
+		Dummy Customer, Inc.
+		<description>This CI describes one company.</description>
+		<Telephone id="245254890226067428">(505) 888 3500</Telephone>
+		<icon id="6846582408793603938">resource</icon>
+		<Web_Address id="3091341559433264219">http://www.dumcust.com</Web_Address>
+		<Name id="6278461199563365736">Dummy Customer, Inc.</Name>
+	</Company>
+	<MSOutlook alias="MSOutlook-1" id="-3193311556004652575" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.527" lastModified="2009-02-05T18:20:25.527" displayValue="MS Outlook (on Windows XP SP1 (on Jsmith Desktop 212.100.95.23))">
+		MS Outlook (on Windows XP SP1 (on Jsmith Desktop 212.100.95.23))
+		<description>This CI defines MS Outlook</description>
+		<Service id="7585340168737555433"><ref alias="Service-4"/></Service>
+		<LicenseKey id="7326838962576635332">MSOL-4566-7768-6786</LicenseKey>
+		<Financial id="3143463660938297731"><ref alias="Financial-5"/></Financial>
+		<Version id="8758624872650631444">2003</Version>
+		<icon id="2615630978286480879">package</icon>
+		<InstalledOn id="6968863822910449172"><ref alias="WinXP_SP1-1"/></InstalledOn>
+		<Name id="3926652339259674086">MS Outlook</Name>
+		<DSLEntry id="4393311953084465993">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="4415618331424855315"><ref alias="Maintenance-5"/></Maintenance>
+	</MSOutlook>
+	<RedHatLinuxV5 alias="RedHatLinuxV5-1" id="-9165266691585778037" displayName="${Name} ${Version} (on ${InstalledOn})" created="2009-02-05T18:20:25.230" lastModified="2009-02-05T18:20:25.230" displayValue="Red Hat Linux 5 (on Echo 212.100.103.145)">
+		Red Hat Linux 5 (on Echo 212.100.103.145)
+		<description>This CI defines a Red Hat Linux Operating System. It is installed on a System.</description>
+		<Service id="5875966221110496391"><ref alias="Service-6"/></Service>
+		<Family id="-5640625579392879538">Linux</Family>
+		<LicenseKey id="5774094432000698800">FGHJ-3456-YUJK</LicenseKey>
+		<Financial id="-8345791367127866862"><ref alias="Financial-7"/></Financial>
+		<Version id="-6479940870062212352">5</Version>
+		<icon id="-9138946761674200159">linux</icon>
+		<InstalledOn id="9216344713921827005"><ref alias="Server-5"/></InstalledOn>
+		<Name id="837712815357154272">Red Hat Linux</Name>
+		<DSLEntry id="-5413754765394990483">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</DSLEntry>
+		<Maintenance id="4539495484653503273"><ref alias="Maintenance-4"/></Maintenance>
+	</RedHatLinuxV5>
+	<RedHatLinuxV4 alias="RedHatLinuxV4-1" id="-2268185422822321307" displayName="${Name} ${Version} (on ${InstalledOn})" created="2009-02-05T18:20:25.542" lastModified="2009-02-05T18:20:25.542" displayValue="Red Hat Linux 4 (on Bravo 212.100.105.110)">
+		Red Hat Linux 4 (on Bravo 212.100.105.110)
+		<description>This CI defines a Red Hat Linux Operating System. It is installed on a System.</description>
+		<Service id="231115137172107589"><ref alias="Service-6"/></Service>
+		<Family id="-4625305343988812122">Linux</Family>
+		<LicenseKey id="8855275746149005871">GHJU-7688-MOVF</LicenseKey>
+		<Financial id="6457745521029052781"><ref alias="Financial-7"/></Financial>
+		<Version id="-3387707318365296999">4</Version>
+		<icon id="-6742478321824178720">linux</icon>
+		<InstalledOn id="-7150737369885252316"><ref alias="Server-2"/></InstalledOn>
+		<Name id="8515927767305288331">Red Hat Linux</Name>
+		<DSLEntry id="3693441423038185646">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</DSLEntry>
+		<Maintenance id="6451327723701787823"><ref alias="Maintenance-4"/></Maintenance>
+	</RedHatLinuxV4>
+	<Location alias="Location-1" id="-5443812953029206089" displayName="${Name}" created="2009-02-05T18:20:25.542" lastModified="2009-02-05T18:20:25.542" displayValue="Atlanta">
+		Atlanta
+		<description>This CI defines a Location. A location is defined by a symbolic name.</description>
+		<icon id="-4631712425608750648">resource</icon>
+		<Name id="-3233333071696070176">Atlanta</Name>
+	</Location>
+	<Maintenance alias="Maintenance-1" id="-6549140622132632536" displayName="${Name}" created="2009-02-05T18:20:25.246" lastModified="2009-02-05T18:20:25.246" displayValue="HW Maintenance 7x24">
+		HW Maintenance 7x24
+		<description>This CI contains maintenance information for one or several pieces of equipment or software packages</description>
+		<icon id="778986481153253025">maintenance</icon>
+		<Maintenance_Agreement id="8408154077849910810">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Maintenance_Agreement.pdf</Maintenance_Agreement>
+		<Maintenance_Level id="7621277109479229260">7x24</Maintenance_Level>
+		<Specialist id="-2893384197223851181"><ref alias="Jsmith"/></Specialist>
+		<Maintenance_Org id="8505620868269780324"><ref alias="Itsuppgroup"/></Maintenance_Org>
+		<Name id="4358445484684579244">HW Maintenance 7x24</Name>
+	</Maintenance>
+	<Maintenance alias="Maintenance-5" id="-1333152577154133417" displayName="${Name}" created="2009-02-05T18:20:25.246" lastModified="2009-02-05T18:20:25.246" displayValue="Microsoft Maintenance">
+		Microsoft Maintenance
+		<description>This CI describes the maintenance aggrement. The maintenance are typically associated with a Service, Software and Hardware.</description>
+		<icon id="5510324784949688261">maintenance</icon>
+		<Maintenance_Agreement id="-2185949810360308219">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Maintenance_Agreement.pdf</Maintenance_Agreement>
+		<Maintenance_Level id="4156082727909701379">5x8</Maintenance_Level>
+		<Specialist id="2998753959986065777"><ref alias="Dgould"/></Specialist>
+		<Maintenance_Org id="-6051807000432586421"><ref alias="Itsuppgroup"/></Maintenance_Org>
+		<Name id="-3560270125110404485">Microsoft Maintenance</Name>
+	</Maintenance>
+	<Person alias="Person-1" id="-7607810480487927021" displayName="${Name}" created="2009-02-05T18:20:25.558" lastModified="2009-02-05T18:20:25.558" displayValue="Bill Brown">
+		Bill Brown
+		<description>This CI describes one Person.</description>
+		<Email id="-3175547576979137018">bb@dummycust.com</Email>
+		<Organisation id="7713400478000623326"><ref alias="Dummycust"/></Organisation>
+		<Telephone id="2562416092347893430">(562) 888 7788</Telephone>
+		<icon id="-7808705773961535031">people</icon>
+		<Name id="14968279329455356">Bill Brown</Name>
+	</Person>
+	<Location alias="Location-2" id="-402761551094006382" displayName="${Name}" created="2009-02-05T18:20:25.558" lastModified="2009-02-05T18:20:25.558" displayValue="New York">
+		New York
+		<description>This CI defines a Location. A location is defined by a symbolic name.</description>
+		<icon id="-4037518972575287848">resource</icon>
+		<Name id="-1087525440084327116">New York</Name>
+	</Location>
+	<Service alias="Service-3" id="-5874590188716788456" displayName="${Name}" created="2009-02-05T18:20:25.573" lastModified="2009-02-05T18:20:25.573" displayValue="Single Sign On">
+		Single Sign On
+		<description>This CI defines a Service. All hardware and software belongs to a service. A service defines a number of SLA's and has many company that uses it.</description>
+		<Uses id="7135231382758732392"><ref alias="Service-2"/></Uses>
+		<Uses id="490573410368898105"><ref alias="Service-6"/></Uses>
+		<SLA id="1663890980155789258">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Service_Level_Agreement.pdf</SLA>
+		<icon id="6596406482649998543">service</icon>
+		<Name id="-2060537844013427191">Single Sign On</Name>
+	</Service>
+	<Server alias="Server-5" id="-5276295558489267616" displayName="${Name} ${IPAddress}" created="2009-02-05T18:20:25.573" lastModified="2009-02-05T18:20:25.573" displayValue="Echo 212.100.103.145">
+		Echo 212.100.103.145
+		<description>This CI specifies one server computer system. A Server Computer System is used to host server applications.</description>
+		<Status id="5080784071025749129"><ref alias="OP_Status_In_Production"/></Status>
+		<SerialNumber id="6110596428351643409">D-435-WER-45656576</SerialNumber>
+		<MAC_Address id="-7795327692416339367">12341234</MAC_Address>
+		<Hostname id="4765975829953767434">appserver.acme.com</Hostname>
+		<Manufacturer id="4315392110159415849"><ref alias="Dell"/></Manufacturer>
+		<Maintenance id="7756287826059087337"><ref alias="Maintenance-2"/></Maintenance>
+		<Service id="-1586073038920377096"><ref alias="Service-5"/></Service>
+		<Network id="3898161858512221588"><ref alias="Network-4"/></Network>
+		<ConnectedTo id="-79181057645808779"><ref alias="Router1233856830960"/></ConnectedTo>
+		<icon id="145039717331390477">computer</icon>
+		<Financials id="-6950655620111584696"><ref alias="Financial-1"/></Financials>
+		<Name id="-2924374386744928631">Echo</Name>
+		<Location id="-700485118634653709"><ref alias="Location-1"/></Location>
+		<IPAddress id="7821732892553718896">212.100.103.145</IPAddress>
+	</Server>
+	<WinXP_SP2 alias="WinXP_SP2-2" id="743152804407625534" displayName="${Name} ${Version} (on ${InstalledOn})" created="2009-02-05T18:20:25.261" lastModified="2009-02-05T18:20:25.261" displayValue="Windows XP SP2 (on Charlie 212.100.120.003)">
+		Windows XP SP2 (on Charlie 212.100.120.003)
+		<description>This CI defines a Windows XP Operating System. The OS is installed on a System.</description>
+		<Service id="5051871917594826277"><ref alias="Service-6"/></Service>
+		<Family id="-463085522098175491">Windows</Family>
+		<LicenseKey id="3223095157286488540">MSWR-1234-8765</LicenseKey>
+		<Financial id="-5788085573091065595"><ref alias="Financial-4"/></Financial>
+		<Version id="-7869133132541997622">SP2</Version>
+		<icon id="5991364810694307967">mswindows</icon>
+		<InstalledOn id="-1081487905922885314"><ref alias="Server-3"/></InstalledOn>
+		<Name id="-7872064715413011123">Windows XP</Name>
+		<DSLEntry id="1449253684223064379">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</DSLEntry>
+		<Maintenance id="-5215963788042814440"><ref alias="Maintenance-5"/></Maintenance>
+	</WinXP_SP2>
+	<Service alias="Service-2" id="-848959097632095929" displayName="${Name}" created="2009-02-05T18:20:25.589" lastModified="2009-02-05T18:20:25.589" displayValue="SAN">
+		SAN
+		<description>This CI defines a Service. All hardware and software belongs to a service. A service defines a number of SLA's and has many company that uses it.</description>
+		<SLA id="5602109431174820380">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Service_Level_Agreement.pdf</SLA>
+		<Uses id="-321944004766668226"><ref alias="Service-6"/></Uses>
+		<icon id="-5037566260396015166">service</icon>
+		<Name id="-8371441681403982387">SAN</Name>
+	</Service>
+	<Maintenance alias="Maintenance-3" id="-5679572426271654164" displayName="${Name}" created="2009-02-05T18:20:25.277" lastModified="2009-02-05T18:20:25.277" displayValue="SW Maintenance 5x8">
+		SW Maintenance 5x8
+		<description>This CI contains maintenance information for one or several pieces of equipment or software packages</description>
+		<icon id="-7379231673079685224">maintenance</icon>
+		<Maintenance_Agreement id="-8868021715743912338">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Maintenance_Agreement.pdf</Maintenance_Agreement>
+		<Maintenance_Level id="4966786041349333859">5x8</Maintenance_Level>
+		<Specialist id="4582304305976785496"><ref alias="Dgould"/></Specialist>
+		<Maintenance_Org id="-9111412186122265644"><ref alias="Itsuppgroup"/></Maintenance_Org>
+		<Name id="-2343299656281107453">SW Maintenance 5x8</Name>
+	</Maintenance>
+	<Person alias="Person-2" id="743028827449698918" displayName="${Name}" created="2009-02-05T18:20:25.277" lastModified="2009-02-05T18:20:25.277" displayValue="Jill Andersen">
+		Jill Andersen
+		<description>This CI describes one Person.</description>
+		<Email id="-1069887049300735490">ja@dummycust.com</Email>
+		<Organisation id="8678628102398586648"><ref alias="Dummycust"/></Organisation>
+		<Telephone id="-4997744306434564499">(562) 888 7365</Telephone>
+		<icon id="-9032464327010773031">people</icon>
+		<Name id="3449225353409659049">Jill Andersen</Name>
+	</Person>
+	<Financial alias="Financial-7" id="-3607260945798962993" displayName="${Name}" created="2009-02-05T18:20:25.605" lastModified="2009-02-05T18:20:25.605" displayValue="Financials OS">
+		Financials OS
+		<description>This CI describes the financial aspect of a CI.</description>
+		<Purchase_Date id="1418159343386735642">2007-07-01</Purchase_Date>
+		<Depreciation id="-9133027287308020998">3</Depreciation>
+		<Maintenance_Fee id="3539048426723098491">100</Maintenance_Fee>
+		<Purchase_Prise id="8142999016480876409">1000</Purchase_Prise>
+		<icon id="-3295530208449651177">asset</icon>
+		<Purchase_Contract id="-328759394162566748">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Purchase_Contract.pdf</Purchase_Contract>
+		<Name id="-5990259102906263119">Financials OS</Name>
+	</Financial>
+	<OperationalStatus alias="OP_Status_Under_Test" id="188111474730449064" displayName="${Name}" created="2009-02-05T18:20:25.605" lastModified="2009-02-05T18:20:25.605" displayValue="Under Test">
+		Under Test
+		<description>The operational status for a CI. Typically this would be In Production, In Testing, Under installation etc.</description>
+		<icon id="-616387793167197768">resource</icon>
+		<Name id="-2999196563530834697">Under Test</Name>
+	</OperationalStatus>
+	<Company alias="Dell" id="2394316739889056481" displayName="${Name}" created="2009-02-05T18:20:25.293" lastModified="2009-02-05T18:20:25.293" displayValue="Dell Computers">
+		Dell Computers
+		<description>This CI describes one company.</description>
+		<Telephone id="-328261381523589714">(265) 345 2000</Telephone>
+		<icon id="3126101384550054829">resource</icon>
+		<Web_Address id="6427881435922446406">http://www.dell.com</Web_Address>
+		<Name id="8252447099941218443">Dell Computers</Name>
+	</Company>
+	<MSOffice alias="MSOffice-1" id="4931850290655391548" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.293" lastModified="2009-02-05T18:20:25.293" displayValue="MS Office (on Windows XP SP1 (on Jsmith Desktop 212.100.95.23))">
+		MS Office (on Windows XP SP1 (on Jsmith Desktop 212.100.95.23))
+		<description>This CI defines MS Office</description>
+		<LicenseKey id="-3972633813556083158">MSOF-6767-7788-WERT</LicenseKey>
+		<Financial id="6105781637074936495"><ref alias="Financial-5"/></Financial>
+		<Version id="8271257937624758646">2003</Version>
+		<icon id="-7804693645158556115">package</icon>
+		<InstalledOn id="-434226240164800762"><ref alias="WinXP_SP1-1"/></InstalledOn>
+		<Name id="2234478002426289394">MS Office</Name>
+		<DSLEntry id="-8907227206427427031">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="-7233673277805620742"><ref alias="Maintenance-5"/></Maintenance>
+	</MSOffice>
+	<Company alias="Acme" id="2688367889922900760" displayName="${Name}" created="2009-02-05T18:20:25.308" lastModified="2009-02-05T18:20:25.308" displayValue="Acme, Inc">
+		Acme, Inc
+		<description>This CI describes one company.</description>
+		<Telephone id="877641225893425830">(415) 345 6500</Telephone>
+		<icon id="2746973560733495122">resource</icon>
+		<Web_Address id="-6432756491130136761">http://www.acme.com</Web_Address>
+		<Name id="-1446023668108395094">Acme, Inc</Name>
+	</Company>
+	<Financial alias="Financial-2" id="-636067151805925458" displayName="${Name}" created="2009-02-05T18:20:25.620" lastModified="2009-02-05T18:20:25.620" displayValue="Financials Sun HW">
+		Financials Sun HW
+		<description>This CI contains financial information for one or several pieces of equipment or software packages.</description>
+		<Purchase_Date id="-8161641641477478087">2006-10-15</Purchase_Date>
+		<Depreciation id="2224137117101753078">3</Depreciation>
+		<Purchase_Prise id="-4676584919922863211">5000</Purchase_Prise>
+		<Maintenance_Fee id="6814970521436508924">600</Maintenance_Fee>
+		<icon id="6654644335674373669">asset</icon>
+		<Purchase_Contract id="2934822770149892516">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Purchase_Contract.pdf</Purchase_Contract>
+		<Name id="-4227719003537064930">Financials Sun HW</Name>
+	</Financial>
+	<WebApplication alias="WebApplication-1" id="-5109106515906585207" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.308" lastModified="2009-02-05T18:20:25.308" displayValue="Web Mail (on )">
+		Web Mail (on )
+		<description>This CI describes one web application, that is accessed through a web browser.</description>
+		<Service id="-7054914299816884804"><ref alias="Service-7"/></Service>
+		<LicenseKey id="-3185479711433012892">ertf4545rtr78h</LicenseKey>
+		<Financial id="5338274085924155156"><ref alias="Financial-6"/></Financial>
+		<Version id="-2316240670068204386">1.0.0</Version>
+		<icon id="-4259421738898882896">package</icon>
+		<Name id="9014378365091390535">Web Mail</Name>
+		<Maintenance id="-8424098992579099756"><ref alias="Maintenance-3"/></Maintenance>
+	</WebApplication>
+	<Server alias="Server-2" id="-2780341911154535929" displayName="${Name} ${IPAddress}" created="2009-02-05T18:20:25.324" lastModified="2009-02-05T18:20:25.324" displayValue="Bravo 212.100.105.110">
+		Bravo 212.100.105.110
+		<description>This CI specifies one server computer system. A Server Computer System is used to host server applications.</description>
+		<Status id="-904696483322060582"><ref alias="OP_Status_In_Production"/></Status>
+		<SerialNumber id="6594940866606089571">235-SDFG-2345</SerialNumber>
+		<MAC_Address id="8877707232451181133">5464263</MAC_Address>
+		<Manufacturer id="-4004306391877501035"><ref alias="Sun"/></Manufacturer>
+		<Maintenance id="9213283871064822918"><ref alias="Maintenance-2"/></Maintenance>
+		<Service id="-5507871485336110691"><ref alias="Service-2"/></Service>
+		<Network id="2748548768315047347"><ref alias="Network-2"/></Network>
+		<ConnectedTo id="7781055416523330634"><ref alias="Router1233856862163"/></ConnectedTo>
+		<icon id="-8566202350343724111">computer</icon>
+		<Financials id="-5539879736296552080"><ref alias="Financial-2"/></Financials>
+		<Name id="922700142885112110">Bravo</Name>
+		<Location id="-7027077151791218655"><ref alias="Location-3"/></Location>
+		<IPAddress id="-6308160319775755016">212.100.105.110</IPAddress>
+	</Server>
+	<Company alias="Sun" id="4827639666063870561" displayName="${Name}" created="2009-02-05T18:20:25.620" lastModified="2009-02-05T18:20:25.620" displayValue="Sun">
+		Sun
+		<description>This CI describes one company.</description>
+		<Telephone id="-5747572477218651974">(234) 200 4444</Telephone>
+		<icon id="-42571373374639887">resource</icon>
+		<Web_Address id="-8432222704224285859">http://www.sun.com</Web_Address>
+		<Name id="-7916825796291365954">Sun</Name>
+	</Company>
+	<Service alias="Service-7" id="3189730768841882258" displayName="${Name}" created="2009-02-05T18:20:25.324" lastModified="2009-02-05T18:20:25.324" displayValue="Webhosting">
+		Webhosting
+		<description>This CI defines a Service. All hardware and software belongs to a service. A service defines a number of SLA's and has many company that uses it.</description>
+		<Uses id="-6577541824743203825"><ref alias="Service-2"/></Uses>
+		<Uses id="-8653518768302331333"><ref alias="Service-3"/></Uses>
+		<Uses id="-1268010112572255946"><ref alias="Service-6"/></Uses>
+		<SLA id="1682013692277440502">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Service_Level_Agreement.pdf</SLA>
+		<icon id="-142166637471263708">service</icon>
+		<UsedBy id="-7280038168401795640"><ref alias="Company-1"/></UsedBy>
+		<Name id="-9131571986546859824">Webhosting</Name>
+	</Service>
+	<Financial alias="Financial-3" id="3447297152599012184" displayName="${Name}" created="2009-02-05T18:20:25.620" lastModified="2009-02-05T18:20:25.620" displayValue="Financials Dell #2">
+		Financials Dell #2
+		<description>This CI contains financial information for one or several pieces of equipment or software packages.</description>
+		<Purchase_Date id="3663409453936928363">2007-04-01</Purchase_Date>
+		<Depreciation id="6369819791582477280">5</Depreciation>
+		<Purchase_Prise id="8467856545510875329">4000</Purchase_Prise>
+		<Maintenance_Fee id="4118196448195070210">600</Maintenance_Fee>
+		<icon id="-6478337622352732830">asset</icon>
+		<Purchase_Contract id="2771452549664126995">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Purchase_Contract.pdf</Purchase_Contract>
+		<Name id="5964179305182959369">Financials Dell #2</Name>
+	</Financial>
+	<Company alias="Computercomp" id="-4924686504653201824" displayName="${Name}" created="2009-02-05T18:20:25.339" lastModified="2009-02-05T18:20:25.339" displayValue="Computer Company, Inc.">
+		Computer Company, Inc.
+		<description>This CI describes one company.</description>
+		<Telephone id="6476380113391649824">(349) 100 2222</Telephone>
+		<icon id="-6890596100545655483">resource</icon>
+		<Web_Address id="-507067667273558681">http://www.compcomp.com</Web_Address>
+		<Name id="3871636920419996688">Computer Company, Inc.</Name>
+	</Company>
+	<MSOutlook alias="MSOutlook-2" id="8090983795433772996" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.636" lastModified="2009-02-05T18:20:25.636" displayValue="MS Outlook (on Windows XP SP1 (on Dgould Desktop 212.100.23.76))">
+		MS Outlook (on Windows XP SP1 (on Dgould Desktop 212.100.23.76))
+		<description>This CI defines MS Outlook</description>
+		<Service id="7334753369923292717"><ref alias="Service-4"/></Service>
+		<LicenseKey id="9130283071690710966">MSOL-4566-7768-6786</LicenseKey>
+		<Financial id="8943026116533135433"><ref alias="Financial-5"/></Financial>
+		<Version id="-5157229922116189130">2003</Version>
+		<icon id="3249455197676406498">package</icon>
+		<InstalledOn id="-6385269724732852619"><ref alias="WinXP_SP1-2"/></InstalledOn>
+		<Name id="7540760987300877583">MS Outlook</Name>
+		<DSLEntry id="-3654443718858452907">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="163086795645474175"><ref alias="Maintenance-5"/></Maintenance>
+	</MSOutlook>
+	<RedHatLinuxV4 alias="RedHatLinuxV4-2" id="8718515141396958895" displayName="${Name} ${Version} (on ${InstalledOn})" created="2009-02-05T18:20:25.355" lastModified="2009-02-05T18:20:25.355" displayValue="Red Hat Linux 4 (on Delta 212.100.220.134)">
+		Red Hat Linux 4 (on Delta 212.100.220.134)
+		<description>This CI defines a Red Hat Linux Operating System. It is installed on a System.</description>
+		<Service id="3741866973671273131"><ref alias="Service-6"/></Service>
+		<Family id="5788685430609525259">Linux</Family>
+		<LicenseKey id="264650982293241804">GHJU-7688-MOVF</LicenseKey>
+		<Financial id="7256091722820874235"><ref alias="Financial-7"/></Financial>
+		<Version id="7995554396915835149">4</Version>
+		<icon id="-4654495339642416173">linux</icon>
+		<InstalledOn id="7089503395639832807"><ref alias="Server-4"/></InstalledOn>
+		<Name id="-8744581548617627329">Red Hat Linux</Name>
+		<DSLEntry id="2857423553898214396">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</DSLEntry>
+		<Maintenance id="-136428068907166085"><ref alias="Maintenance-4"/></Maintenance>
+	</RedHatLinuxV4>
+	<Service alias="Service-6" id="-7692847623536433277" displayName="${Name}" created="2009-02-05T18:20:25.355" lastModified="2009-02-05T18:20:25.355" displayValue="Platform">
+		Platform
+		<description>This CI defines a Service. All hardware and software belongs to a service. A service defines a number of SLA's and has many company that uses it.</description>
+		<SLA id="2166932072540764963">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Service_Level_Agreement.pdf</SLA>
+		<icon id="2296655913270209708">service</icon>
+		<UsedBy id="4106109930827195843"><ref alias="Dummycust"/></UsedBy>
+		<UsedBy id="-8099317571974383133"><ref alias="Acme"/></UsedBy>
+		<UsedBy id="6019143145223405189"><ref alias="Company-1"/></UsedBy>
+		<Name id="-8554951234448586558">Platform</Name>
+	</Service>
+	<WinXP_SP1 alias="WinXP_SP1-2" id="2360961565293786437" displayName="${Name} ${Version} (on ${InstalledOn})" created="2009-02-05T18:20:25.371" lastModified="2009-02-05T18:20:25.371" displayValue="Windows XP SP1 (on Dgould Desktop 212.100.23.76)">
+		Windows XP SP1 (on Dgould Desktop 212.100.23.76)
+		<description>This CI defines a Windows XP Operating System. The OS is installed on a System.</description>
+		<Service id="-135395996188300779"><ref alias="Service-6"/></Service>
+		<Family id="8300458231596483573">Windows</Family>
+		<LicenseKey id="-2605112679573528609">MSHJ-6543-6789</LicenseKey>
+		<Financial id="5899619806822072117"><ref alias="Financial-4"/></Financial>
+		<Version id="4004549536679635253">SP1</Version>
+		<icon id="644993539742346958">mswindows</icon>
+		<InstalledOn id="1577385282079260616"><ref alias="Desktop-2"/></InstalledOn>
+		<Name id="-6228881075929250019">Windows XP</Name>
+		<DSLEntry id="6203082668259779746">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</DSLEntry>
+		<Maintenance id="2135928731967655168"><ref alias="Maintenance-5"/></Maintenance>
+	</WinXP_SP1>
+	<Financial alias="Financial1233858583772" id="3852205446987776193" displayName="${Name}" created="2009-02-05T18:31:07.212" lastModified="2009-02-05T18:31:07.212" displayValue="Financials Cisco">
+		Financials Cisco
+		<description>This CI describes the financial aspect of a CI.</description>
+		<Purchase_Date id="-6165651937164852779">2007-10-10</Purchase_Date>
+		<Depreciation id="-8830729736156586020">5</Depreciation>
+		<Maintenance_Fee id="-516607607055496321">500</Maintenance_Fee>
+		<Purchase_Prise id="-8401344228175379927">5000</Purchase_Prise>
+		<icon id="1092741289416238300">asset</icon>
+		<Purchase_Contract id="-8615054769213158235">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Purchase_Contract.pdf</Purchase_Contract>
+		<Name id="1298048259539154345">Financials Cisco</Name>
+	</Financial>
+	<ServerApplication alias="ServerApplication-1" id="7527652757339169570" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.636" lastModified="2009-02-05T18:20:25.636" displayValue="Apache (on Red Hat Linux 4 (on Delta 212.100.220.134))">
+		Apache (on Red Hat Linux 4 (on Delta 212.100.220.134))
+		<description>This CI defines a Server Application. A Server Application defines a listener port.</description>
+		<Service id="-639916175088470024"><ref alias="Service-7"/></Service>
+		<LicenseKey id="-4648286921588776910">N.A</LicenseKey>
+		<Financial id="3908408647385085092"><ref alias="Financial-6"/></Financial>
+		<Version id="-2280013387560589214">3.4</Version>
+		<icon id="-1359343931752273943">package</icon>
+		<InstalledOn id="4517896688311847404"><ref alias="RedHatLinuxV4-2"/></InstalledOn>
+		<Port id="3812575873462958305">80</Port>
+		<Name id="2778783699897452421">Apache</Name>
+		<DSLEntry id="-3836582735760237061">http://onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="3737203980237319335"><ref alias="Maintenance-3"/></Maintenance>
+	</ServerApplication>
+	<Service alias="Service-5" id="-1151731189348023647" displayName="${Name}" created="2009-02-05T18:20:25.651" lastModified="2009-02-05T18:20:25.651" displayValue="ERP">
+		ERP
+		<description>This CI defines a Service. All hardware and software belongs to a service. A service defines a number of SLA's and has many company that uses it.</description>
+		<SLA id="5145676479463408400">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Service_Level_Agreement.pdf</SLA>
+		<Uses id="7819460367056402737"><ref alias="Service-6"/></Uses>
+		<Uses id="6413197770666764411"><ref alias="Service-2"/></Uses>
+		<icon id="3753796123307784258">service</icon>
+		<UsedBy id="243700242225166115"><ref alias="Acme"/></UsedBy>
+		<Name id="6926212295666617372">ERP</Name>
+	</Service>
+	<Desktop alias="Desktop-2" id="-8812018634225087876" displayName="${Name} ${IPAddress}" created="2009-02-05T18:20:25.371" lastModified="2009-02-05T18:34:35.434" displayValue="Dgould Desktop 212.100.23.76">
+		Dgould Desktop 212.100.23.76
+		<description>This CI specifies one desktop computer system. A desktop computer System is located in one place and used by one person at a time.</description>
+		<SerialNumber id="-3865565000895609819">D-3453-34535-67</SerialNumber>
+		<Status id="-3508621591250907696"><ref alias="OP_Status_In_Production"/></Status>
+		<MAC_Address id="-4564729555852199888">46745764567</MAC_Address>
+		<Manufacturer id="-5213508822611217742"><ref alias="Dell"/></Manufacturer>
+		<Maintenance id="-3568415903406117242"><ref alias="Maintenance-2"/></Maintenance>
+		<Network id="7990095548265408298"><ref alias="Network-2"/></Network>
+		<ConnectedTo id="8425412410163566420"><ref alias="Router1233856862163"/></ConnectedTo>
+		<icon id="2890107311770500604">desktop</icon>
+		<Financials id="6033336664941745388"><ref alias="Financial-1"/></Financials>
+		<Name id="-5915857156723831852">Dgould Desktop</Name>
+		<Location id="4503866045808790941"><ref alias="Location-3"/></Location>
+		<IPAddress id="3393247818238661201">212.100.23.76</IPAddress>
+	</Desktop>
+	<Router alias="Router1233856155355" id="-5530975777436294239" displayName="${Name} ${IPAddress}" created="2009-02-05T17:49:46.650" lastModified="2009-02-05T18:20:26.322" displayValue="Internet Router">
+		Internet Router
+		<description>This CI specifies a network device router.</description>
+		<Network id="-794638742345679370"><ref alias="Network-1"/></Network>
+		<icon id="3660573623667195354">netcomp</icon>
+		<Name id="514723969537527735">Internet Router</Name>
+	</Router>
+	<WinXP_SP1 alias="WinXP_SP1-1" id="-7681228067161851499" displayName="${Name} ${Version} (on ${InstalledOn})" created="2009-02-05T18:20:25.386" lastModified="2009-02-05T18:20:25.386" displayValue="Windows XP SP1 (on Jsmith Desktop 212.100.95.23)">
+		Windows XP SP1 (on Jsmith Desktop 212.100.95.23)
+		<description>This CI defines a Windows XP Operating System. The OS is installed on a System.</description>
+		<Service id="7883327145289866919"><ref alias="Service-6"/></Service>
+		<Family id="-7346716372425517803">Windows</Family>
+		<LicenseKey id="-954215081080461216">MSHJ-6543-6789</LicenseKey>
+		<Financial id="-7198846641098311717"><ref alias="Financial-4"/></Financial>
+		<Version id="9157154134601090117">SP1</Version>
+		<icon id="4005668422070062656">mswindows</icon>
+		<InstalledOn id="-6058526366718365878"><ref alias="Desktop-1"/></InstalledOn>
+		<Name id="1486925729904617622">Windows XP</Name>
+		<DSLEntry id="-8501327883016571670">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</DSLEntry>
+		<Maintenance id="-5680969358798954518"><ref alias="Maintenance-5"/></Maintenance>
+	</WinXP_SP1>
+	<Server alias="Server-3" id="-3333177631690514592" displayName="${Name} ${IPAddress}" created="2009-02-05T18:20:25.386" lastModified="2009-02-05T18:20:25.386" displayValue="Charlie 212.100.120.003">
+		Charlie 212.100.120.003
+		<description>This CI specifies one server computer system. A Server Computer System is used to host server applications.</description>
+		<Status id="7308020398993199785"><ref alias="OP_Status_Under_Test"/></Status>
+		<SerialNumber id="-8257656579827314561">ASDF-2342424</SerialNumber>
+		<MAC_Address id="-8984575878324233060">2345345234</MAC_Address>
+		<Manufacturer id="1520207194837661057"><ref alias="Dell"/></Manufacturer>
+		<Maintenance id="6791805199949843540"><ref alias="Maintenance-2"/></Maintenance>
+		<Service id="1150693381845890573"><ref alias="Service-5"/></Service>
+		<Network id="-8862607126972719591"><ref alias="Network-3"/></Network>
+		<ConnectedTo id="4480687567658066129"><ref alias="Router1233856716808"/></ConnectedTo>
+		<icon id="2042563273663095651">computer</icon>
+		<Financials id="6619187104700101757"><ref alias="Financial-1"/></Financials>
+		<Name id="7167904723246412909">Charlie</Name>
+		<Location id="-4060091675123323242"><ref alias="Location-2"/></Location>
+		<IPAddress id="8829350485542058753">212.100.120.003</IPAddress>
+	</Server>
+	<Person alias="Person-3" id="644432760647713998" displayName="${Name}" created="2009-02-05T18:20:25.402" lastModified="2009-02-05T18:20:25.402" displayValue="Ron Holland">
+		Ron Holland
+		<description>This CI describes one Person.</description>
+		<Email id="1015408020258484321">rh@acme.com</Email>
+		<Organisation id="8408966000768163514"><ref alias="Acme"/></Organisation>
+		<Telephone id="1808707473131307331">(415) 345 6777</Telephone>
+		<icon id="-6941008103885541397">people</icon>
+		<Name id="4109019445564469078">Ron Holland</Name>
+	</Person>
+	<Financial alias="Financial-6" id="4998293707470442048" displayName="${Name}" created="2009-02-05T18:20:25.651" lastModified="2009-02-05T18:20:25.651" displayValue="Financials Applications">
+		Financials Applications
+		<description>This CI contains financial information for one or several pieces of equipment or software packages.</description>
+		<Purchase_Date id="7225805649094270252">2007-08-20</Purchase_Date>
+		<Depreciation id="-6956308277164992726">5</Depreciation>
+		<Purchase_Prise id="5235706806350679807">4000</Purchase_Prise>
+		<Maintenance_Fee id="3525325848917290610">850</Maintenance_Fee>
+		<icon id="-1183398848473545322">asset</icon>
+		<Purchase_Contract id="-2337225455011948381">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Purchase_Contract.pdf</Purchase_Contract>
+		<Name id="-7116446921194197392">Financials Applications</Name>
+	</Financial>
+	<ServerApplication alias="ServerApplication-2" id="-848813191485028174" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.667" lastModified="2009-02-05T18:20:25.667" displayValue="Server Application (on Red Hat Linux 5 (on Echo 212.100.103.145))">
+		Server Application (on Red Hat Linux 5 (on Echo 212.100.103.145))
+		<description>This CI defines a Server Application. A Server Application defines a listener port.</description>
+		<Service id="6737691706274371376"><ref alias="Service-3"/></Service>
+		<LicenseKey id="-4084214817368702525">N.A</LicenseKey>
+		<Financial id="2347238752858666952"><ref alias="Financial-6"/></Financial>
+		<Version id="-8133124878963475102">Tomcat</Version>
+		<icon id="9096430065151848462">package</icon>
+		<InstalledOn id="-2203450543243349591"><ref alias="RedHatLinuxV5-1"/></InstalledOn>
+		<Port id="6470086527220365972">8080</Port>
+		<Name id="-5006702932400865661">Server Application</Name>
+		<DSLEntry id="-7553576189883934994">http://onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="458424968452037270"><ref alias="Maintenance-3"/></Maintenance>
+	</ServerApplication>
+	<Network alias="Network-3" id="-850307699632903230" displayName="${Name}" created="2009-02-05T18:20:25.402" lastModified="2009-02-05T18:20:25.402" displayValue="Acme Extranet">
+		Acme Extranet
+		<description>A logical network that a system belongs to.</description>
+		<icon id="-8593978970276874372">resource</icon>
+		<Name id="5181239213287648750">Acme Extranet</Name>
+	</Network>
+	<OperationalStatus alias="OperationalStatus-1" id="5792062249944280424" displayName="${Name}" created="2009-02-05T18:20:25.683" lastModified="2009-02-05T18:20:25.683" displayValue="Not Installed">
+		Not Installed
+		<description>The operational status for a CI. Typically this would be In Production, In Testing, Under installation etc.</description>
+		<icon id="-6364483151912109510">resource</icon>
+		<Name id="-1319734164380103193">Not Installed</Name>
+	</OperationalStatus>
+	<Desktop alias="Desktop-1" id="-4076178900868196451" displayName="${Name} ${IPAddress}" created="2009-02-05T18:20:25.667" lastModified="2009-02-05T18:33:51.736" displayValue="Jsmith Desktop 212.100.95.23">
+		Jsmith Desktop 212.100.95.23
+		<description>This CI specifies one desktop computer system. A desktop computer System is located in one place and used by one person at a time.</description>
+		<Status id="7401758420267420012"><ref alias="OP_Status_In_Production"/></Status>
+		<SerialNumber id="3989950536302010219">D-2134-987778</SerialNumber>
+		<MAC_Address id="-6976008299784686741">78785678</MAC_Address>
+		<Manufacturer id="-210489060092153760"><ref alias="Dell"/></Manufacturer>
+		<Maintenance id="3217099131252509843"><ref alias="Maintenance-2"/></Maintenance>
+		<Network id="-1092690769918185221"><ref alias="Network-2"/></Network>
+		<ConnectedTo id="7213960889757268449"><ref alias="Router1233856862163"/></ConnectedTo>
+		<icon id="8281340774955524480">desktop</icon>
+		<Financials id="6515479463174837620"><ref alias="Financial-1"/></Financials>
+		<Name id="-4837458899626072913">Jsmith Desktop</Name>
+		<Location id="6350424754771385454"><ref alias="Location-3"/></Location>
+		<IPAddress id="-3458601285111143881">212.100.95.23</IPAddress>
+	</Desktop>
+	<Network alias="Network-2" id="5620893656154885808" displayName="${Name}" created="2009-02-05T18:20:25.417" lastModified="2009-02-05T18:20:25.417" displayValue="Acme Intranet">
+		Acme Intranet
+		<description>A logical network that a system belongs to.</description>
+		<icon id="1420390690482460949">resource</icon>
+		<Name id="-1585866660227135170">Acme Intranet</Name>
+	</Network>
+	<Router alias="Router1233856716808" id="7126412854245366183" displayName="${Name} ${IPAddress}" created="2009-02-05T18:00:20.227" lastModified="2009-02-05T18:33:10.051" displayValue="New Your Router">
+		New Your Router
+		<description>This CI specifies a network device router.</description>
+		<Status id="3768025980963753083"><ref alias="OP_Status_In_Production"/></Status>
+		<SerialNumber id="-899861630289755415">3213-43423-A</SerialNumber>
+		<Hostname id="7003586492111076701">rt-ny-01</Hostname>
+		<Maintenance id="4195418534074174138"><ref alias="Maintenance-1"/></Maintenance>
+		<Service id="1971319685763471933"><ref alias="Service-6"/></Service>
+		<Network id="-6794024229554574364"><ref alias="Network-3"/></Network>
+		<ConnectedTo id="4253076717814574354"><ref alias="Router1233856155355"/></ConnectedTo>
+		<icon id="-4932627984315062285">netcomp</icon>
+		<Financials id="-4067758442388733862"><ref alias="Financial1233858583772"/></Financials>
+		<Name id="8119676032460098150">New Your Router</Name>
+		<Location id="-1000005322863799041"><ref alias="Location-2"/></Location>
+	</Router>
+	<Server alias="Server-1" id="-2475574555352221402" displayName="${Name} ${IPAddress}" created="2009-02-05T18:20:25.683" lastModified="2009-02-05T18:20:25.683" displayValue="Alpha 212.100.105.105">
+		Alpha 212.100.105.105
+		<description>This CI specifies one server computer system. A Server Computer System is used to host server applications.</description>
+		<Status id="-1921963780400912651"><ref alias="OP_Status_In_Production"/></Status>
+		<SerialNumber id="-3378342716339624738">3425-234523</SerialNumber>
+		<MAC_Address id="-2632218590634162977">2345243</MAC_Address>
+		<Hostname id="-3129038374842647889">mail.acme.com</Hostname>
+		<Manufacturer id="-8363414363933874567"><ref alias="Dell"/></Manufacturer>
+		<Maintenance id="5019584212837015406"><ref alias="Maintenance-1"/></Maintenance>
+		<Service id="2934000106356744815"><ref alias="Service-4"/></Service>
+		<Network id="-2221848050270434651"><ref alias="Network-2"/></Network>
+		<ConnectedTo id="5359626264798396913"><ref alias="Router1233856830960"/></ConnectedTo>
+		<icon id="-2799903762990815919">computer</icon>
+		<Financials id="-4270741229303412076"><ref alias="Financial-3"/></Financials>
+		<Name id="5806807389946396943">Alpha</Name>
+		<Location id="6240567714759336461"><ref alias="Location-1"/></Location>
+		<IPAddress id="3341673632119540104">212.100.105.105</IPAddress>
+	</Server>
+	<Maintenance alias="Maintenance-2" id="-4190494150324136983" displayName="${Name}" created="2009-02-05T18:20:25.698" lastModified="2009-02-05T18:20:25.698" displayValue="HW Maintenance 5x8">
+		HW Maintenance 5x8
+		<description>This CI contains maintenance information for one or several pieces of equipment or software packages</description>
+		<icon id="5060840081890650942">maintenance</icon>
+		<Maintenance_Agreement id="-7857390527405446753">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Maintenance_Agreement.pdf</Maintenance_Agreement>
+		<Maintenance_Level id="7784285728070539961">5x8</Maintenance_Level>
+		<Specialist id="-154678095715910230"><ref alias="Jsmith"/></Specialist>
+		<Name id="-8563583562675265604">HW Maintenance 5x8</Name>
+		<Maintenance_Org id="7211017198938200721"><ref alias="Itsuppgroup"/></Maintenance_Org>
+	</Maintenance>
+	<Database alias="Database-1" id="7778635931428835549" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.417" lastModified="2009-02-05T18:20:25.417" displayValue="MySQL (on Red Hat Linux 4 (on Bravo 212.100.105.110))">
+		MySQL (on Red Hat Linux 4 (on Bravo 212.100.105.110))
+		<description>This CI describes a database software.</description>
+		<Service id="8638948293972093182"><ref alias="Service-3"/></Service>
+		<LicenseKey id="-5656899184184389181">N.A</LicenseKey>
+		<Financial id="-6467415063771255223"><ref alias="Financial-6"/></Financial>
+		<Version id="4280751810376952048">5.0</Version>
+		<icon id="-8635027279306505323">package</icon>
+		<InstalledOn id="-8900994198494610975"><ref alias="RedHatLinuxV4-1"/></InstalledOn>
+		<Name id="-4918938297162095369">MySQL</Name>
+		<DSLEntry id="8772636201544763866">http://onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="8450003995186799408"><ref alias="Maintenance-3"/></Maintenance>
+	</Database>
+	<Company alias="Company-1" id="-4855903498930170112" displayName="${Name}" created="2009-02-05T18:20:25.698" lastModified="2009-02-05T18:20:25.698" displayValue="Customer Company, Inc.">
+		Customer Company, Inc.
+		<description>This CI describes one company.</description>
+		<Telephone id="-8819319518092941161">(651) 6677 2345</Telephone>
+		<icon id="6410794548907466335">resource</icon>
+		<Name id="5317372597898857085">Customer Company, Inc.</Name>
+	</Company>
+	<Person alias="Jsmith" id="-3893405268448940490" displayName="${Name}" created="2009-02-05T18:20:25.714" lastModified="2009-02-05T18:20:25.714" displayValue="John Smith">
+		John Smith
+		<description>This CI describes one Person.</description>
+		<Email id="5066324111052808385">js@acme.com</Email>
+		<Organisation id="7164257259879327766"><ref alias="Acme"/></Organisation>
+		<Telephone id="1914006347921019632">(415) 345 6514</Telephone>
+		<icon id="-1934981893647782272">people</icon>
+		<Name id="759828985996519600">John Smith</Name>
+	</Person>
+	<Financial alias="Financial-4" id="1397661819573870079" displayName="${Name}" created="2009-02-05T18:20:25.433" lastModified="2009-02-05T18:20:25.433" displayValue="Financials Microsoft (Bulk)">
+		Financials Microsoft (Bulk)
+		<description>This CI contains financial information for one or several pieces of equipment or software packages.</description>
+		<Purchase_Date id="-952299957948130227">2007-09-01</Purchase_Date>
+		<Depreciation id="-8117568860116257380">3</Depreciation>
+		<Maintenance_Fee id="-8009851118201185332">35</Maintenance_Fee>
+		<Purchase_Prise id="-3161059600611305858">300</Purchase_Prise>
+		<icon id="6342921068141150397">asset</icon>
+		<Purchase_Contract id="8212180513145188274">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Purchase_Contract.pdf</Purchase_Contract>
+		<Name id="8719950613925255341">Financials Microsoft (Bulk)</Name>
+	</Financial>
+	<Maintenance alias="Maintenance-4" id="3165690820718202191" displayName="${Name}" created="2009-02-05T18:20:25.714" lastModified="2009-02-05T18:20:25.714" displayValue="Linux Maintenance">
+		Linux Maintenance
+		<description>This CI describes the maintenance aggrement. The maintenance are typically associated with a Service, Software and Hardware.</description>
+		<icon id="-4635026322778405667">maintenance</icon>
+		<Maintenance_Agreement id="553618425351284771">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Maintenance_Agreement.pdf</Maintenance_Agreement>
+		<Maintenance_Level id="7970401338457508493">5x8</Maintenance_Level>
+		<Specialist id="-5359600836155918187"><ref alias="Dgould"/></Specialist>
+		<Maintenance_Org id="4732144602134860133"><ref alias="Computercomp"/></Maintenance_Org>
+		<Name id="1643248570528096007">Linux Maintenance</Name>
+	</Maintenance>
+	<Service alias="Service-4" id="-2007625949736517707" displayName="${Name}" created="2009-02-05T18:20:25.433" lastModified="2009-02-05T18:20:25.433" displayValue="E-mail">
+		E-mail
+		<description>This CI defines a Service. All hardware and software belongs to a service. A service defines a number of SLA's and has many company that uses it.</description>
+		<SLA id="2086896242348831245">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Service_Level_Agreement.pdf</SLA>
+		<Uses id="85894829351579672"><ref alias="Service-6"/></Uses>
+		<Uses id="4092838175874158136"><ref alias="Service-3"/></Uses>
+		<icon id="3002956153644051314">service</icon>
+		<UsedBy id="7441608930445406534"><ref alias="Acme"/></UsedBy>
+		<Name id="-9092452137035644184">E-mail</Name>
+	</Service>
+	<Router alias="Router1233856830960" id="8704394320707623023" displayName="${Name} ${IPAddress}" created="2009-02-05T18:00:52.833" lastModified="2009-02-05T18:33:10.051" displayValue="Atlanta Router">
+		Atlanta Router
+		<description>This CI specifies a network device router.</description>
+		<SerialNumber id="-1733227788889734395">2134-12312-A</SerialNumber>
+		<Status id="-7048050971202361396"><ref alias="OP_Status_In_Production"/></Status>
+		<Hostname id="-6851084663544707355">rt-atl-01</Hostname>
+		<Maintenance id="-4562412397549890633"><ref alias="Maintenance-1"/></Maintenance>
+		<Service id="-8308506233244147257"><ref alias="Service-6"/></Service>
+		<ConnectedTo id="2500252497778285908"><ref alias="Router1233856155355"/></ConnectedTo>
+		<icon id="6244364672324494252">netcomp</icon>
+		<Financials id="-2998015807616017159"><ref alias="Financial1233858583772"/></Financials>
+		<Name id="8031553200319791986">Atlanta Router</Name>
+		<Location id="3451665973673174452"><ref alias="Location-1"/></Location>
+	</Router>
+	<MSOffice alias="MSOffice-2" id="-4242991344461626935" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.449" lastModified="2009-02-05T18:20:25.449" displayValue="MS Office (on Windows XP SP1 (on Dgould Desktop 212.100.23.76))">
+		MS Office (on Windows XP SP1 (on Dgould Desktop 212.100.23.76))
+		<description>This CI defines MS Office</description>
+		<LicenseKey id="-8976073450458226065">MSOF-6767-7788-WERT</LicenseKey>
+		<Financial id="-9004179824314757671"><ref alias="Financial-5"/></Financial>
+		<Version id="-3144738892424537882">2003</Version>
+		<icon id="499260592934306042">package</icon>
+		<InstalledOn id="3573472863578479498"><ref alias="WinXP_SP1-2"/></InstalledOn>
+		<Name id="-878338414931166483">MS Office</Name>
+		<DSLEntry id="2458690534891983894">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="-971514043261012494"><ref alias="Maintenance-5"/></Maintenance>
+	</MSOffice>
+	<Financial alias="Financial-1" id="2660740486680094472" displayName="${Name}" created="2009-02-05T18:20:25.464" lastModified="2009-02-05T18:20:25.464" displayValue="Financials Dell #1">
+		Financials Dell #1
+		<description>This CI contains financial information for one or several pieces of equipment or software packages.</description>
+		<Purchase_Date id="7758379023601097171">2007-01-01</Purchase_Date>
+		<Depreciation id="-519182964796871311">5</Depreciation>
+		<Purchase_Prise id="-28440345935395326">3500</Purchase_Prise>
+		<Maintenance_Fee id="1863042958151051796">400</Maintenance_Fee>
+		<icon id="-6378695641735355253">asset</icon>
+		<Purchase_Contract id="-2568448142585723346">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Purchase_Contract.pdf</Purchase_Contract>
+		<Name id="-5138013176167448798">Financials Dell #1</Name>
+	</Financial>
+	<Server alias="Server-4" id="-1400692771274535445" displayName="${Name} ${IPAddress}" created="2009-02-05T18:20:25.464" lastModified="2009-02-05T18:20:25.464" displayValue="Delta 212.100.220.134">
+		Delta 212.100.220.134
+		<description>This CI specifies one server computer system. A Server Computer System is used to host server applications.</description>
+		<SerialNumber id="-5545017291784471569">D-23455525</SerialNumber>
+		<Status id="-8892034308259810526"><ref alias="OP_Status_In_Production"/></Status>
+		<MAC_Address id="2217119169404806760">432213423</MAC_Address>
+		<Manufacturer id="-156709814948638932"><ref alias="Dell"/></Manufacturer>
+		<Maintenance id="-6311814958747872799"><ref alias="Maintenance-1"/></Maintenance>
+		<Service id="-7539157331790975801"><ref alias="Service-3"/></Service>
+		<Network id="725932703911901252"><ref alias="Network-3"/></Network>
+		<ConnectedTo id="-1543501912370142891"><ref alias="Router1233856716808"/></ConnectedTo>
+		<icon id="2882438378625192635">computer</icon>
+		<Financials id="-9108954904218391125"><ref alias="Financial-3"/></Financials>
+		<Name id="-2719613865537713581">Delta</Name>
+		<Location id="8845605156991249105"><ref alias="Location-2"/></Location>
+		<IPAddress id="-6526717684304383236">212.100.220.134</IPAddress>
+	</Server>
+	<Person alias="Person-4" id="-5660852541304445579" displayName="${Name}" created="2009-02-05T18:20:25.480" lastModified="2009-02-05T18:20:25.480" displayValue="Nick Jones">
+		Nick Jones
+		<description>This CI describes one Person.</description>
+		<Email id="-1950114199003349928">nj@acme.com</Email>
+		<Organisation id="2003607630268516086"><ref alias="Acme"/></Organisation>
+		<Telephone id="-2841633559634385085">(212) 868 1012</Telephone>
+		<icon id="-6978792737461074220">people</icon>
+		<Name id="-3371201140165800957">Nick Jones</Name>
+	</Person>
+	<Person alias="Dgould" id="4928935779923226009" displayName="${Name}" created="2009-02-05T18:20:25.480" lastModified="2009-02-05T18:20:25.480" displayValue="Donna Gould">
+		Donna Gould
+		<description>This CI describes one Person.</description>
+		<Email id="5841013687752705315">dg@acme.com</Email>
+		<Organisation id="-1007523862602170445"><ref alias="Acme"/></Organisation>
+		<Telephone id="3870977919325663369">(415) 345 6515</Telephone>
+		<icon id="6846035337840121578">people</icon>
+		<Name id="-1971701329132424147">Donna Gould</Name>
+	</Person>
+	<Router alias="Router1233856862163" id="5008548003919795864" displayName="${Name} ${IPAddress}" created="2009-02-05T18:01:27.046" lastModified="2009-02-05T18:33:10.051" displayValue="Los Angeles Router">
+		Los Angeles Router
+		<description>This CI specifies a network device router.</description>
+		<SerialNumber id="-2691906439716898477">2345-12334-C</SerialNumber>
+		<Status id="859338018239841590"><ref alias="OP_Status_In_Production"/></Status>
+		<Hostname id="-5600972302265118921">rt-la-01</Hostname>
+		<Maintenance id="4744757613489925929"><ref alias="Maintenance-1"/></Maintenance>
+		<Service id="-1749098981884922986"><ref alias="Service-6"/></Service>
+		<ConnectedTo id="5270807616398300646"><ref alias="Router1233856155355"/></ConnectedTo>
+		<icon id="-8804791460694112798">netcomp</icon>
+		<Financials id="-8773389736838371887"><ref alias="Financial1233858583772"/></Financials>
+		<Name id="-3898955533602035718">Los Angeles Router</Name>
+		<Location id="5613508043863150238"><ref alias="Location-3"/></Location>
+	</Router>
+	<OperationalStatus alias="OP_Status_In_Production" id="2943787540273695633" displayName="${Name}" created="2009-02-05T18:20:25.729" lastModified="2009-02-05T18:20:25.729" displayValue="In Production">
+		In Production
+		<description>The operational status for a CI. Typically this would be In Production, In Testing, Under installation etc.</description>
+		<icon id="1011499765892071753">resource</icon>
+		<Name id="-1002999791258630508">In Production</Name>
+	</OperationalStatus>
+	<Database alias="Database-2" id="-8466585517712856565" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.480" lastModified="2009-02-05T18:20:25.480" displayValue="Oracle DB (on Red Hat Linux 5 (on Echo 212.100.103.145))">
+		Oracle DB (on Red Hat Linux 5 (on Echo 212.100.103.145))
+		<description>This CI describes a database software.</description>
+		<Service id="8317232173013054421"><ref alias="Service-5"/></Service>
+		<LicenseKey id="6876134981544635278">See Agreement</LicenseKey>
+		<Financial id="661196438946491576"><ref alias="Financial-6"/></Financial>
+		<Version id="8515378209520649558">V10</Version>
+		<icon id="7306462179391144246">package</icon>
+		<InstalledOn id="-2933075769775825877"><ref alias="RedHatLinuxV5-1"/></InstalledOn>
+		<Name id="1195982439188809271">Oracle DB</Name>
+		<DSLEntry id="7780866491690667623">http://onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="-2259048401946000978"><ref alias="Maintenance-3"/></Maintenance>
+	</Database>
+	<ServerApplication alias="ServerApplication-3" id="-6287582473708609526" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.495" lastModified="2009-02-05T18:20:25.495" displayValue="Oracle Financials (on Red Hat Linux 5 (on Echo 212.100.103.145))">
+		Oracle Financials (on Red Hat Linux 5 (on Echo 212.100.103.145))
+		<description>This CI defines a Server Application. A Server Application defines a listener port.</description>
+		<Service id="8577868377478815159"><ref alias="Service-5"/></Service>
+		<LicenseKey id="9018731417728747828">See Agreement</LicenseKey>
+		<Financial id="-556687136475920184"><ref alias="Financial-6"/></Financial>
+		<Version id="-7242988430161401735">9.4</Version>
+		<icon id="-3820973715494542114">package</icon>
+		<InstalledOn id="-4156491739036209588"><ref alias="RedHatLinuxV5-1"/></InstalledOn>
+		<Name id="-2177796476471989789">Oracle Financials</Name>
+		<DSLEntry id="-5183484135138565481">http://onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="-4690583208233553053"><ref alias="Maintenance-3"/></Maintenance>
+	</ServerApplication>
+	<Location alias="Location-3" id="-4842567901194156697" displayName="${Name}" created="2009-02-05T18:20:25.495" lastModified="2009-02-05T18:20:25.495" displayValue="Los Angeles">
+		Los Angeles
+		<description>This CI defines a Location. A location is defined by a symbolic name.</description>
+		<icon id="-1990157026527767878">resource</icon>
+		<Name id="6943335339908840256">Los Angeles</Name>
+	</Location>
+	<Financial alias="Financial-5" id="-6809990507988265013" displayName="${Name}" created="2009-02-05T18:20:25.729" lastModified="2009-02-05T18:20:25.729" displayValue="Financials Microsoft (applic)">
+		Financials Microsoft (applic)
+		<description>This CI contains financial information for one or several pieces of equipment or software packages.</description>
+		<Purchase_Date id="-8035834600713925830">2007-06-01</Purchase_Date>
+		<Depreciation id="-1957043479847351847">3</Depreciation>
+		<Purchase_Prise id="6784226043130057477">20</Purchase_Prise>
+		<Maintenance_Fee id="5181719940807660262">4</Maintenance_Fee>
+		<icon id="-2328663551021768479">asset</icon>
+		<Purchase_Contract id="3089254521955763061">http://www.onecmdb.org/docs/BasicDatacenter/docs/Dummy_Purchase_Contract.pdf</Purchase_Contract>
+		<Name id="-4751151200871688622">Financials Microsoft (applic)</Name>
+	</Financial>
+	<Company alias="Itsuppgroup" id="-2617370702621233587" displayName="${Name}" created="2009-02-05T18:20:25.511" lastModified="2009-02-05T18:20:25.511" displayValue="IT Support Group, Inc">
+		IT Support Group, Inc
+		<description>This CI describes one company.</description>
+		<Telephone id="-1961874030918505764">(212) 868 1000</Telephone>
+		<icon id="-6791966744142647144">resource</icon>
+		<Web_Address id="8070498338325910660">http://www.itsupp.com</Web_Address>
+		<Name id="8126659251547382630">IT Support Group, Inc</Name>
+	</Company>
+	<MS_Exchange alias="MS_Exchange-1" id="-8390914078023097105" displayName="${Name} (on ${InstalledOn})" created="2009-02-05T18:20:25.745" lastModified="2009-02-05T18:20:25.745" displayValue="MS Exchange (on )">
+		MS Exchange (on )
+		<description>This CI defines MS Exchange.</description>
+		<Service id="4092401723283353890"><ref alias="Service-4"/></Service>
+		<LicenseKey id="-7925888331328345621">MSXC-2246-6678-8998</LicenseKey>
+		<Financial id="-404243416718402197"><ref alias="Financial-5"/></Financial>
+		<Version id="-3463909961822165521">2003</Version>
+		<icon id="-2655331211832046321">package</icon>
+		<Name id="-2775650980202693599">MS Exchange</Name>
+		<DSLEntry id="4417203231883184644">http://onecmdb.org/docs/BasicDatacenter/DSL/Dummy_Software_Package.txt</DSLEntry>
+		<Maintenance id="8768583334408616296"><ref alias="Maintenance-5"/></Maintenance>
+	</MS_Exchange>
+	<WinXP_SP2 alias="WinXP_SP2-1" id="-8943318251782324959" displayName="${Name} ${Version} (on ${InstalledOn})" created="2009-02-05T18:20:25.745" lastModified="2009-02-05T18:20:25.745" displayValue="Windows XP SP2 (on Alpha 212.100.105.105)">
+		Windows XP SP2 (on Alpha 212.100.105.105)
+		<description>This CI defines a Windows XP Operating System. The OS is installed on a System.</description>
+		<Service id="3228882876129931322"><ref alias="Service-6"/></Service>
+		<Family id="-4334541705973310210">Windows</Family>
+		<LicenseKey id="5205836537922286909">MSWR-1234-8765</LicenseKey>
+		<Financial id="-5836469115630946552"><ref alias="Financial-4"/></Financial>
+		<Version id="4830736563074733556">SP2</Version>
+		<icon id="830475846139958738">mswindows</icon>
+		<InstalledOn id="3459173321380166939"><ref alias="Server-1"/></InstalledOn>
+		<Name id="-4946203882299470377">Windows XP</Name>
+		<DSLEntry id="-7143199781598031812">http://www.onecmdb.org/docs/BasicDatacenter/DSL/Dummy_OS_Package.txt</DSLEntry>
+		<Maintenance id="-6928212523960030931"><ref alias="Maintenance-5"/></Maintenance>
+	</WinXP_SP2>
+	<Network alias="Network-1" id="-3657346468776188455" displayName="${Name}" created="2009-02-05T18:20:25.511" lastModified="2009-02-05T18:20:25.511" displayValue="The Internet">
+		The Internet
+		<description>A logical network that a system belongs to.</description>
+		<icon id="62646434733317011">resource</icon>
+		<Name id="5247855429365919938">The Internet</Name>
+	</Network>
+</instances>
+</onecmdb>

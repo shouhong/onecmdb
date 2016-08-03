@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb-transform name="nmap-transform">
+	<DataSet name="nmap-network">
+		<InstanceSelector match="/" template="NMAP_Network"/>
+		<DefaultAttributeSelector name="name" value="{network}" naturalKey="true"/>
+	</DataSet>
+	
+	<DataSet name="nmap-host">
+		<InstanceSelector match="//host[status[@state='up']]" template="NMAP_Host"/>
+		<AttributeSelector name="ipv4Address" selector="address[@addrtype='ipv4']/@addr" naturalKey="false"/>
+		<AttributeSelector name="ipv6Address" selector="address[@addrtype='ipv6']/@addr" naturalKey="false"/>
+		<AttributeSelector name="hostname" selector="hostnames/hostname/@name" naturalKey="true"/>
+		<AttributeSelector name="macAddress" selector="address[@addrtype='mac']/@addr" naturalKey="true"/>
+		<AttributeSelector name="macVendor" selector="address[@addrtype='mac']/@vendor" naturalKey="false"/>
+		<ComplexAttributeSelector name="network" dataSet="nmap-network" selector="../.." naturalKey="true"/>
+	</DataSet>
+	
+	<DataSet name="nmap-tcp_port">
+		<InstanceSelector match="//host[status[@state='up']]/ports/port[@protocol='tcp' AND state[@state='open']]" template="NMAP_TCP_Port"/>
+		<AttributeSelector name="port" selector="@portid" naturalKey="true"/>
+		<AttributeSelector name="protocol" selector="@protocol" naturalKey="false"/>
+		<AttributeSelector name="serviceName" selector="service/@name" naturalKey="false"/>
+		<ComplexAttributeSelector name="host" dataSet="nmap-host" selector="../.." naturalKey="true"/>
+	</DataSet>
+	
+	<DataSet name="nmap-udp_port">
+		<InstanceSelector match="//host[status[@state='up']]/ports/port[@protocol='udp' AND state[@state='open']]" template="NMAP_UDP_Port"/>
+		<AttributeSelector name="port" selector="@portid" naturalKey="true"/>
+		<AttributeSelector name="protocol" selector="@protocol" naturalKey="false"/>
+		<AttributeSelector name="serviceName" selector="service/@name" naturalKey="false"/>
+		<ComplexAttributeSelector name="host" dataSet="nmap-host" selector="../.." naturalKey="true"/>
+	</DataSet>
+	
+	
+</onecmdb-transform>

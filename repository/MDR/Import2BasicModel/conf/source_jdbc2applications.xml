@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>
+Example of a JDBC Data Source description. 
+Edit it to point own database, and alter the query to 
+reflect the structure in database.
+
+NOTE: The query is transformed by file conf/transform_jdbc2applications.xml.
+This has to be altered to reflect the columns retrived from the query.
+</comment>
+<entry key="type">jdbc</entry>
+<entry key="db.user">root</entry>
+<entry key="db.password">1qaz1qaz</entry>
+<entry key="db.url">jdbc:mysql://192.168.1.15:3306/cmdb_systems</entry>
+<entry key="db.driverClass">com.mysql.jdbc.Driver</entry>
+<entry key="db.query">
+select * from cmdbApplications;
+</entry>
+</properties>

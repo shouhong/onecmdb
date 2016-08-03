@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<CustomView>
+	<widgets>
+		<widget asList="true" id ="cmdb-url-frame-widget">
+			<heading>CMDB Templates</heading>
+			<params>
+				<url>onecmdb/export/templates.html?name=CMDB/templates/templates.cfg</url>
+			</params>
+		</widget>
+	</widgets>
+</CustomView>

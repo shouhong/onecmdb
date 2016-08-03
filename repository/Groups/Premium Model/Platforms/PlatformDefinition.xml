@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GroupDescription name="Hardware" icon="onecmdb/content/Content/Images/Icons/computer16.gif">
+	
+	<GraphQuery>
+		<ItemOffspringSelector id="platform" template="PhysicalPlatformSystem" primary="true">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="virtual" template="VirtualPlatformSystem" primary="false">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="interface" template="NetworkInterface">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+	
+		<ItemOffspringSelector id="ip" template="IPAddress">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="segment" template="PhysicalSegment">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="software" template="SoftwareServer">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+
+		<ItemRelationSelector id="interface2platform" template="BelongsTo">
+			<target>platform</target>
+			<source>interface</source>
+			<mandatory>false</mandatory>
+
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="interface2segment" template="MemberOf">
+			<target>segment</target>
+			<source>interface</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="ip2platform" template="BelongsTo">
+			<target>platform</target>
+			<source>ip</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="virtual2platform" template="BelongsTo">
+			<target>platform</target>
+			<source>virtual</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="ip2virtual" template="BelongsTo">
+			<target>virtual</target>
+			<source>ip</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+
+		<ItemRelationSelector id="software2platform" template="BelongsTo">
+			<target>platform</target>
+			<source>software</source>
+<mandatory>false</mandatory>
+		</ItemRelationSelector>
+
+		
+		
+	</GraphQuery>
+
+	<Presentation>
+		<Tree id="tree-1" name="Platforms - Tree">
+			<TreeItemSelector id="platform">
+				<TreeItem name="Interfaces">
+					<TreeItemSelector id="interface"/>
+				</TreeItem> 
+				<TreeItem name="IPAdresses">
+					<TreeItemSelector id="ip"/>
+				</TreeItem>	
+			</TreeItemSelector>
+			
+		</Tree>
+		<Table id="table-1" name="Hardwares">
+			<visible>true</visible>
+			<primary>platform</primary>
+			<TableView asList="true" id="platform">
+				<Column object="platform" render="internal_displayname" asList="true">
+					<label>System Name</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				<Column object="ip2platform.0.ip" render="value_ipv4Address.value" asList="true">
+					<label>Mgmt IPAddress</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				
+				<Column object="platform" render="value_entityName.value" asList="true">
+					<label>System Name</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				<Column object="interface2platform" render="size" asList="true">
+					<label>Interfaces</label>
+					<reference>true</reference>
+					<type>NetworkInterface</type>
+				</Column>
+				
+				<Column object="ip2platform" render="size" asList="true">
+					<label>IP Address</label>
+					<reference>true</reference>
+					<type>IPAddress</type>
+				</Column>
+				
+				<Column object="virtual2platform" render="size" asList="true">
+					<label>Virtual Servers</label>
+					<reference>true</reference>
+					<type>VirtualServer</type>
+				</Column>
+				<Column object="software2platform" render="size" asList="true">
+					<label>Software</label>
+					<type>SoftwareServer</type>
+					<reference>true</reference>
+					<complexType>false</complexType>
+				</Column>		
+				
+			</TableView>
+			<TableView asList="true" id="virtual2platform">
+				<Column object="virtual" render="internal_displayname" asList="true">
+					<label>Display Name</label>
+				</Column>
+				<Column object="ip2virtual.0.ip" render="internal_displayname" asList="true">
+					<type>xs:string</type>
+					<label>IP Address</label>
+				</Column>
+			</TableView>
+			
+			<TableView asList="true" id="interface2platform">
+				<Column object="interface" render="internal_displayname" asList="true">
+					<label>Display Name</label>
+				</Column>
+				<Column object="interface" render="value_ifName.value" asList="true">
+					<type>xs:string</type>
+					<label>IF Name</label>
+				</Column>
+				<Column object="interface" render="value_txSpeed.value" asList="true">
+					<type>xs:string</type>
+					<label>TX Speed</label>
+				</Column>
+				<Column object="interface" render="value_rxSpeed.value" asList="true">
+					<type>xs:string</type>
+					<label>RX Speed</label>
+				</Column>
+			</TableView>
+			
+			<TableView asList="true" id="ip2platform">
+				<Column object="ip" render="internal_displayname" asList="true">
+					<label>IP Address</label>
+				</Column>
+			</TableView>
+
+			<TableView asList="true" id="software2platform">
+				<Column object="software" render="internal_displayname" asList="true">
+					<label>Software Name</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+
+
+			</TableView>	
+		</Table>
+		<Graph id="graph-2" name="L2 Topology Graph - Force Directed" asList="true">
+			<expression asSimpleList="true">platform/interface/segment/interface/platform</expression>
+			<expression asSimpleList="true">platform/virtual</expression>
+			
+			<applet>
+				<code>
+					org.onecmdb.graphml.viewer.applet.GraphMLViewApplet.class
+				</code>
+				<archive>
+					onecmdb/content/Content/applet/graphml/onecmdb-applet.jar,
+					onecmdb/content/Content/applet/graphml/onecmdb-applet-dependencies.jar
+				</archive>
+				<param>
+					<url><![CDATA[
+						${baseURL}/onecmdb/export/output.graphml?name=GraphML/export.cfg&type=graphml&group=${group}&graphid=${graphid}
+					]]></url>
+					<nodeLabel>nodeLabel</nodeLabel>
+					<nodeImageLabel>nodeImage</nodeImageLabel>
+					<layout>force</layout>	
+				</param>
+			</applet>
+		</Graph>
+		<Graph id="graph-1" name="L2 Topology Graph - Radial" asList="true">
+			<expression asSimpleList="true">platform/interface/segment/interface/platform</expression>
+			<expression asSimpleList="true">platform/virtual</expression>
+			
+			<applet>
+				<code>
+					org.onecmdb.graphml.viewer.applet.GraphMLViewApplet.class
+				</code>
+				<archive>
+					onecmdb/content/Content/applet/graphml/onecmdb-applet.jar,
+					onecmdb/content/Content/applet/graphml/onecmdb-applet-dependencies.jar
+				</archive>
+				<param>
+					<url><![CDATA[
+						${baseURL}/onecmdb/export/output.graphml?name=GraphML/export.cfg&type=graphml&group=${group}&graphid=${graphid}
+					]]></url>
+					<nodeLabel>nodeLabel</nodeLabel>
+					<nodeImageLabel>nodeImage</nodeImageLabel>
+					<layout>radial</layout>
+				</param>
+			</applet>
+		</Graph>
+		
+
+	</Presentation>
+
+	<LifeCycle>
+		<Create>
+			<instances>
+			</instances>
+			
+			<parameters>
+				<Input id="a" name="Platform"/>
+				<Input id="b" name="Install Dir"/>
+			</parameters>
+		</Create>
+		<Delete/>
+		<Import/>
+	</LifeCycle>
+	
+	
+</GroupDescription>
+
+
+
+
+

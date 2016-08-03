@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb-transform name="jdbc2systems">
+<!--  
+Assuming that the sql query will result a tabel with the following columns:
+1ID
+2System.Type
+3System.Hostname
+4System.IPAddress
+5System.IPv6Address
+6System.MAC_Address
+7System.SerialNumber
+8OS.Type
+9OS.Version
+10OS.Familly
+11OS.LicenseKey
+12Network.Name
+-->
+<!--  
+1System.Type
+2System.Hostname
+3System.IPAddress
+4System.IPv6Address
+5System.MAC_Address
+6System.SerialNumber
+7OS.Type
+8OS.Version
+9OS.Familly
+10OS.LicenseKey
+11Network.Name
+-->
+	<DataSet name="system">
+		<InstanceSelector template="System" templateSelector="2" />
+		<AttributeSelector name="Hostname" naturalKey="false" selector="3" />
+		<AttributeSelector name="IPAddress" naturalKey="true" selector="4" />
+		<AttributeSelector name="IPv6Address" naturalKey="false" selector="5" />
+		<AttributeSelector name="MAC_Address" naturalKey="false" selector="6" />
+		<AttributeSelector name="SerialNumber" naturalKey="false" selector="7" />
+		<ComplexAttributeSelector name="Network" naturalKey="true" dataSet="network" />
+	</DataSet>
+	
+	<DataSet name="os">
+		<InstanceSelector template="OS" templateSelector="8" />
+		<AttributeSelector name="Version" naturalKey="false" selector="9" />
+		<AttributeSelector name="Family" naturalKey="false" selector="10" />
+		<AttributeSelector name="LicenseKey" naturalKey="false" selector="11" />
+		<ComplexAttributeSelector name="InstalledOn" naturalKey="true" dataSet="system" />
+	</DataSet>
+	
+
+	<DataSet name="network">
+		<InstanceSelector template="Network"/>
+		<AttributeSelector name="Name" naturalKey="true" selector="12" />
+	</DataSet>
+	
+</onecmdb-transform>

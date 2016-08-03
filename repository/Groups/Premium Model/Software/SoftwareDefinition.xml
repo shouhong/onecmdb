@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GroupDescription name="Software - Servers" icon="onecmdb/content/Content/Images/Icons/system-installer.png">
+	
+	<GraphQuery>
+		<ItemOffspringSelector id="server" template="SoftwareServer" primary="true">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="platform" template="PlatformSystem">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="component" template="SoftwareComponent">
+			<matchTemplate>false</matchTemplate>			
+		</ItemOffspringSelector>
+	
+		<ItemOffspringSelector id="serverConnector" template="SoftwareServerConnector">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+	
+		<ItemOffspringSelector id="clientConnector" template="SoftwareClientConnector">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		
+		<ItemRelationSelector id="server2platform" template="BelongsTo">
+			<target>platform</target>
+			<source>server</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="component2server" template="BelongsTo">
+			<target>server</target>
+			<source>component</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="component2client" template="BelongsTo">
+			<target>component</target>
+			<source>clientConnector</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="component2socket" template="BelongsTo">
+			<target>component</target>
+			<source>serverConnector</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="client2socket" template="Uses">
+			<target>serverConnector</target>
+			<source>clientConnector</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+	</GraphQuery>
+
+	<Presentation>
+		<Table id="server" name="Server Table">
+			<visible>true</visible>
+			<primary>server</primary>
+			<TableView asList="true" id="server">
+				<Column object="server" render="internal_displayname" asList="true">
+					<label>Server</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				<Column object="server2platform.0.platform" render="internal_displayname" asList="true">
+					<label>Host</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				<Column object="component2server" render="size" asList="true">
+					<label>Components</label>
+					<reference>true</reference>
+					<type>SoftwareComponent</type>
+					<complexType>false</complexType>
+				</Column>
+				
+			</TableView>
+			
+			<TableView asList="true" id="component2server">
+				<Column object="component" render="internal_displayname" asList="true">
+					<label>Display Name</label>
+				</Column>
+			</TableView>
+		</Table>
+		
+		<Graph id="graph1" name="Software - Graph">
+			<expression asSimpleList="true">server/platform</expression>
+			<expression asSimpleList="true">server/component</expression>
+			<expression asSimpleList="true">component/clientConnector/serverConnector/component</expression>
+			<applet>
+				<code>
+					org.onecmdb.graphml.viewer.applet.GraphMLViewApplet.class
+				</code>
+				<archive>
+					onecmdb/content/Content/applet/graphml/onecmdb-applet.jar,
+					onecmdb/content/Content/applet/graphml/onecmdb-applet-dependencies.jar
+				</archive>
+				<param>
+					<url><![CDATA[
+						${baseURL}/onecmdb/export/output.graphml?name=GraphML/export.cfg&type=graphml&group=${group}&graphid=${graphid}
+					]]></url>
+					<nodeLabel>nodeLabel</nodeLabel>
+					<nodeImageLabel>nodeImage</nodeImageLabel>
+				<layout>force</layout>
+</param>
+			</applet>
+		</Graph>
+		
+	</Presentation>
+
+	<Lifecycle>
+		<Create id="sw-1" name="Softare Server" asList="true">
+			<instances>
+				<SoftwareServer alias="s1">
+					<partOf><ref alias="{platform.internal_alias}"/></partOf>
+				</SoftwareServer>
+				
+				<SoftwareServerSocketConnector>
+					<port>{port}</port>
+					<protocol>{protocol}</protocol>
+					<partOf><ref alias="s1"/></partOf>
+				</SoftwareServerSocketConnector>
+			</instances>
+			
+			<InputForm>
+				<InputItem id="ci" name="Platform" asList="true">
+					<type>PlatformSystem</type>
+					<complexType>true</complexType>
+					<refType>BelongsTo</refType>
+				</InputItem>
+				<InputItem id="port" name="Port" asList="true">
+					<type>xs:string</type>
+				</InputItem>
+				<InputItem id="protocol" name="Protocol" asList="true">
+					<type>xs:string</type>
+				</InputItem>
+				<InputItem id="boolean" name="Boolean" asList="true">
+					<type>xs:boolean</type>
+				</InputItem>
+				<InputItem id="date" name="Date" asList="true">
+					<type>xs:date</type>
+				</InputItem>
+				<InputItem id="radio" name="Radio" asList="true">
+					<type>xs:radiogroup</type>
+				</InputItem>
+				<InputItem id="enum" name="Enum" asList="true">
+					<type>xs:enum</type>
+				</InputItem>
+				<InputItem id="textarea" name="Text Area" asList="true">
+					<type>xs:textarea</type>
+				</InputItem>
+				
+				
+			</InputForm>
+		</Create>
+		
+		<Delete/>
+		<Import/>
+	</Lifecycle>
+	
+	
+</GroupDescription>
+
+
+
+
+

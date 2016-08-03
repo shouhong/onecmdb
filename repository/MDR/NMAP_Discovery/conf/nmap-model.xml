@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb>
+	<templates>
+		<template alias="NMAP_Discovery">
+			<description>Defines root of all NMAP CI's</description>
+			<derivedFrom>
+				<ref alias="Ci"/>
+			</derivedFrom>
+		</template>
+		
+		<template alias="NMAP_Network">
+			<description>Defines a discovered network discoverd by NMAP</description>
+			<derivedFrom>
+				<ref alias="NMAP_Discovery"/>
+			</derivedFrom>
+			<attribute attAlias="name" displayName="Name">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="networkAddress" displayName="Network IP Address">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="networkMask" displayName="Network Mask">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+		</template>
+		<template alias="NMAP_Port">
+			<description>Defines a discovered network discoverd by NMAP</description>
+			<derivedFrom>
+				<ref alias="NMAP_Discovery"/>
+			</derivedFrom>
+			<attribute attAlias="host" displayName="Host">
+				<complexType>
+					<ref alias="NMAP_Host"/>
+					<refType><ref alias="BelongsTo"/></refType>
+				</complexType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="port" displayName="Port">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="protocol" displayName="Protocol">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="serviceName" displayName="Service Name">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			
+		</template>
+
+		<template alias="NMAP_TCP_Port">
+			<description>Defines a NMAP discovered open TCP server port</description>
+			<derivedFrom>
+				<ref alias="NMAP_Port"/>
+			</derivedFrom>
+		</template>
+		
+		<template alias="NMAP_UDP_Port">
+			<description>Defines a NMAP discovered open UDP server port</description>
+			<derivedFrom>
+				<ref alias="NMAP_Port"/>
+			</derivedFrom>
+		</template>
+		
+		
+		<template alias="NMAP_Host">
+			<description>Defines a discovered host NMAP CI</description>
+			<derivedFrom>
+				<ref alias="NMAP_Discovery"/>
+			</derivedFrom>
+			<attribute attAlias="network" displayName="Network">
+				<complexType>
+					<ref alias="NMAP_Network"/>
+					<refType><ref alias="BelongsTo"/></refType>
+				</complexType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="ipv4Address" displayName="IPV4 Address">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			<attribute attAlias="ipv6Address" displayName="IPV6 Address">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			
+			<attribute attAlias="macAddress" displayName="MAC Address">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			
+			
+			<attribute attAlias="hostname" displayName="Hostname">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+			
+			<attribute attAlias="macVendor" displayName="Interface Vendor">
+				<simpleType>xs:string</simpleType>
+				<policy>
+					<maxOccurs>1</maxOccurs>
+					<minOccurs>1</minOccurs>
+				</policy>
+			</attribute>
+		</template>
+		
+	</templates>
+</onecmdb>

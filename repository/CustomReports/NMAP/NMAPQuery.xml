@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphQuery>
+	<ItemOffspringSelector id="network" template="NMAP_Network"
+		primary="true">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	<ItemOffspringSelector id="host" template="NMAP_Host"
+		primary="false">
+		<matchTemplate>false</matchTemplate>
+		<excludeRelation id="port2host" />
+	</ItemOffspringSelector>
+	<ItemOffspringSelector id="port" template="NMAP_Port"
+		primary="false">
+		<matchTemplate>false</matchTemplate>
+	</ItemOffspringSelector>
+	
+	<ItemRelationSelector id="host2network" template="Reference"
+		primary="false">
+		<target>network</target>
+		<source>host</source>
+	</ItemRelationSelector>
+	<ItemRelationSelector id="port2host" template="Reference"
+		primary="false">
+		<target>host</target>
+		<source>port</source>
+		<mandatory>false</mandatory>
+	</ItemRelationSelector>
+	
+</GraphQuery>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb>
+<templates>
+</templates>
+<instances>
+
+	<!-- Default Roles
+	     Admin
+	     User
+	     Readonly 
+	 -->	
+	 <CMDBRole alias="ROLE_Guest">
+	 	<name>Guest</name>
+	 </CMDBRole>
+	 <CMDBRole alias="ROLE_User">
+	 	<name>User</name>
+	 </CMDBRole>
+	 <CMDBRole alias="ROLE_Admin">
+	 	<name>Admin</name>
+	 </CMDBRole>
+	 <CMDBRole alias="ROLE_Nagios">
+	 	<name>Nagios</name>
+	 </CMDBRole>
+	 
+	 
+	<CMDBAccount alias="account-cmdb-nagios" displayValue="">
+		<password>nagios</password>
+		<enabled>true</enabled>
+		<username>nagios</username>
+		<role>Nagios</role>
+		<defaultRole>Nagios</defaultRole>
+	</CMDBAccount>
+	 
+	<CMDBAccount alias="account-cmdb-guest" displayValue="">
+		<password>1qaz</password>
+		<enabled>true</enabled>
+		<username>cmdb-guest</username>
+		<role>Guest</role>
+		<defaultRole>Guest</defaultRole>
+	</CMDBAccount>
+	
+	<CMDBAccount alias="account-cmdb-admin" displayValue="">
+		<password>1qaz</password>
+		<enabled>true</enabled>
+		<username>cmdb-admin</username>
+		<role>Admin</role>
+		<role>User</role>
+		<role>Guest</role>
+		<defaultRole>Admin</defaultRole>
+	</CMDBAccount>
+	
+	<CMDBAccount alias="account-cmdb-user" displayValue="">
+		<password>1qaz</password>
+		<enabled>true</enabled>
+		<username>cmdb-user</username>
+		<role>User</role>
+		<role>Guest</role>
+		<defaultRole>User</defaultRole>
+	</CMDBAccount>
+
+	
+	
+</instances>
+</onecmdb>

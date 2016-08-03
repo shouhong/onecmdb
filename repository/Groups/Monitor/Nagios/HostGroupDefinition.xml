@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GroupDescription name="Host Groups" icon="onecmdb/content/Content/Images/Icons/computer16.gif">
+	
+	<GraphQuery>
+		<ItemOffspringSelector id="hostgroup" template="NAGIOS_Hostgroup" primary="true">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+		
+		<ItemOffspringSelector id="host" template="NAGIOS_Host" primary="false">
+			<matchTemplate>false</matchTemplate>
+		</ItemOffspringSelector>
+
+		<ItemRelationSelector id="host2group" template="Reference">
+			<target>hostgroup</target>
+			<source>host</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="group2host" template="Reference">
+			<target>host</target>
+			<source>hostgroup</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+		
+		<ItemRelationSelector id="group2group" template="Reference">
+			<target>hostgroup</target>
+			<source>hostgroup</source>
+			<mandatory>false</mandatory>
+		</ItemRelationSelector>
+	</GraphQuery>
+
+	<Presentation>
+		<Table id="table-1" name="Groups">
+			<visible>true</visible>
+			<primary>hostgroup</primary>
+			<TableView asList="true" id="hostgroup">
+				<Column object="hostgroup" render="internal_displayname" asList="true">
+					<label>Name</label>
+					<type>xs:string</type>
+					<complexType>false</complexType>
+				</Column>
+				
+				<Column object="group2group" render="size" asList="true">
+					<label>Host Groups</label>
+					<reference>true</reference>
+					<type>Group</type>
+				</Column>
+				
+				<Column object="host2group" render="size" asList="true">
+					<label>Hosts</label>
+					<reference>true</reference>
+					<type>Host</type>
+				</Column>
+				
+			</TableView>
+		</Table>
+		
+	</Presentation>
+
+	<LifeCycle>
+		<Create>
+			<instances>
+			</instances>
+			
+			<parameters>
+				<Input id="a" name="Platform"/>
+				<Input id="b" name="Install Dir"/>
+			</parameters>
+		</Create>
+		<Delete/>
+		<Import/>
+	</LifeCycle>
+	
+	
+</GroupDescription>
+
+
+
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Meta Data for this Folder</comment>
+<entry key="type">OneCMDB xml formatted data</entry>
+<entry key="org.onecmdb.ui.gwt.desktop.client.service.model.CMDBDesktopConfig">org.onecmdb.ui.gwt.desktop.server.service.content.adapter.GXTModelContentAdapter</entry>
+<entry key="com.extjs.gxt.ui.client.data.BaseModel">org.onecmdb.ui.gwt.desktop.server.service.content.adapter.GXTModelContentAdapter</entry>
+<entry key="org.onecmdb.ui.gwt.desktop.client.service.model.UserPreference">org.onecmdb.ui.gwt.desktop.server.service.content.adapter.GXTModelContentAdapter</entry>
+</properties>

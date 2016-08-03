@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb-transform name="cmdb2nagios">
+		
+	<DataSet name="host" exclude="true">
+		<AttributeSelector name="host_name" naturalKey="true" selector="Hostname" />
+		<AttributeSelector name="address" naturalKey="true" selector="IPAddress" />
+		<AttributeExpressionSelector name="notes_url" natrualKey="false">
+			<AttributeSelector name="alias" selector="@alias"/>
+			<Expression><![CDATA[http://localhost:8080/onecmdb-desktop?alid=nagios&alias={alias}]]></Expression>
+		</AttributeExpressionSelector>
+	</DataSet>
+	
+	<DataSet name="host_linux" parent="host">
+		<InstanceSelector match="/Tree/system[os2system/os/Family = 'Linux']" template="NAGIOS_Host_linux-server"/>
+		
+	</DataSet>
+	
+	<DataSet name="host_windows" parent="host">
+		<InstanceSelector match="/Tree/system[os2system/os/Family = 'Windows']" template="NAGIOS_Host_windows-server"/>
+	</DataSet>
+	
+	<DataSet name="host_router" parent="host">
+		<InstanceSelector match="/Tree/system[@type='Router']" template="NAGIOS_Host_generic-switch"/>
+	</DataSet>
+	
+	
+	<DataSet name="host_switch" parent="host">
+		<InstanceSelector match="/Tree/system[@type='Switch']" template="NAGIOS_Host_generic-switch"/>
+	</DataSet>
+	
+	<DataSet name="host_printer" parent="host">
+		<InstanceSelector match="/Tree/system[@type='NetworkPrinter']" template="NAGIOS_Host_generic-printer"/>
+	</DataSet>
+	
+	
+	<DataSetSelector name="host_match" exclude="true">
+		<InstanceSelector match="." template="NAGIOS_Host"/>
+		<RegExpMatcher regExpr="networkprinter" lowerCase="true">
+			<AttributeSelector name="expr" selector="@type"/>
+			<DataSet>host_printer</DataSet>
+		</RegExpMatcher>
+		
+		<RegExpMatcher regExpr="router" lowerCase="true">
+			<AttributeSelector name="expr" selector="@type"/>
+			<DataSet>host_router</DataSet>
+		</RegExpMatcher>
+		
+		<RegExpMatcher regExpr="switch" lowerCase="true">
+			<AttributeSelector name="expr" selector="@type"/>
+			<DataSet>host_switch</DataSet>
+		</RegExpMatcher>
+		
+		
+		<RegExpMatcher regExpr="windows" lowerCase="true">
+			<AttributeSelector name="expr" selector="os2system/os/Family"/>
+			<DataSet>host_windows</DataSet>
+		</RegExpMatcher>
+		<RegExpMatcher regExpr="linux" lowerCase="true">
+			<AttributeSelector name="expr" selector="os2system/os/Family"/>
+			<DataSet>host_linux</DataSet>
+		</RegExpMatcher>
+	</DataSetSelector>	
+	
+	<DataSet name="tcp_service">
+		<InstanceSelector match="/Tree//appl[Protocol='tcp']" template="NAGIOS_Service_generic-service"/>
+		<AttributeExpressionSelector name="service_description" naturalKey="true">
+			<AttributeSelector name="port" selector="Port" />
+			<AttributeSelector name="name" selector="Name" />
+			<Expression>{name} - {port}</Expression>
+		</AttributeExpressionSelector>	
+		<ComplexAttributeSelector name="host_name" naturalKey="true" dataSet="host_match" selector="../../../.." />	
+		<DefaultAttributeSelector name="check_command" naturalKey="true" value="NAGIOS_I_command_check_tcp" complex="true"/>
+		<AttributeSelector name="check_command_arg" selector="Port"/>
+		<AttributeExpressionSelector name="notes_url" natrualKey="false">
+			<AttributeSelector name="alias" selector="@alias"/>
+			<Expression><![CDATA[http://localhost:8080/onecmdb-desktop?alid=nagios&alias={alias}]]></Expression>
+		</AttributeExpressionSelector>
+	</DataSet>
+	
+	<DataSet name="udp_service">
+		<InstanceSelector match="/Tree//appl[Protocol='udp']" template="NAGIOS_Service_generic-service"/>
+		<AttributeExpressionSelector name="service_description" naturalKey="true">
+			<AttributeSelector name="port" selector="Port" />
+			<AttributeSelector name="name" selector="Name" />
+			<Expression>{name} ({port})</Expression>
+		</AttributeExpressionSelector>	
+		
+		<ComplexAttributeSelector name="host_name" naturalKey="true" dataSet="host_match" selector="../../../.." />	
+		<DefaultAttributeSelector name="check_command" natrualKey="true" value="NAGIOS_I_command_check_udp"/>
+		<AttributeSelector name="check_command_arg" selector="Port"/>
+	</DataSet>
+	
+</onecmdb-transform>

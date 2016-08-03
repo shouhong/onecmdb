@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<CustomView>
+	<widgets>
+		<widget asList="true" id="cmdb-model-instance-overview">
+			<heading>Nagios View</heading>
+			<width>650px</width>
+			<height>600px</height>
+			<params>
+				<rootCI asSimpleList="true">NAGIOS_Host</rootCI>
+				<rootCI asSimpleList="true">NAGIOS_Hostgroup</rootCI>
+				<rootCI asSimpleList="true">NAGIOS_Service</rootCI>
+				<rootCI asSimpleList="true">NAGIOS_Servicegroup</rootCI>
+				<rootCI asSimpleList="true">NAGIOS_Command</rootCI>
+				<rootCI asSimpleList="true">NAGIOS_Timeperiod</rootCI>
+				<table>
+					<visible>true</visible>
+					<ColumnFilter asList="true" alias="NAGIOS_Host">
+						<Column attAlias="host_name" asList="true" include="true">
+							<include>true</include>
+							<width>300</width>
+						</Column>
+						<Column attAlias="address" asList="true">
+							<include>true</include>
+							<width>300</width>
+						</Column>
+					</ColumnFilter>
+					
+					<ColumnFilter asList="true" alias="NAGIOS_Service">
+							<Column asList="true" attAlias="host_name">
+								<include>true</include>
+								<width>150</width>
+							</Column>
+							<Column asList="true" attAlias="service_description">
+								<include>true</include>
+								<width>200</width>
+							</Column>
+							<Column asList="true" attAlias="check_command">
+								<include>true</include>
+								<width>200</width>
+							</Column>
+							<Column asList="true" attAlias="max_check_attempts">
+								<include>true</include>
+								<width>50</width>
+							</Column>
+							<Column asList="true" attAlias="normal_check_intervall">
+								<include>true</include>
+								<width>50</width>
+							</Column>
+							<Column asList="true" attAlias="retry_check_intervall">
+								<include>true</include>
+								<width>50</width>
+							</Column>
+							<Column asList="true" attAlias="check_period">
+								<include>true</include>
+								<width>200</width>
+							</Column>
+							<Column asList="true" attAlias="notification_period">
+								<include>true</include>
+								<width>150</width>
+							</Column>
+					</ColumnFilter>
+				</table>
+				
+				<tree>
+					<visible>true</visible>
+				</tree>
+		
+				<graph>
+					<visible>true</visible>
+					<code>org.onecmdb.rest.graph.utils.applet.AppletLaunch.class</code>
+					<archive>onecmdb/content/Content/applet/onecmdb-applet.jar, onecmdb/content/Content/applet/onecmdb-applet-dependencies.jar</archive>
+					<param>
+						<url>${baseURL}/onecmdb/query</url>
+						<rootCI>Ci</rootCI>
+						<appletlaunch.callcode>org.onecmdb.rest.graph.applet.InstanceViewApplet</appletlaunch.callcode>
+						<appletlaunch.color.background>FFFFFF</appletlaunch.color.background>
+						<appletlaunch.splash>onecmdb/content/Content/applet/applet-loading.gif</appletlaunch.splash>
+						<appletlaunch.splasherror>onecmdb/content/Content/applet/applet-error.gif</appletlaunch.splasherror>
+						<appletlaunch.version>1.5.0</appletlaunch.version>
+						<iconURL>${baseURL}/onecmdb/icon</iconURL>
+						<graphBackgroundColor>0x454545</graphBackgroundColor>
+					</param>
+				</graph>
+			</params>
+		</widget>
+	</widgets>
+</CustomView>

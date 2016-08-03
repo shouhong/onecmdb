@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<onecmdb-transform name="csv2systems">
+<!--  
+1System.Type
+2System.Hostname
+3System.IPAddress
+4System.IPv6Address
+5System.MAC_Address
+6System.SerialNumber
+7OS.Type
+8OS.Version
+9OS.Familly
+10OS.LicenseKey
+11Network.Name
+-->
+	<DataSet name="system">
+		<InstanceSelector template="System" templateSelector="1" />
+		<AttributeSelector name="Hostname" naturalKey="false" selector="2" />
+		<AttributeSelector name="IPAddress" naturalKey="true" selector="3" />
+		<AttributeSelector name="IPv6Address" naturalKey="false" selector="4" />
+		<AttributeSelector name="MAC_Address" naturalKey="false" selector="5" />
+		<AttributeSelector name="SerialNumber" naturalKey="false" selector="6" />
+		<ComplexAttributeSelector name="Network" naturalKey="true" dataSet="network" />
+	</DataSet>
+	
+	<DataSet name="os">
+		<InstanceSelector template="OS" templateSelector="7" />
+		<AttributeSelector name="Version" naturalKey="false" selector="8" />
+		<AttributeSelector name="Family" naturalKey="false" selector="9" />
+		<AttributeSelector name="LicenseKey" naturalKey="false" selector="10" />
+		<ComplexAttributeSelector name="InstalledOn" naturalKey="true" dataSet="system" />
+	</DataSet>
+	
+
+	<DataSet name="network">
+		<InstanceSelector template="Network"/>
+		<AttributeSelector name="Name" naturalKey="true" selector="11" />
+	</DataSet>
+	
+</onecmdb-transform>
