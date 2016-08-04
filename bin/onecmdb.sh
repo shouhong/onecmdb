@@ -53,7 +53,9 @@ if [ $1 = start ]; then
     fi		
 
     # Tomcat (we need to start with a known CWD)
-    ( 
+    (
+	cd "$ONECMDB_HOME/bin" 
+	./setmysql.sh
 	cd "$ONECMDB_HOME"
 	./tomcat/bin/startup.sh
     )

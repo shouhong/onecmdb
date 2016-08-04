@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE 
+	beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!-- ==================== datasource.xml =========================  -->
+<!--	                                                            -->
+<!--	Definition of the data source to be used by OneCMDB         -->
+<!--	                                                            -->
+<!--	The following beans are used:                               -->
+<!--	                                                            -->
+<!--	  dataSource            defines driver/url/user/pwd         -->
+<!--	  hibernateProperties   defines the database dialect        -->
+<!--	                                                            -->
+<beans default-dependency-check="none">
+
+	<!--  HSQLDB Datasource                                         -->
+	<!--                                                            -->
+	<!--  These HSQL modes are supported:                           -->
+	<!--                                                            -->
+	<!--    In-memory    jdbc:hsqldb:mem                            -->	
+	<!--    Standalone   jdbc:hsqldb:file:<file>                    -->	
+	<!--    Server       jdbc:hsqldb:hsql://<server>/<database>     -->	
+	<!--                                                            -->
+	<!--  Note: When using the standalone and the in-memory modes   -->
+	<!--        the 'shutdown' property should bs set to true to    -->
+	<!--        ensure data files are closed properly when the      -->
+	<!--        system is shutdown.                                 -->
+	<!--                                                            -->
+	<bean id="dataSource" 
+		class="org.onecmdb.core.internal.storage.DataSourceWrapper"
+		destroy-method="close" >
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/onecmdb" />
+		<property name="username" value="${MYSQL_USER}" />
+		<property name="password" value="${MYSQL_PASSWORD}" />
+	
+		<property name="initialSize" value="0" />
+		<property name="maxActive" value="8" />
+		<property name="minIdle" value="0" />
+		<property name="maxIdle" value="8" />
+
+		<property name="connectionProperties">
+			<props>
+				<prop key="shutdown">false</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!--  Hibernate configuration taking the 'dataSoure' defintion  -->
+	<!--  in account, specifically the dialect to use.              -->
+	<!--                                                            -->
+	<bean id="hibernateProperties" class="org.onecmdb.core.internal.storage.HibernateProperty">
+		<property name="properties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+				<prop key="show_sql">true</prop>
+				<prop key="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.jdbc.batch_size">20</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>
